@@ -1,0 +1,16 @@
+# ignore every thing
+*
+!.gitignore
+!.gitattributes
+!.docker-compose.yml
+!.custom.ini
+
+# allow snazy portfolio theme to be ignored
+!wp-content/
+!wp-content/themes/
+!wp-content/themes/snazzyportfolio/
+!wp-content/themes/snazzyportfolio/**
+
+# ignore node_modules directory everywhere
+node_modules/
+
