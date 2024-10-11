@@ -16,11 +16,14 @@ function snazzyportfolio_features()
 }
 add_action('after_setup_theme', 'snazzyportfolio_features');
 
-// snazzyportfolio_blocks 
+// snazzyportfolio_blocks
 
 function snazzyportfolio_blocks()
 {
   register_block_type_from_metadata(__DIR__ . '/build/intro');
+  register_block_type_from_metadata(__DIR__ . '/build/introheadline');
+  register_block_type_from_metadata(__DIR__ . '/build/introparagraph');
+  register_block_type_from_metadata(__DIR__ . '/build/introsubheadline');
 }
 
 add_action('init', 'snazzyportfolio_blocks');

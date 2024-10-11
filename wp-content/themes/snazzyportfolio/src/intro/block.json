@@ -4,5 +4,14 @@
   "name": "snazzyportfolio/develper-intro",
   "title": "Developer intro",
   "editorScript": "file:./index.js",
-  "render": "file:./render.php"
+  "render": "file:./render.php",
+  "supports": {
+    "align": ["full"]
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    }
+  }
 }

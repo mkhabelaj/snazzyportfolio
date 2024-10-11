@@ -4,10 +4,22 @@ export default function EditComponent() {
   const blockProps = useBlockProps();
   return (
     <div {...blockProps}>
-      <div className="sp-p-40 ">
-        <p className="sp-text-center sp-bg-black sp-text-white">
-          Developer intro
-        </p>
+      <div
+        className="
+        sp-bg-slate-900 
+        sp-text-slate-400 
+        font-inter
+        sp-selection:bg-teal-300 
+        sp-selection:text-teal-900 
+        sp-leading-relaxed
+        sp-antialiase
+        sp-flex sp-items-center 
+        sp-justify-center sp-flex-col 
+        sp-text-center
+        sp-p-10
+        "
+      >
+        <p>Developer intro</p>
         <InnerBlocks />
       </div>
     </div>
