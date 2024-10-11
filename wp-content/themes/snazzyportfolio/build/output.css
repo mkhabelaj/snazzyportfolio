@@ -553,3 +553,21 @@ video {
 [hidden] {
   display: none;
 }
+
+.sp-bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.sp-p-40 {
+  padding: 10rem;
+}
+
+.sp-text-center {
+  text-align: center;
+}
+
+.sp-text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
