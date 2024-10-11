@@ -554,12 +554,16 @@ video {
   display: none;
 }
 
-.sp-mb-6 {
-  margin-bottom: 1.5rem;
+.sp-mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .sp-mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.sp-mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .sp-flex {
@@ -592,10 +596,6 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.sp-p-40 {
-  padding: 10rem;
-}
-
 .sp-p-10 {
   padding: 2.5rem;
 }
@@ -614,6 +614,26 @@ video {
   line-height: 1.5rem;
 }
 
+.sp-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.sp-text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.sp-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.sp-text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .sp-font-bold {
   font-weight: 700;
 }
@@ -622,17 +642,17 @@ video {
   font-weight: 500;
 }
 
-.sp-leading-relaxed {
-  line-height: 1.625;
-}
-
 .sp-leading-normal {
   line-height: 1.5;
 }
 
-.sp-text-white {
+.sp-leading-relaxed {
+  line-height: 1.625;
+}
+
+.sp-text-slate-200 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .sp-text-slate-400 {
@@ -640,7 +660,63 @@ video {
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
-.sp-text-slate-200 {
+.sp-text-white {
   --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:sp-mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .md\:sp-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:sp-text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:sp-text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:sp-text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:sp-text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:sp-text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:sp-text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .md\:sp-text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .md\:sp-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:sp-text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }

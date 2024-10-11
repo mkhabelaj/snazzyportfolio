@@ -8,7 +8,7 @@ export default function EditComponent() {
         className="
         sp-bg-slate-900 
         sp-text-slate-400 
-        font-inter
+        sp-font-inter
         sp-selection:bg-teal-300 
         sp-selection:text-teal-900 
         sp-leading-relaxed
