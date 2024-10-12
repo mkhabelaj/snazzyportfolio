@@ -12,7 +12,7 @@ export default function EditComponent({
         <div>
           <RichText
             tagName="h1"
-            className={`${textSizeVariant[size]} sp-mt-4 sp-decoration-4 sp-mb-5 sp-text-slate-200 sp-uppercase sp-tracking-widest`}
+            className={`${textSizeVariant[size]} sp-mt-4  s-mb-5 sp-text-slate-200 sp-tracking-widest`}
             value={text}
             onChange={(value) => setAttributes({ text: value })}
           />

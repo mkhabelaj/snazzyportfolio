@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/project-subtitle",
+  "title": "Snazzy Project Subtitle",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "text": { "type": "string", "default": "Snazzy Project Article Subtitle" },
+    "size": { "type": "string", "default": "2xl" }
+  }
+}

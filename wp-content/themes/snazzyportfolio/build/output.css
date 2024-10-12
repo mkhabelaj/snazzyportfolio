@@ -575,6 +575,10 @@ video {
   margin-top: 1rem;
 }
 
+.sp-mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .sp-flex {
   display: flex;
 }
@@ -659,6 +663,11 @@ video {
 .sp-text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.sp-text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .sp-font-bold {

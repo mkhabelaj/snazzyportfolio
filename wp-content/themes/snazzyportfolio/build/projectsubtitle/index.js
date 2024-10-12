@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/projecttitle/edit.js":
-/*!**********************************!*\
-  !*** ./src/projecttitle/edit.js ***!
-  \**********************************/
+/***/ "./src/projectsubtitle/edit.js":
+/*!*************************************!*\
+  !*** ./src/projectsubtitle/edit.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _textSize__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./textSize */ "./src/projecttitle/textSize.js");
+/* harmony import */ var _textSize__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./textSize */ "./src/projectsubtitle/textSize.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -34,7 +34,7 @@ function EditComponent({
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
           tagName: "h1",
-          className: `${_textSize__WEBPACK_IMPORTED_MODULE_1__["default"][size]} sp-mt-4 sp-decoration-4 sp-mb-5 sp-text-slate-200 sp-uppercase sp-tracking-widest`,
+          className: `${_textSize__WEBPACK_IMPORTED_MODULE_1__["default"][size]} sp-mt-4  s-mb-5 sp-text-slate-200 sp-tracking-widest`,
           value: text,
           onChange: value => setAttributes({
             text: value
@@ -47,10 +47,10 @@ function EditComponent({
 
 /***/ }),
 
-/***/ "./src/projecttitle/textSize.js":
-/*!**************************************!*\
-  !*** ./src/projecttitle/textSize.js ***!
-  \**************************************/
+/***/ "./src/projectsubtitle/textSize.js":
+/*!*****************************************!*\
+  !*** ./src/projectsubtitle/textSize.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -58,8 +58,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  "4xl": "sp-text-4xl",
-  "5xl": "sp-text-5xl"
+  xl: "sp-text-xl",
+  "2xl": "sp-text-2xl",
+  "3xl": "sp-text-3xl"
 });
 
 /***/ }),
@@ -94,13 +95,13 @@ module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
-/***/ "./src/projecttitle/block.json":
-/*!*************************************!*\
-  !*** ./src/projecttitle/block.json ***!
-  \*************************************/
+/***/ "./src/projectsubtitle/block.json":
+/*!****************************************!*\
+  !*** ./src/projectsubtitle/block.json ***!
+  \****************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-title","title":"Snazzy Project Title","editorScript":"file:./index.js","attributes":{"text":{"type":"string","default":"Snazzy Project Article Title"},"size":{"type":"string","default":"4xl"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-subtitle","title":"Snazzy Project Subtitle","editorScript":"file:./index.js","attributes":{"text":{"type":"string","default":"Snazzy Project Article Subtitle"},"size":{"type":"string","default":"2xl"}}}');
 
 /***/ })
 
@@ -175,17 +176,17 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!***********************************!*\
-  !*** ./src/projecttitle/index.js ***!
-  \***********************************/
+/*!**************************************!*\
+  !*** ./src/projectsubtitle/index.js ***!
+  \**************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./src/projecttitle/block.json");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/projecttitle/edit.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./src/projectsubtitle/block.json");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/projectsubtitle/edit.js");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _textSize__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./textSize */ "./src/projecttitle/textSize.js");
+/* harmony import */ var _textSize__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./textSize */ "./src/projectsubtitle/textSize.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
 
@@ -198,7 +199,8 @@ __webpack_require__.r(__webpack_exports__);
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: props => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, {
     tagName: "h1",
-    className: `${_textSize__WEBPACK_IMPORTED_MODULE_4__["default"][props.attributes.size]} sp-mt-4 sp-decoration-4 sp-mb-5 sp-text-slate-200 sp-uppercase sp-tracking-widest`,
+    className: `${_textSize__WEBPACK_IMPORTED_MODULE_4__["default"][props.attributes.size]} sp-mt-4 sp-mb-5 sp-text-slate-200 sp-tracking-widest
+`,
     value: props.attributes.text
   })
 });
