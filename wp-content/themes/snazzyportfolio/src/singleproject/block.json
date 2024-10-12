@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/single-project",
+  "title": "Snazzy Single Project",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "supports": {
+    "align": ["full"]
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    }
+  }
+}
