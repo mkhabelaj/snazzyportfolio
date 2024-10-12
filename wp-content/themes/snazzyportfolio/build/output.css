@@ -554,6 +554,11 @@ video {
   display: none;
 }
 
+.sp-my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .sp-mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -759,6 +764,10 @@ video {
 
   .md\:sp-max-w-\[600px\] {
     max-width: 600px;
+  }
+
+  .md\:sp-max-w-\[650px\] {
+    max-width: 650px;
   }
 
   .md\:sp-text-2xl {

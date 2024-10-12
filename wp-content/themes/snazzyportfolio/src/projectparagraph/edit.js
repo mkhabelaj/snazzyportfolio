@@ -14,7 +14,7 @@ export default function EditComponent({
           <RichText
             tagName="p"
             className={`${textSizeVariant[size]} 
-                sp-italic md:sp-max-w-[600px] sp-whitespace-pre-wrap sp-my-5 sp-font-medium sp-leading-tight`}
+                md:sp-max-w-[650px] sp-whitespace-pre-wrap sp-my-5  sp-leading-tight`}
             value={text}
             onChange={(value) => setAttributes({ text: value })}
           />
