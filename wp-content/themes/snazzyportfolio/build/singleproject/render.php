@@ -6,5 +6,7 @@
         sp-leading-relaxed
         sp-antialiased
   ">
-  <?php the_content() ?>
+  <main class="sp-max-w-5xl sp-w-11/12 sp-mx-auto">
+    <?php the_content() ?>
+  </main>
 </div>

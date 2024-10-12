@@ -1,4 +1,5 @@
 <?php
+
 // includes
 require get_theme_file_path('/inc/posttypes.php');
 
@@ -37,6 +38,9 @@ function snazzyportfolio_blocks()
   register_block_type_from_metadata(__DIR__ . '/build/projectexcerpt');
   register_block_type_from_metadata(__DIR__ . '/build/projectparagraph');
   register_block_type_from_metadata(__DIR__ . '/build/projectimage');
+  register_block_type_from_metadata(__DIR__ . '/build/flexcontainer');
+  register_block_type_from_metadata(__DIR__ . '/build/maincontent');
+  register_block_type_from_metadata(__DIR__ . '/build/sidecontent');
 }
 
 add_action('init', 'snazzyportfolio_blocks');
