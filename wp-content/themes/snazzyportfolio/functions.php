@@ -31,8 +31,9 @@ function snazzyportfolio_blocks()
   register_block_type_from_metadata(__DIR__ . '/build/introheadline');
   register_block_type_from_metadata(__DIR__ . '/build/introparagraph');
   register_block_type_from_metadata(__DIR__ . '/build/introsubheadline');
-  register_block_type_from_metadata(__DIR__ . '/build/projecttitle');
   register_block_type_from_metadata(__DIR__ . '/build/singleproject');
+  register_block_type_from_metadata(__DIR__ . '/build/projecttitle');
+  register_block_type_from_metadata(__DIR__ . '/build/projectexcerpt');
 }
 
 add_action('init', 'snazzyportfolio_blocks');
