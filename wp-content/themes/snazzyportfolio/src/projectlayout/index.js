@@ -8,9 +8,7 @@ registerBlockType(metadata.name, {
   save: () => (
     <div
       className="
-        sp-flex md:sp-flex-row sp-gap-4 sp-flex-col-reverse
-        sp-p-10
-        "
+        sp-flex md:sp-flex-row sp-gap-4 sp-flex-col-reverse"
     >
       <InnerBlocks.Content />
     </div>

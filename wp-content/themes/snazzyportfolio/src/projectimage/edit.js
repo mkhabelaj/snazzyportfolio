@@ -18,7 +18,6 @@ export default function EditComponent(props) {
           path: `/wp/v2/media/${props.attributes.imgID}`,
           method: "GET",
         });
-        console.log(response);
         props.setAttributes({
           imgURL: response.media_details.sizes.projectLandscapeLg.source_url,
         });
