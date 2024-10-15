@@ -45,3 +45,10 @@ function snazzyportfolio_blocks()
 }
 
 add_action('init', 'snazzyportfolio_blocks');
+
+// function for the main body content
+
+function snazzyportfolio_main_content_area($template_path)
+{
+  require get_theme_file_path('/inc/main.php');
+}
