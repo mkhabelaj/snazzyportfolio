@@ -1,3 +1,4 @@
+<!-- Main Content Area -->
 <div class="sp-bg-slate-900 
         sp-text-slate-400 
         sp-min-h-screen font-inter

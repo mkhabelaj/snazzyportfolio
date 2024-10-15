@@ -42,6 +42,7 @@ function snazzyportfolio_blocks()
   register_block_type_from_metadata(__DIR__ . '/build/projectlayoutmaincontent');
   register_block_type_from_metadata(__DIR__ . '/build/projectlayoutsidecontent');
   register_block_type_from_metadata(__DIR__ . '/build/projecttaglist');
+  register_block_type_from_metadata(__DIR__ . '/build/tag');
 }
 
 add_action('init', 'snazzyportfolio_blocks');
@@ -51,4 +52,10 @@ add_action('init', 'snazzyportfolio_blocks');
 function snazzyportfolio_main_content_area($template_path)
 {
   require get_theme_file_path('/inc/main.php');
+}
+
+// pagination template
+function snazzyportfolio_pagination()
+{
+  require get_theme_file_path('/inc/pagination.php');
 }
