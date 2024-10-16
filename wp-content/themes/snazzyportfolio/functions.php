@@ -45,6 +45,7 @@ function snazzyportfolio_blocks()
   register_block_type_from_metadata(__DIR__ . '/build/tag');
   register_block_type_from_metadata(__DIR__ . '/build/projectgrid');
   register_block_type_from_metadata(__DIR__ . '/build/projectarchive');
+  register_block_type_from_metadata(__DIR__ . '/build/timeline');
 }
 
 add_action('init', 'snazzyportfolio_blocks');

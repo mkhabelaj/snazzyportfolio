@@ -2,6 +2,7 @@
 
 function snazzyportfolio_post_types()
 {
+  // Project Post Type
   register_post_type('project', [
     'rewrite' => [
       'slug' => 'projects'
@@ -32,6 +33,36 @@ function snazzyportfolio_post_types()
       "excerpt",
     ],
     "taxonomies" => ["category", "post_tag"],
+  ]);
+
+  // Timeline Post Type
+  register_post_type('timeline', [
+    'rewrite' => [
+      'slug' => 'timeline'
+    ],
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'public' => true, // Todo: change to false after development
+    "description" => "Timelines for Snazzy Portfolio",
+    "menu_icon" => "dashicons-clock",
+    "labels" => [
+      "name" => "Timelines",
+      "singular_name" => "Timeline",
+      "menu_name" => "Timelines",
+      "all_items" => "All Timelines",
+      "add_new" => "Add New",
+      "add_new_item" => "Add New Timeline",
+      "edit_item" => "Edit Timeline",
+      "new_item" => "New Timeline",
+      "view_item" => "View Timeline",
+      "search_items" => "Search Timelines",
+      "not_found" => "No timelines found",
+      "not_found_in_trash" => "No timelines found in Trash",
+    ],
+    "supports" => [
+      "title",
+      "thumbnail",
+    ],
   ]);
 }
 
