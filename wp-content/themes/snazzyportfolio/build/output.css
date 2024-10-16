@@ -572,6 +572,21 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.sp-my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sp-my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sp-my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .sp-mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -606,6 +621,14 @@ video {
 
 .sp-mt-8 {
   margin-top: 2rem;
+}
+
+.sp-mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.sp-mt-12 {
+  margin-top: 3rem;
 }
 
 .sp-inline-block {
@@ -836,6 +859,10 @@ video {
 
 .sp-pb-8 {
   padding-bottom: 2rem;
+}
+
+.sp-pt-12 {
+  padding-top: 3rem;
 }
 
 .sp-text-center {
