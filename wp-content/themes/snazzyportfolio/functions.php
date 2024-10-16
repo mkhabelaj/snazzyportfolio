@@ -43,15 +43,24 @@ function snazzyportfolio_blocks()
   register_block_type_from_metadata(__DIR__ . '/build/projectlayoutsidecontent');
   register_block_type_from_metadata(__DIR__ . '/build/projecttaglist');
   register_block_type_from_metadata(__DIR__ . '/build/tag');
+  register_block_type_from_metadata(__DIR__ . '/build/projectgrid');
 }
 
 add_action('init', 'snazzyportfolio_blocks');
 
 // function for the main body content
 
-function snazzyportfolio_main_content_area($template_path)
+function snazzyportfolio_main_content_area($template_path, $type = 'main')
 {
-  require get_theme_file_path('/inc/main.php');
+  if ($type === 'main') {
+    require get_theme_file_path('/inc/main.php');
+    return;
+  }
+  if ($type === 'section') {
+    require get_theme_file_path('/inc/section.php');
+    return;
+  }
+  throw new Exception("Main content type not found. Invalid type: $type");
 }
 
 // pagination template
