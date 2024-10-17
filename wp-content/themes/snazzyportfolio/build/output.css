@@ -574,11 +574,6 @@ video {
   top: 1rem;
 }
 
-.sp-mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .sp-my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -666,20 +661,12 @@ video {
   min-height: 100vh;
 }
 
-.sp-w-11\/12 {
-  width: 91.666667%;
-}
-
 .sp-w-3 {
   width: 0.75rem;
 }
 
 .sp-w-full {
   width: 100%;
-}
-
-.sp-max-w-5xl {
-  max-width: 64rem;
 }
 
 .sp-max-w-sm {
