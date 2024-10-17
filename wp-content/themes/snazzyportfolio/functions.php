@@ -75,22 +75,6 @@ function snazzyportfolio_blocks()
 
 add_action('init', 'snazzyportfolio_blocks');
 
-
-// function for the main body content
-
-function snazzyportfolio_main_content_area($template_path, $type = 'main')
-{
-  if ($type === 'main') {
-    require get_theme_file_path('/inc/main.php');
-    return;
-  }
-  if ($type === 'section') {
-    require get_theme_file_path('/inc/section.php');
-    return;
-  }
-  throw new Exception("Main content type not found. Invalid type: $type");
-}
-
 // pagination template
 function snazzyportfolio_pagination()
 {

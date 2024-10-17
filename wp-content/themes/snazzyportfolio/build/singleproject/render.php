@@ -1,3 +1,5 @@
-<?php
-snazzyportfolio_main_content_area("/src/singleproject/template.php");
-
+<div class="main-content">
+  <div class="sub-main-content">
+    <?php the_content(); ?>
+  </div>
+</div>
