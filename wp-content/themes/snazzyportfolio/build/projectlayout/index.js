@@ -37,8 +37,7 @@ function EditComponent({
       innerBlockCount: getBlockCount(clientId)
     };
   });
-  const className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(`sp-bg-slate-900 
-       sp-text-slate-400 
+  const className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(`
        sp-min-h-screen font-inter
        selection:sp-bg-teal-300 
        selection:sp-text-teal-900 

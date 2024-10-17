@@ -6,8 +6,6 @@ export default function Edit() {
     <div {...blockProps}>
       <div
         className="
-        sp-bg-slate-900
-        sp-text-slate-400 
         sp-font-inter
         selection:sp-bg-teal-300 
         selection:sp-text-teal-900 

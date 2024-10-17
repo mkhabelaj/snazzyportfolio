@@ -1,0 +1,102 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "background": false,
+      "custom": true,
+      "customGradient": true,
+      "palette": [
+        {
+          "slug": "background",
+          "color": "var(--background)",
+          "name": "Background"
+        },
+        {
+          "slug": "foreground",
+          "color": "var(--foreground)",
+          "name": "Foreground"
+        },
+        {
+          "slug": "primary",
+          "color": "var(--primary)",
+          "name": "Primary"
+        },
+        {
+          "slug": "primary-foreground",
+          "color": "--primary-foreground",
+          "name": "Primary Foreground"
+        },
+        {
+          "slug": "secondary",
+          "color": "var(--secondary)",
+          "name": "Secondary"
+        },
+        {
+          "slug": "secondary-foreground",
+          "color": "var(--secondary-foreground)",
+          "name": "Secondary Foreground"
+        },
+        {
+          "slug": "muted",
+          "color": "var(--muted)",
+          "name": "Muted"
+        },
+        {
+          "slug": "muted-foreground",
+          "color": "var(--muted-foreground)",
+          "name": "Muted Foreground"
+        },
+        {
+          "slug": "accent",
+          "color": "var(--accent)",
+          "name": "Accent"
+        },
+        {
+          "slug": "accent-foreground",
+          "color": "var(--accent-foreground)",
+          "name": "Accent Foreground"
+        },
+        {
+          "slug": "destructive",
+          "color": "var(--destructive)",
+          "name": "Destructive"
+        },
+        {
+          "slug": "destructive-foreground",
+          "color": "var(--destructive-foreground)",
+          "name": "Destructive Foreground"
+        },
+        {
+          "slug": "border",
+          "color": "var(--border)",
+          "name": "Border"
+        },
+        {
+          "slug": "input",
+          "color": "var(--input)",
+          "name": "Input"
+        },
+        {
+          "slug": "ring",
+          "color": "var(--ring)",
+          "name": "Ring"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "base",
+          "size": "1rem",
+          "name": "Base"
+        },
+        {
+          "slug": "large",
+          "size": "1.25rem",
+          "name": "Large"
+        }
+      ]
+    }
+  }
+}

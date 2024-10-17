@@ -1,7 +1,5 @@
 <!-- Main Content Area -->
 <div class="
-        sp-bg-slate-900 
-        sp-text-slate-400 
         sp-min-h-40 font-inter
         selection:sp-bg-teal-300 
         selection:sp-text-teal-900 

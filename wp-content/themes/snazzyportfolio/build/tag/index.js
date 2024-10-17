@@ -23,7 +23,7 @@ function Edit() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: " sp-bg-slate-900 sp-text-slate-400  sp-font-inter selection:sp-bg-teal-300  selection:sp-text-teal-900  sp-leading-relaxed sp-antialiased sp-flex sp-items-center  sp-flex-col  sp-text-center sp-p-10 sp-text-5xl sp-font-bold ",
+      className: " sp-font-inter selection:sp-bg-teal-300  selection:sp-text-teal-900  sp-leading-relaxed sp-antialiased sp-flex sp-items-center  sp-flex-col  sp-text-center sp-p-10 sp-text-5xl sp-font-bold ",
       children: "Tag Placeholder"
     })
   });

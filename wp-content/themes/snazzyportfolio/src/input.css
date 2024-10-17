@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background: #0f172a; /* Dark slate background color */
+  --foreground: #e2e8f0; /* Light text for contrast */
+  --primary: #5eead4; /* Teal for primary elements (buttons, links) */
+  --primary-foreground: #0f172a; /* Dark text on primary backgrounds */
+  --secondary: #2d3748; /* Slightly lighter gray for secondary backgrounds */
+  --secondary-foreground: #cbd5e0; /* Light gray text for secondary elements */
+  --muted: #1e293b; /* Darker muted background for less emphasis */
+  --muted-foreground: #94a3b8; /* Muted text for less important details */
+  --accent: #7dd3fc; /* Light blue for accentuating elements */
+  --accent-foreground: #1e293b; /* Dark text for accent backgrounds */
+  --destructive: #ef4444; /* Red for error or destructive actions */
+  --destructive-foreground: #ffffff; /* White text for destructive elements */
+  --border: #2c2f33; /* Border color that blends with the dark theme */
+  --input: #334155; /* Input fields background for contrast */
+  --ring: #5eead4; /* Teal for focus rings to match primary */
+  --radius: 0.5rem; /* Slightly rounded corners for smooth UI */
+}
+body {
+  background-color: var(--wp--preset--color--background);
+  color: var(--wp--preset--color--muted-foreground);
+}
+
+body:selection {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--primary-foreground);
+}

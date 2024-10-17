@@ -133,11 +133,11 @@ $custom_query = new WP_Query($args);
 
             <h3 class="sp-text-lg sp-font-semibold sp-text-slate-200"><?php the_field('institution'); ?></h3>
 
-            <div class="sp-my-1 sp-text-sm sp-font-normal sp-leading-none sp-text-slate-400 dark:sp-text-stone-500">
+            <div class="sp-my-1 sp-text-sm sp-font-normal sp-leading-none dark:sp-text-stone-500">
               <?php echo get_time_duration(get_field('start_date'), get_field('end_date')); ?>
             </div>
           </div>
-          <p class="sp-my-2 sp-text-base sp-font-normal sp-text-slate-400"><?php the_field('description'); ?></p>
+          <p class="sp-my-2 sp-text-base sp-font-normal"><?php the_field('description'); ?></p>
         </li>
       </ol>
     <?php

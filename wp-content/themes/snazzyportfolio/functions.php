@@ -7,9 +7,11 @@ require get_theme_file_path('/inc/posttypes.php');
 function snazzyportfolio_files()
 {
   wp_enqueue_style('snazzyportfolio_main_styles', get_theme_file_uri('/build/output.css'));
+  add_editor_style('build/output.css');
 }
 
 add_action('wp_enqueue_scripts', 'snazzyportfolio_files');
+add_action("admin_init", 'snazzyportfolio_files');
 
 function snazzyportfolio_features()
 {

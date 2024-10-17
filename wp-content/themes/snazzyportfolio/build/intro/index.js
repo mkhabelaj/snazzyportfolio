@@ -23,7 +23,7 @@ function EditComponent() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: " sp-bg-slate-900  sp-text-slate-400  sp-font-inter sp-selection:bg-teal-300  sp-selection:text-teal-900  sp-leading-relaxed sp-antialiase sp-flex sp-items-center  sp-justify-center sp-flex-col  sp-text-center sp-p-10 ",
+      className: " sp-font-inter sp-selection:bg-teal-300  sp-selection:text-teal-900  sp-leading-relaxed sp-antialiase sp-flex sp-items-center  sp-justify-center sp-flex-col  sp-text-center sp-p-10 ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
         children: "Developer intro"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks, {})]

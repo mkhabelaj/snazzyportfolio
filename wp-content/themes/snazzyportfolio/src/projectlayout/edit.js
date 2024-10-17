@@ -19,8 +19,7 @@ export default function EditComponent({ clientId }) {
     };
   });
   const className = clsx(
-    `sp-bg-slate-900 
-       sp-text-slate-400 
+    `
        sp-min-h-screen font-inter
        selection:sp-bg-teal-300 
        selection:sp-text-teal-900 
