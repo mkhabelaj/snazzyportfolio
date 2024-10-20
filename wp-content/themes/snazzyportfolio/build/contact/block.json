@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/contact-form",
+  "title": "Snazzy Portfolio Contact Form",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "attributes": {
+    "action": {
+      "type": "string",
+      "default": "/contact"
+    }
+  }
+}
