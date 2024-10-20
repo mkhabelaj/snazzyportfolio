@@ -4,7 +4,7 @@
           sp-rounded-md sp-overflow-hidden sp-border-slate-600
           hover:sp-border-teal-600 hover:sp-border-2
           sp-max-w-sm
-          sp-transition-transform sp-duration-200 sp-ease-out hover:sp-scale-105">
+          sp-transition-transform sp-duration-200 sp-ease-out hover:sp-scale-105 sp-min-h-64 md:sp-min-h-96">
     <img src="<?php the_post_thumbnail_url("projectLandscapeSm"); ?>" alt="portfolio image"
       class="sp-w-full sp-h-36 md:sp-h-48 sp-object-cover sp-cursor-pointer">
     <div class="sp-w-full sp-p-4">
