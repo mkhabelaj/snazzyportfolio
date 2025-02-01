@@ -1,9 +1,8 @@
 .gitattributes
 .docker-compose.yml
 .custom.ini
-DS_Store
+.DS_Store
 
-# allow snazy portfolio theme to be ignored
 wp-content/
 
 # ignore node_modules directory everywhere
