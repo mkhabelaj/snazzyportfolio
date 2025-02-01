@@ -4,7 +4,7 @@
 DS_Store
 
 # allow snazy portfolio theme to be ignored
-# wp-content/
+wp-content/
 
 # ignore node_modules directory everywhere
 node_modules/
