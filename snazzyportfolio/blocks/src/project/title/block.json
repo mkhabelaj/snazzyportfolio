@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/project-title",
+  "title": "Snazzy Project Title",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "text": { "type": "string", "default": "Snazzy Project Article Title" },
+    "size": { "type": "string", "default": "4xl" }
+  }
+}

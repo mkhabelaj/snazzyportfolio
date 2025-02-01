@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "eb3fc8459c37326c1da22dcc1fbbe1d5",
+    "packages": [
+        {
+            "name": "nzuridesigns/worm",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com-nzuridesigns:nzuridesigns/worm.git",
+                "reference": "4cc32826e3a6dc75e80715d49b092b041b28d527"
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nzuridesigns\\Worm\\": "src/"
+                }
+            },
+            "description": "A description of your package",
+            "time": "2025-01-21T03:53:27+00:00"
+        },
+        {
+            "name": "nzuridesigns/wp-utility",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com-nzuridesigns:nzuridesigns/wp-utility.git",
+                "reference": "c05b64cf8574e3111ee2802c6d438faf302d17e1"
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nzuridesigns\\WPUtility\\": "src/"
+                }
+            },
+            "description": "A description of your package",
+            "time": "2025-01-21T13:38:16+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "nzuridesigns/worm": 20,
+        "nzuridesigns/wp-utility": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

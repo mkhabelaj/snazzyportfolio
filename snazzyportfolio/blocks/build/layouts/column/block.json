@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/column",
+  "parent": [
+    "snazzyportfolio/three-column-layout"
+  ],
+  "title": "Snazzy Project Column",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

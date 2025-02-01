@@ -1,0 +1,8 @@
+{
+  "themes": ["./snazzyportfolio"],
+  "plugins": ["https://downloads.wordpress.org/plugin/advanced-custom-fields.latest-stable.zip"],
+  "core": null,
+  "config": {
+    "WP_DEBUG": true
+  }
+}

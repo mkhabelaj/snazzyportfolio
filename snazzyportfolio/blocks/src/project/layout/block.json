@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/project-layout",
+  "title": "Snazzy Project Layout",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "category": "snazzyportfolio",
+  "allowedBlocks": [
+    "snazzyportfolio/project-layout-main-content",
+    "snazzyportfolio/project-layout-side-content"
+  ],
+  "supports": {
+    "align": ["full"]
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    }
+  }
+}

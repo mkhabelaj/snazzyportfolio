@@ -1,0 +1,54 @@
+{
+    "packages": [
+        {
+            "name": "nzuridesigns/worm",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com-nzuridesigns:nzuridesigns/worm.git",
+                "reference": "4cc32826e3a6dc75e80715d49b092b041b28d527"
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "time": "2025-01-21T03:53:27+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "Nzuridesigns\\Worm\\": "src/"
+                }
+            },
+            "description": "A description of your package",
+            "install-path": "../nzuridesigns/worm"
+        },
+        {
+            "name": "nzuridesigns/wp-utility",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com-nzuridesigns:nzuridesigns/wp-utility.git",
+                "reference": "c05b64cf8574e3111ee2802c6d438faf302d17e1"
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "time": "2025-01-21T13:38:16+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "Nzuridesigns\\WPUtility\\": "src/"
+                }
+            },
+            "description": "A description of your package",
+            "install-path": "../nzuridesigns/wp-utility"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
