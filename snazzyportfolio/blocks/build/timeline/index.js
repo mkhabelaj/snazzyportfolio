@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/timeline/edit.js":
-/*!******************************!*\
-  !*** ./src/timeline/edit.js ***!
-  \******************************/
+/***/ "./blocks/src/timeline/edit.js":
+/*!*************************************!*\
+  !*** ./blocks/src/timeline/edit.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -61,10 +61,10 @@ module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
-/***/ "./src/timeline/block.json":
-/*!*********************************!*\
-  !*** ./src/timeline/block.json ***!
-  \*********************************/
+/***/ "./blocks/src/timeline/block.json":
+/*!****************************************!*\
+  !*** ./blocks/src/timeline/block.json ***!
+  \****************************************/
 /***/ ((module) => {
 
 module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/timeline","title":"Snazzy Timeline","editorScript":"file:./index.js","render":"file:./render.php","supports":{"align":["full"]},"attributes":{"align":{"type":"string","default":"full"}}}');
@@ -142,14 +142,14 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!*******************************!*\
-  !*** ./src/timeline/index.js ***!
-  \*******************************/
+/*!**************************************!*\
+  !*** ./blocks/src/timeline/index.js ***!
+  \**************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./src/timeline/block.json");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/timeline/edit.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./blocks/src/timeline/block.json");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./blocks/src/timeline/edit.js");
 
 
 

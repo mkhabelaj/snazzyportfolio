@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/project/excerpt/edit.js":
-/*!*************************************!*\
-  !*** ./src/project/excerpt/edit.js ***!
-  \*************************************/
+/***/ "./blocks/src/project/excerpt/edit.js":
+/*!********************************************!*\
+  !*** ./blocks/src/project/excerpt/edit.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _textSize__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./textSize */ "./src/project/excerpt/textSize.js");
+/* harmony import */ var _textSize__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./textSize */ "./blocks/src/project/excerpt/textSize.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -49,10 +49,10 @@ function EditComponent({
 
 /***/ }),
 
-/***/ "./src/project/excerpt/textSize.js":
-/*!*****************************************!*\
-  !*** ./src/project/excerpt/textSize.js ***!
-  \*****************************************/
+/***/ "./blocks/src/project/excerpt/textSize.js":
+/*!************************************************!*\
+  !*** ./blocks/src/project/excerpt/textSize.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -97,10 +97,10 @@ module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
-/***/ "./src/project/excerpt/block.json":
-/*!****************************************!*\
-  !*** ./src/project/excerpt/block.json ***!
-  \****************************************/
+/***/ "./blocks/src/project/excerpt/block.json":
+/*!***********************************************!*\
+  !*** ./blocks/src/project/excerpt/block.json ***!
+  \***********************************************/
 /***/ ((module) => {
 
 module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-excerpt","title":"Snazzy Project Excerpt","editorScript":"file:./index.js","attributes":{"text":{"type":"string","default":"Project Excerpt"},"size":{"type":"string","default":"md"}}}');
@@ -178,17 +178,17 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!**************************************!*\
-  !*** ./src/project/excerpt/index.js ***!
-  \**************************************/
+/*!*********************************************!*\
+  !*** ./blocks/src/project/excerpt/index.js ***!
+  \*********************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./src/project/excerpt/block.json");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/project/excerpt/edit.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./blocks/src/project/excerpt/block.json");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./blocks/src/project/excerpt/edit.js");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _textSize__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./textSize */ "./src/project/excerpt/textSize.js");
+/* harmony import */ var _textSize__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./textSize */ "./blocks/src/project/excerpt/textSize.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
 

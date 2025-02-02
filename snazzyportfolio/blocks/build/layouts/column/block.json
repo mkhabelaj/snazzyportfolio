@@ -5,7 +5,7 @@
   "parent": [
     "snazzyportfolio/three-column-layout"
   ],
-  "title": "Snazzy Project Column",
+  "title": "Snazzy Column",
   "editorScript": "file:./index.js",
   "render": "file:./render.php"
 }

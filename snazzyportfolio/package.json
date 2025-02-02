@@ -3,7 +3,7 @@
     "tw:build": "npx tailwindcss -i ./src/input.css -o ./build/output.css --minify",
     "tw:dev:build": "npx tailwindcss -i ./src/input.css -o ./build/output.css",
     "tw:watch": "npx tailwindcss -i ./src/input.css -o ./build/output.css --watch",
-    "wp:blocks": "wp-scripts start --experimental-modules",
+    "wp:blocks": "wp-scripts start --experimental-modules --output-path=blocks/build --webpack-src-dir=blocks/src",
     "start": "wp-scripts start"
   },
   "devDependencies": {

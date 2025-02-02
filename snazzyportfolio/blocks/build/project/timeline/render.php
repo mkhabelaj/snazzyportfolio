@@ -6,7 +6,7 @@
   <ul class="sp-flex sp-flex-col sp-gap-2 sp-text-slate-200">
     <?php
     //TODO: limit this block to project timelines
-    $related_timelines = get_field('related_timelines');
+    $related_timelines = get_field('otm-acf_timelines');
     foreach ($related_timelines as $timeline) : ?>
 
       <li class="sp-flex sp-flex-col sp-gap-2 sp-text-slate-200">

@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/layouts/threecolumn/edit.js":
-/*!*****************************************!*\
-  !*** ./src/layouts/threecolumn/edit.js ***!
-  \*****************************************/
+/***/ "./blocks/src/layouts/threecolumn/edit.js":
+/*!************************************************!*\
+  !*** ./blocks/src/layouts/threecolumn/edit.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -114,13 +114,13 @@ function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else i
 
 /***/ }),
 
-/***/ "./src/layouts/threecolumn/block.json":
-/*!********************************************!*\
-  !*** ./src/layouts/threecolumn/block.json ***!
-  \********************************************/
+/***/ "./blocks/src/layouts/threecolumn/block.json":
+/*!***************************************************!*\
+  !*** ./blocks/src/layouts/threecolumn/block.json ***!
+  \***************************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/three-column-layout","title":"Snazzy Project Layout","editorScript":"file:./index.js","render":"file:./render.php","category":"snazzyportfolio","allowedBlocks":["snazzyportfolio/column"],"supports":{"align":["full"]},"attributes":{"align":{"type":"string","default":"full"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/three-column-layout","title":"Snazzy Three Column Layout","editorScript":"file:./index.js","render":"file:./render.php","category":"snazzyportfolio","allowedBlocks":["snazzyportfolio/column"],"supports":{"align":["full"]},"attributes":{"align":{"type":"string","default":"full"}}}');
 
 /***/ })
 
@@ -195,14 +195,14 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!******************************************!*\
-  !*** ./src/layouts/threecolumn/index.js ***!
-  \******************************************/
+/*!*************************************************!*\
+  !*** ./blocks/src/layouts/threecolumn/index.js ***!
+  \*************************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./src/layouts/threecolumn/block.json");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/layouts/threecolumn/edit.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./blocks/src/layouts/threecolumn/block.json");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./blocks/src/layouts/threecolumn/edit.js");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
