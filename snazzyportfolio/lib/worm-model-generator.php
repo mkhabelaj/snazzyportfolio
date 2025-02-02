@@ -1,4 +1,3 @@
-
 <?php
 
 // use Nzdesigns\Tantrum\Wordpress\ORM\Models\Extended\ExtendedProfilesMetaModel;
