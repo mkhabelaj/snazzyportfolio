@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb3fc8459c37326c1da22dcc1fbbe1d5",
+    "content-hash": "f891d768524e47527e89b79c7257c020",
     "packages": [
         {
             "name": "nzuridesigns/worm",
@@ -58,7 +58,7 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

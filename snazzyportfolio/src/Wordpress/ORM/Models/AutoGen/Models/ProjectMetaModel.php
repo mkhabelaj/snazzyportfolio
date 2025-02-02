@@ -8,9 +8,9 @@ use Nzuridesigns\Worm\AbstractClasses\MetaModel;
 use Nzuridesigns\Worm\Fields\OnetoManyACFField;
 use Nzuridesigns\Worm\Fields\NonHierarchicalTaxonomyField;
 use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedTimelinesMetaModel;
+use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedProjectMetaModel;
 use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedprojectQueryModel;
 use Nzuridesigns\Worm\AbstractClasses\Query;
-use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedProjectMetaModel;
 use Nzuridesigns\Worm\AbstractClasses\QueryType;
 
 class ProjectMetaModel extends MetaModel

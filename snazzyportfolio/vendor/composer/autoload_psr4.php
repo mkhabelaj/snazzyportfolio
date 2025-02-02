@@ -8,5 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Nzuridesigns\\Worm\\' => array($vendorDir . '/nzuridesigns/worm/src'),
     'Nzuridesigns\\WPUtility\\' => array($vendorDir . '/nzuridesigns/wp-utility/src'),
-    'Jacksonmkhabela\\Snazzyportfolio\\' => array($baseDir . '/src'),
+    'Jcodify\\Snazzyportfolio\\' => array($baseDir . '/src'),
 );

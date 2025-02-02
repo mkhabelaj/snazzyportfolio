@@ -1,20 +1,20 @@
 <?php return array(
     'root' => array(
-        'name' => 'jacksonmkhabela/snazzyportfolio',
+        'name' => 'jcodify/snazzyportfolio',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f3b7ff36681193b40586941d69aa5a5427a97653',
-        'type' => 'project',
+        'reference' => '507ff418c57d3bfb10492b67a5031bb7203b26d8',
+        'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'jacksonmkhabela/snazzyportfolio' => array(
+        'jcodify/snazzyportfolio' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f3b7ff36681193b40586941d69aa5a5427a97653',
-            'type' => 'project',
+            'reference' => '507ff418c57d3bfb10492b67a5031bb7203b26d8',
+            'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,

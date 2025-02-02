@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once get_template_directory() . '/vendor/autoload.php';
 require_once get_template_directory() . '/lib/worm-model-generator.php';
 require get_theme_file_path('/inc/posttypes.php');
 require get_theme_file_path('/inc/taxonomies.php');

@@ -1,7 +1,6 @@
 {
   "name": "jcodify/snazzyportfolio",
   "description": "Wordpress theme",
-  "type": "project",
   "autoload": {
     "psr-4": {
       "Jcodify\\Snazzyportfolio\\": "src/"
