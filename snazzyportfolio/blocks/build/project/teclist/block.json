@@ -1,8 +1,8 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "snazzyportfolio/project-tag-list",
-  "title": "Snazzy Project Tag List",
+  "name": "snazzyportfolio/project-tech-list",
+  "title": "Snazzy Project Tech List",
   "editorScript": "file:./index.js",
   "render": "file:./render.php",
   "attributes": {

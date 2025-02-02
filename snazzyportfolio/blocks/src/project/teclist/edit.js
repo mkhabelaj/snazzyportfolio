@@ -19,7 +19,7 @@ export default function Edit() {
         sp-font-bold
         "
       >
-        Tag List Placeholder
+        Tech List Placeholder
       </div>
     </div>
   );

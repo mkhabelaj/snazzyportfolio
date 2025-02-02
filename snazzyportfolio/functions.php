@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 require get_theme_file_path('/inc/posttypes.php');
+require get_theme_file_path('/inc/taxonomies.php');
 
 // snazzyportfolio  files
 function snazzyportfolio_files()

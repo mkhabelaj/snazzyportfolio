@@ -1,7 +1,7 @@
 <?php
 
 $post_id = get_the_ID();
-$taglist = get_the_terms($post_id, 'post_tag');
+$taglist = get_the_terms($post_id, 'technology');
 if (!empty($taglist)) {
   foreach ($taglist as $tag):
   endforeach;

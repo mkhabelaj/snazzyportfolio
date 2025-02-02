@@ -2,7 +2,6 @@
 
 new Nzuridesigns\WPUtility\CustomPostType('project', 'projects', 'Projects', [
   'support' => ['title', 'editor', 'thumbnail', 'excerpt'],
-  'taxonomies' => ['category', 'post_tag'],
   'description' => 'Projects for Snazzy Portfolio',
   'menu_icon' => 'dashicons-portfolio',
 ]);

@@ -1,17 +1,14 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "snazzyportfolio/tag",
-  "title": "Snazzy Tag",
+  "name": "snazzyportfolio/project-tech-list",
+  "title": "Snazzy Project Tech List",
   "editorScript": "file:./index.js",
   "render": "file:./render.php",
-  "supports": {
-    "align": ["full"]
-  },
   "attributes": {
-    "align": {
+    "text": {
       "type": "string",
-      "default": "full"
+      "default": "Tag List"
     }
   }
 }

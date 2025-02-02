@@ -5,10 +5,10 @@
     <!-- Tag Title and Description -->
     <header class="sp-mb-8">
       <h1 class="sp-text-4xl md:sp-text-7xl sp-font-bold sp-mb-4 sp-text-slate-200">
-        <?php single_tag_title(); ?> <!-- Tag archive title -->
+        <?php single_term_title(); ?> <!-- Tag archive title -->
       </h1>
       <div class="sp-text-lg">
-        <?php echo tag_description(); ?> <!-- Tag description -->
+        <?php echo term_description(); ?> <!-- Tag description -->
       </div>
     </header>
 
