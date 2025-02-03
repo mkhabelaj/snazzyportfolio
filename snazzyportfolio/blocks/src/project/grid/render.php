@@ -9,8 +9,7 @@ $custom_query = new WP_Query($args); ?>
 
 <div class="main-content">
   <section class="sub-main-content">
-    <div class="sp-flex sp-flex-col md:sp-flex-row sp-items-center sp-justify-center">
-      <div class="sp-grid sp-grid-cols-1 md:sp-grid-cols-2 lg:sp-grid-cols-3 sp-gap-4">
+      <div class="sp-grid sp-grid-cols-1 md:sp-grid-cols-2 lg:sp-grid-cols-3 sp-gap-4 sp-place-items-center">
         <?php while ($custom_query->have_posts()) :
           $custom_query->the_post() ?>
           <?php get_template_part('template-parts/grid') ?>
@@ -21,6 +20,5 @@ $custom_query = new WP_Query($args); ?>
         ?>
 
       </div>
-    </div>
   </section>
 </div>
