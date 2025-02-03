@@ -8,8 +8,8 @@ require get_theme_file_path('/inc/taxonomies.php');
 // snazzyportfolio  files
 function snazzyportfolio_files()
 {
-    wp_enqueue_style('snazzyportfolio_main_styles', get_theme_file_uri('/lib/styles/output.css'));
-    add_editor_style('build/output.css');
+    wp_enqueue_style('snazzyportfolio_main_styles', get_theme_file_uri('/lib/styles/theme/output.css'));
+    add_editor_style('/lib/styles/theme/output.css');
 }
 
 add_action('wp_enqueue_scripts', 'snazzyportfolio_files');
