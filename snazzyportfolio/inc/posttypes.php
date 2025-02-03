@@ -1,13 +1,13 @@
 <?php
 
 new Nzuridesigns\WPUtility\CustomPostType('project', 'projects', 'Projects', [
-  'support' => ['title', 'editor', 'thumbnail', 'excerpt'],
+  'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
   'description' => 'Projects for Snazzy Portfolio',
   'menu_icon' => 'dashicons-portfolio',
 ]);
 
 new Nzuridesigns\WPUtility\CustomPostType('timeline', 'timeline', 'Timeline', [
-  'support' => ['title', 'thumbnail'],
+  'supports' => ['title'],
   'taxonomies' => ['category', 'post_tag'],
   'description' => 'Timeline for Snazzy Portfolio',
   'menu_icon' => 'dashicons-clock',
