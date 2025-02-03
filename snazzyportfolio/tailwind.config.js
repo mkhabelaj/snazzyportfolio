@@ -2,9 +2,9 @@
 module.exports = {
   prefix: "sp-",
   content: [
-    "./src/**/*.{html,js,php}",
-    "./inc/**/*.php",
+    "./blocks/src/**/*.{html,js,php}",
     "./template-parts/**/*.php",
+    "./inc/**/*.php",
   ],
   theme: {
     extend: {
