@@ -11,7 +11,7 @@
     $navItems = [
       ['name' => 'Home', 'link' => site_url(), 'active' => is_front_page()],
       ['name' => 'Projects', 'link' => get_post_type_archive_link('project'), 'active' => is_post_type_archive('project')],
-      ['name' => 'Work History', 'link' => get_post_type_archive_link('timeline'), 'active' => is_post_type_archive('timeline')],
+     # ['name' => 'Work History', 'link' => get_post_type_archive_link('timeline'), 'active' => is_post_type_archive('timeline')],
     ];
     ?>
     <nav class="sp-bg-gray-800 sp-p-4">
