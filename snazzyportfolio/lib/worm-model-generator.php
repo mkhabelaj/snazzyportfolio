@@ -110,6 +110,7 @@ if (defined('WP_CLI') && WP_CLI) {
                 }
                 $timeline->startDate->setValue($tl['start']);
                 $timeline->description->setValue($tl['description']);
+                $timeline->institution->setValue($tl['institution']);
                 $timeline->save();
                 $projectModel = ExtendedProjectMetaModel::create($project['title']);
                 $projectModel->timelines->addValue($timeline);
