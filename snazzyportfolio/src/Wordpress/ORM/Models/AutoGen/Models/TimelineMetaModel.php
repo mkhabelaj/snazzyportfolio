@@ -18,6 +18,7 @@ class TimelineMetaModel extends MetaModel
     public BasicField $endDate;
     public BasicField $institution;
     public BasicField $description;
+    public BasicField $currentPlaceOfEmployment;
     public NonHierarchicalTaxonomyField $taxonomyPostTag;
 
     public function __construct(int $id)
@@ -27,6 +28,7 @@ class TimelineMetaModel extends MetaModel
         $this->endDate = new BasicField($id, 'end_date');
         $this->institution = new BasicField($id, 'institution');
         $this->description = new BasicField($id, 'description');
+        $this->currentPlaceOfEmployment = new BasicField($id, 'current_place_of_employment');
         $this->taxonomyPostTag = new NonHierarchicalTaxonomyField($id, 'post_tag');
     }
     public static function instance(MetaModel $model): static
@@ -65,4 +67,5 @@ class TimelineMetaModel extends MetaModel
     {
         return 'timeline';
     }
+
 }
