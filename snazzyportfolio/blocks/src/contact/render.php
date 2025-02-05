@@ -1,13 +1,13 @@
 <?php
 if (!isset($attributes['action'])) {
-?>
+    ?>
   <div class="main-content">
     <div class="sub-main-content">
       Contact form not configured
     </div>
   </div>
 <?php
-  return;
+      return;
 }
 
 $action = $attributes['action'];
@@ -18,7 +18,7 @@ $action = $attributes['action'];
     <div class="sp-flex sp-flex-col sp-mb-10 sp-mx-auto">
       <div class="sp-flex sp-justify-center sp-items-center">
         <form action="<?= $action ?>" method="POST"
-          class="sp-flex sp-flex-col sp-w-full md:sp-w-7/12">
+          class="sp-flex sp-flex-col sp-w-full md:sp-w-[80%]">
           <h2 class="sp-text-2xl sp-font-bold sp-decoration-4 sp-mb-5 sp-text-slate-200 sp-uppercase sp-tracking-widest
             ">Contact</h2>
           <input type="text" name="name" placeholder="Name"

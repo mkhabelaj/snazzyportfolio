@@ -1334,6 +1334,58 @@ body {
     width: 20rem;
   }
 
+  .md\:sp-w-6\/12 {
+    width: 50%;
+  }
+
+  .md\:sp-w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .md\:sp-w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .md\:sp-w-3\/12 {
+    width: 25%;
+  }
+
+  .md\:sp-w-9\/12 {
+    width: 75%;
+  }
+
+  .md\:sp-w-\[70\%\] {
+    width: 70%;
+  }
+
+  .md\:sp-w-\[69\%\] {
+    width: 69%;
+  }
+
+  .md\:sp-w-\[3\%\] {
+    width: 3%;
+  }
+
+  .md\:sp-w-\[3px\] {
+    width: 3px;
+  }
+
+  .md\:sp-w-\[72\%\] {
+    width: 72%;
+  }
+
+  .md\:sp-w-\[75\%\] {
+    width: 75%;
+  }
+
+  .md\:sp-w-\[85\%\] {
+    width: 85%;
+  }
+
+  .md\:sp-w-\[80\%\] {
+    width: 80%;
+  }
+
   .md\:sp-max-w-\[600px\] {
     max-width: 600px;
   }
