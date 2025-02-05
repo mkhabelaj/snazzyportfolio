@@ -43,3 +43,44 @@ function snazzyportfolio_pagination()
 {
     require get_theme_file_path('/inc/pagination.php');
 }
+
+/**
+ * Programmatically assign the custom block template to a page and set it as the Posts Page.
+ */
+function assign_latest_blog_template()
+{
+    $page_title    = 'Latest Blog';             // The title of the page to search or create
+
+    // Add a filter to search by title using a custom query variable.
+    add_filter('posts_where', 'wpse_search_by_title', 10, 2);
+    function wpse_search_by_title($where, $query)
+    {
+        global $wpdb;
+        if ($title = $query->get('search_page_title')) {
+            // Use an exact match for the post title.
+            $where .= $wpdb->prepare(" AND {$wpdb->posts}.post_title = %s", $title);
+        }
+        return $where;
+    }
+
+    // Query to check if a page with the given title exists.
+    $query = new WP_Query(array(
+        'post_type'         => 'page',
+        'post_status'       => 'publish',
+        'posts_per_page'    => 1,
+        'search_page_title' => $page_title, // Custom query variable used in our filter.
+    ));
+
+    // Remove the filter so it does not affect other queries.
+    remove_filter('posts_where', 'wpse_search_by_title', 10, 2);
+
+    if (!$query->have_posts()) {
+        wp_insert_post(array(
+            'post_title'   => $page_title,
+            'post_status'  => 'publish',
+            'post_type'    => 'page',
+        ));
+    }
+}
+// Run this function after the theme is set up.
+add_action('after_setup_theme', 'assign_latest_blog_template');

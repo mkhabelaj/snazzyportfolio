@@ -27,7 +27,9 @@ if (empty($related_posts)) {
           <?= $project->post_excerpt; ?>
         </p>
         <p>
-        <a class="sp-text-teal-300  hover:sp-text-red-white" href="<?= get_the_permalink($project->ID); ?>">Read more</a>
+        <a class="sp-text-teal-300  hover:sp-text-red-white" href="<?= get_the_permalink($project->ID); ?>">
+          Read More
+        </a>
         </p>
       </li>
 
