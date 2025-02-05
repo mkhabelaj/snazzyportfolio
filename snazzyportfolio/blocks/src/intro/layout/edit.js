@@ -7,8 +7,6 @@ export default function EditComponent() {
       <div
         className="
         sp-font-inter
-        sp-selection:bg-teal-300 
-        sp-selection:text-teal-900 
         sp-leading-relaxed
         sp-antialiase
         sp-flex sp-items-center 
