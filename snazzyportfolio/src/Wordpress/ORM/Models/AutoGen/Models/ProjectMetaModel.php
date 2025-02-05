@@ -6,6 +6,7 @@ namespace Jcodify\Snazzyportfolio\Wordpress\ORM\Models\AutoGen\Models;
 
 use Nzuridesigns\Worm\AbstractClasses\MetaModel;
 use Nzuridesigns\Worm\Fields\OnetoManyACFField;
+use Nzuridesigns\Worm\Fields\BasicField;
 use Nzuridesigns\Worm\Fields\NonHierarchicalTaxonomyField;
 use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedTimelinesMetaModel;
 use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedProjectMetaModel;
@@ -16,12 +17,14 @@ use Nzuridesigns\Worm\AbstractClasses\QueryType;
 class ProjectMetaModel extends MetaModel
 {
     public OnetoManyACFField $timelines;
+    public BasicField $relatedPosts;
     public NonHierarchicalTaxonomyField $taxonomyTechnology;
 
     public function __construct(int $id)
     {
         parent::__construct($id);
         $this->timelines = new OnetoManyACFField($id, 'otm-acf_timelines', ExtendedTimelinesMetaModel::class);
+        $this->relatedPosts = new BasicField($id, 'related_posts');
         $this->taxonomyTechnology = new NonHierarchicalTaxonomyField($id, 'technology');
     }
     public static function instance(MetaModel $model): static
@@ -60,4 +63,5 @@ class ProjectMetaModel extends MetaModel
     {
         return 'project';
     }
+
 }

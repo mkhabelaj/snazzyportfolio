@@ -6,6 +6,7 @@ namespace Jcodify\Snazzyportfolio\Wordpress\ORM\Models\AutoGen\QModels;
 
 use Nzuridesigns\Worm\AbstractClasses\Query;
 use Nzuridesigns\Worm\QueryHander\OneToManyACFQueryHandler;
+use Nzuridesigns\Worm\QueryHander\MetaQueryHandler;
 use Nzuridesigns\Worm\QueryHander\TaxQueryHandler;
 use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedTimelinesQueryModel;
 
@@ -13,12 +14,14 @@ class ProjectQueryModel extends Query
 {
     public string $posttype = 'project';
     public OneToManyACFQueryHandler $timelines;
+    public MetaQueryHandler $relatedPosts;
     public TaxQueryHandler $taxonomyTechnology;
 
     public function __construct()
     {
         parent::__construct();
         $this->timelines = new OneToManyACFQueryHandler('otm-acf_timelines', ExtendedTimelinesQueryModel::class);
+        $this->relatedPosts = new MetaQueryHandler('related_posts');
         $this->taxonomyTechnology = new TaxQueryHandler('technology');
     }
 }
