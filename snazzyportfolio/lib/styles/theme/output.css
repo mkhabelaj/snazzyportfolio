@@ -676,6 +676,14 @@ video {
   margin-top: 2rem;
 }
 
+.sp-mt-5 {
+  margin-top: 1.25rem;
+}
+
+.sp-mt-10 {
+  margin-top: 2.5rem;
+}
+
 .sp-inline-block {
   display: inline-block;
 }
