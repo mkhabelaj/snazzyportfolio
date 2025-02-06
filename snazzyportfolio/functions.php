@@ -10,6 +10,12 @@ function snazzyportfolio_files()
 {
     wp_enqueue_style('snazzyportfolio_main_styles', get_theme_file_uri('/lib/styles/theme/output.css'));
     add_editor_style('/lib/styles/theme/output.css');
+
+    //TODO: fix this: This is specific to one block it should be handled in the block itself(we could also make it a plugin)
+    wp_enqueue_style(
+        'prism-tomorrow',
+        get_theme_file_uri('./node_modules/prismjs/themes/prism-tomorrow.css'),
+    );
 }
 
 add_action('wp_enqueue_scripts', 'snazzyportfolio_files');
@@ -75,6 +81,7 @@ function assign_latest_blog_template()
     remove_filter('posts_where', 'wpse_search_by_title', 10, 2);
 
     if (!$query->have_posts()) {
+        // update reading settings
         wp_insert_post(array(
             'post_title'   => $page_title,
             'post_status'  => 'publish',

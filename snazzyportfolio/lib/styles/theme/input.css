@@ -34,3 +34,9 @@ body {
   background-color: var(--wp--preset--color--background);
   color: var(--wp--preset--color--muted-foreground);
 }
+/* override prism default font size
+* TODO: find a better way or move after enqueue prism css to avoid !important 
+*/
+pre[class*="language-"] {
+  font-size: clamp(0.6rem, 1.2vw, 1rem) !important;
+}

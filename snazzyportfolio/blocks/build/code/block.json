@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/code",
+  "title": "Snazzy Portfolio Code Block",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "code": {
+      "type": "string",
+      "default": "console.log('hello world');"
+    },
+    "lang": {
+      "type": "string",
+      "default": "javascript"
+    }
+  }
+}
