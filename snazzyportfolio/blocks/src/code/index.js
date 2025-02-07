@@ -1,7 +1,7 @@
 import { registerBlockType } from "@wordpress/blocks";
 import metadata from "./block.json";
 import Edit from "./edit";
-import { useBlockProps } from "@wordpress/block-editor";
+import { useInnerBlocksProps } from "@wordpress/block-editor";
 
 import Prism from "prismjs";
 
@@ -10,7 +10,7 @@ registerBlockType(metadata.name, {
   save: (props) => {
     const language = props.attributes.lang;
     const className = `language-${language}`;
-    const blockProps = useBlockProps.save();
+    const blockProps = useInnerBlocksProps.save();
     const highlightedCode = Prism.highlight(
       props.attributes.code,
       Prism.languages.javascript,

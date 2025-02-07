@@ -1,3 +1,27 @@
 //all prism language options
-import languages from "prismjs/components/index.js";
-export default [];
+// should match package.json list
+export default [
+  { label: "Markup- HTML, XML", value: "markup" },
+  { label: "PHP", value: "php" },
+  { label: "JavaScript", value: "js" },
+  { label: "json", value: "json" },
+  { label: "css", value: "css" },
+  { label: "scss", value: "scss" },
+  { label: "tsx", value: "tsx" },
+  { label: "bash: shell", value: "bash" },
+  { label: "csharp", value: "csharp" },
+  { label: "java", value: "java" },
+  { label: "python", value: "python" },
+  { label: "sql", value: "sql" },
+  { label: "yaml", value: "yaml" },
+  { label: "jsx", value: "jsx" },
+  { label: "ts", value: "ts" },
+  { label: "django", value: "django" },
+  { label: "docker", value: "docker" },
+  { label: "git", value: "git" },
+  { label: "go", value: "go" },
+  { label: "md", value: "md" },
+  { label: "nginx", value: "nginx" },
+  { label: "php", value: "php" },
+  { label: "sh", value: "sh" },
+];

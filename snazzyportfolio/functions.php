@@ -11,7 +11,8 @@ function snazzyportfolio_files()
     wp_enqueue_style('snazzyportfolio_main_styles', get_theme_file_uri('/lib/styles/theme/output.css'));
     add_editor_style('/lib/styles/theme/output.css');
 
-    //TODO: fix this: This is specific to one block it should be handled in the block itself(we could also make it a plugin)
+    //TODO: fix this: This is specific to one block it should be handled
+    //in the block itself(we could also make it a plugin)
     wp_enqueue_style(
         'prism-tomorrow',
         get_theme_file_uri('./node_modules/prismjs/themes/prism-tomorrow.css'),

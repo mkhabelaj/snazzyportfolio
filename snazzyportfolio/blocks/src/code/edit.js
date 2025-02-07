@@ -1,9 +1,15 @@
 import { __ } from "@wordpress/i18n";
-import { RichText, useBlockProps } from "@wordpress/block-editor";
+import {
+  RichText,
+  useBlockProps,
+  InspectorControls,
+} from "@wordpress/block-editor";
 import { createBlock, getDefaultBlockName } from "@wordpress/blocks";
+import { PanelBody, PanelRow, SelectControl } from "@wordpress/components";
+import LanguageOptions from "./prismOptions.js";
 
 export default function EditComponent({
-  attributes: { code },
+  attributes: { code, lang },
   setAttributes,
   onRemove,
   mergeBlocks,
@@ -11,22 +17,40 @@ export default function EditComponent({
   const blockProps = useBlockProps();
 
   return (
-    <pre {...blockProps}>
-      <RichText
-        tagName="code"
-        identifier="content"
-        value={code}
-        onChange={(code) => setAttributes({ code })}
-        onRemove={onRemove}
-        onMerge={mergeBlocks}
-        placeholder={__("Write code…")}
-        aria-label={__("Code")}
-        preserveWhiteSpace
-        __unstablePastePlainText
-        __unstableOnSplitAtDoubleLineEnd={() =>
-          insertBlocksAfter(createBlock(getDefaultBlockName()))
-        }
-      />
-    </pre>
+    <>
+      <InspectorControls>
+        <PanelBody title="Programming Language" initialOpen>
+          <PanelRow>
+            <SelectControl
+              label="Language"
+              value={lang}
+              onChange={(lang) => {
+                setAttributes({ lang });
+              }}
+              options={LanguageOptions}
+            />
+          </PanelRow>
+        </PanelBody>
+      </InspectorControls>
+      <div className="sp-flex sp-flex-col sp-justify-center">
+        <pre {...blockProps}>
+          <RichText
+            tagName="code"
+            identifier="content"
+            value={code}
+            onChange={(code) => setAttributes({ code })}
+            onRemove={onRemove}
+            onMerge={mergeBlocks}
+            placeholder={__("Write code…")}
+            aria-label={__("Code")}
+            preserveWhiteSpace
+            __unstablePastePlainText
+            __unstableOnSplitAtDoubleLineEnd={() =>
+              insertBlocksAfter(createBlock(getDefaultBlockName()))
+            }
+          />
+        </pre>
+      </div>
+    </>
   );
 }

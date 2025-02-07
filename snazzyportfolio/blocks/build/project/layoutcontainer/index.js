@@ -23,9 +23,9 @@ function EditComponent() {
   var blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)();
   var innerBlocksProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useInnerBlocksProps)();
   return /*#__PURE__*/React.createElement("div", _extends({
-    "class": "main-content"
+    className: "main-content"
   }, blockProps), /*#__PURE__*/React.createElement("div", _extends({
-    "class": "sub-main-content"
+    className: "sub-main-content"
   }, innerBlocksProps)));
 }
 

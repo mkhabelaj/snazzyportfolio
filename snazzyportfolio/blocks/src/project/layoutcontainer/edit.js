@@ -8,8 +8,8 @@ export default function EditComponent() {
   const innerBlocksProps = useInnerBlocksProps();
 
   return (
-    <div class="main-content" {...blockProps}>
-      <div class="sub-main-content" {...innerBlocksProps}></div>
+    <div className="main-content" {...blockProps}>
+      <div className="sub-main-content" {...innerBlocksProps}></div>
     </div>
   );
 }
