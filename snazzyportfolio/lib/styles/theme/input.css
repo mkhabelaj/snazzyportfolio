@@ -23,12 +23,15 @@
 
 .main-content {
   /* add sp-font-inter */
-  @apply sp-min-h-40 sp-leading-relaxed sp-antialiased sp-pb-8;
+  @apply sp-leading-relaxed sp-antialiased sp-pb-8;
 }
 .sub-main-content {
   @apply sp-max-w-5xl sp-w-11/12 sp-mx-auto;
 }
 
+h1 {
+  @apply sp-text-4xl sp-decoration-4  sp-text-slate-200 sp-uppercase sp-tracking-widest;
+}
 body {
   @apply selection:sp-bg-teal-300 selection:sp-text-teal-900;
   background-color: var(--wp--preset--color--background);

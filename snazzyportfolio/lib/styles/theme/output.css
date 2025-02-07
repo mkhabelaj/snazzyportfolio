@@ -1182,7 +1182,6 @@ video {
 
 .main-content {
   /* add sp-font-inter */
-  min-height: 10rem;
   padding-bottom: 2rem;
   line-height: 1.625;
   -webkit-font-smoothing: antialiased;
@@ -1194,6 +1193,16 @@ video {
   margin-right: auto;
   width: 91.666667%;
   max-width: 64rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+  text-decoration-thickness: 4px;
 }
 
 body *::-moz-selection {
