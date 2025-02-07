@@ -11,7 +11,7 @@
     },
     "lang": {
       "type": "string",
-      "default": "javascript"
+      "default": "js"
     }
   }
 }

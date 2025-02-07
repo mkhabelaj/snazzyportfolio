@@ -6,6 +6,6 @@
   "editorScript": "file:./index.js",
   "attributes": {
     "code": { "type": "string", "default": "console.log('hello world');" },
-    "lang": { "type": "string", "default": "javascript" }
+    "lang": { "type": "string", "default": "js" }
   }
 }
