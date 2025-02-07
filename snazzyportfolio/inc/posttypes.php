@@ -24,4 +24,3 @@ function include_custom_post_types_in_tag_archive($query)
 }
 
 add_action('pre_get_posts', 'include_custom_post_types_in_tag_archive');
-

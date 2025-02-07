@@ -1,4 +1,4 @@
-  <header class="">
+  <header class="sp-mb-10">
 
     <?php
 
@@ -14,9 +14,8 @@
       [
         'name' => 'Projects', 'link' => get_post_type_archive_link('project'), 'active' => is_post_type_archive('project')
       ],
-     # ['name' => 'Work History', 'link' => get_post_type_archive_link('timeline'), 'active' => is_post_type_archive('timeline')],
       [
-        'name' => 'Latest Blog', 'link' => get_permalink(get_page_by_path('latest-blog')), 'active' => is_page('latest-blog')
+        'name' => 'Blog', 'link' => get_permalink(get_page_by_path('latest-blog')), 'active' => is_page('latest-blog')
       ],
     ];
     ?>
@@ -27,7 +26,7 @@
             Jcodify.com
           </a>
         </div>
-        <ul class="sp-flex sp-space-x-6">
+        <ul class="sp-flex sp-space-x-6 sp-uppercase">
           <?php foreach ($navItems as $item) : ?>
             <li>
               <a href="<?php echo $item['link']; ?>" class="<?php echo get_active_class($item['active']); ?>  hover:sp-text-red-white">

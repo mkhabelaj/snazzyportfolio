@@ -14,16 +14,12 @@ registerBlockType(metadata.name, {
       "javascript",
     );
     return (
-      <div className="main-content">
-        <div class="sub-main-content">
-          <pre className="language-js" tabIndex="0">
-            <code
-              className="language-js"
-              dangerouslySetInnerHTML={{ __html: highlightedCode }}
-            />
-          </pre>
-        </div>
-      </div>
+      <pre className="language-js" tabIndex="0">
+        <code
+          className="language-js"
+          dangerouslySetInnerHTML={{ __html: highlightedCode }}
+        />
+      </pre>
     );
   },
 });

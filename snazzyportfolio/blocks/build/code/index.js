@@ -2174,20 +2174,14 @@ __webpack_require__.r(__webpack_exports__);
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: props => {
     const highlightedCode = prismjs__WEBPACK_IMPORTED_MODULE_4___default().highlight(props.attributes.code, (prismjs__WEBPACK_IMPORTED_MODULE_4___default().languages).javascript, "javascript");
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-      className: "main-content",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-        class: "sub-main-content",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("pre", {
-          className: "language-js",
-          tabIndex: "0",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("code", {
-            className: "language-js",
-            dangerouslySetInnerHTML: {
-              __html: highlightedCode
-            }
-          })
-        })
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("pre", {
+      className: "language-js",
+      tabIndex: "0",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("code", {
+        className: "language-js",
+        dangerouslySetInnerHTML: {
+          __html: highlightedCode
+        }
       })
     });
   }
