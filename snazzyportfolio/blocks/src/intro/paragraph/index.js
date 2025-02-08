@@ -11,7 +11,7 @@ registerBlockType(metadata.name, {
       tagName="p"
       className={`${
         textSizeVariant[props.attributes.size]
-      } sp-max-w-xl sp-mb-6 sp-leading-normal sp-font-bold`}
+      } md:sp-max-w-[800px] sp-mb-6 sp-leading-normal sp-font-bold`}
       value={props.attributes.text}
     />
   ),
