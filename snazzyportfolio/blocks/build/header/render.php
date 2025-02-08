@@ -19,7 +19,8 @@
       ],
     ];
     ?>
-    <nav class="sp-bg-gray-800 sp-p-4">
+    <!-- Desktop Nav -->
+    <nav class="sp-hidden md:sp-block sp-bg-gray-800 sp-p-4">
       <div class="sp-container sp-mx-auto sp-flex sp-justify-between sp-items-center">
         <div class="sp-text-white sp-text-lg sp-font-bold">
           <a href="<?php echo site_url() ?>">
@@ -36,6 +37,10 @@
           <?php endforeach; ?>
         </ul>
       </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <nav class="sp-block md:sp-hidden sp-bg-gray-800 sp-p-4">
     </nav>
 
   </header>

@@ -21,6 +21,14 @@
       "url": "git@github.com-nzuridesigns:nzuridesigns/wp-utility.git"
     }
   ],
+  "scripts": {
+    "post-install-cmd": [
+      "Jcodify\\Snazzyportfolio\\ComposerScripts::downloadIcons"
+    ],
+    "post-update-cmd": [
+      "Jcodify\\Snazzyportfolio\\ComposerScripts::downloadIcons"
+    ]
+  },
   "require": {
     "nzuridesigns/worm": "dev-main",
     "nzuridesigns/wp-utility": "dev-main"

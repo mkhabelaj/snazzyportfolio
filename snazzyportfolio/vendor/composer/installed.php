@@ -3,7 +3,7 @@
         'name' => 'jcodify/snazzyportfolio',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '507ff418c57d3bfb10492b67a5031bb7203b26d8',
+        'reference' => '87bb286292ab555f2583b3b51a213ad35cee6d33',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'jcodify/snazzyportfolio' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '507ff418c57d3bfb10492b67a5031bb7203b26d8',
+            'reference' => '87bb286292ab555f2583b3b51a213ad35cee6d33',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
