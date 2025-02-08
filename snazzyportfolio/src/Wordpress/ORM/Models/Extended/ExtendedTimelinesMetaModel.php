@@ -76,6 +76,19 @@ class ExtendedTimelinesMetaModel extends TimelineMetaModel
         }
     }
 
+    public function getFormattedEndDate(string $format = "M Y"): string
+    {
+        if ($this->isCurrentPlaceOfEmployment()) {
+            return "Present";
+        }
+
+        if ($this->endDate->getValue() == null || $this->endDate->getValue() == "") {
+            return "N/A";
+        }
+
+        return $this->endDate->getDateFormattedVal($format);
+    }
+
     public static function getAllTimelines(): array
     {
 
