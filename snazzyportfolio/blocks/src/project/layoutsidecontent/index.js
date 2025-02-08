@@ -6,8 +6,8 @@ import { InnerBlocks } from "@wordpress/block-editor";
 registerBlockType(metadata.name, {
   edit: Edit,
   save: () => (
-    <div className="md:sp-basis-80 sp-p-2 md:sp-mt-52">
+    <aside className="sp-p-2 md:sp-mt-52 md:sp-w-1/4 md:sp-min-w-[300px] md:sp-max-w-[400px]">
       <InnerBlocks.Content />
-    </div>
+    </aside>
   ),
 });

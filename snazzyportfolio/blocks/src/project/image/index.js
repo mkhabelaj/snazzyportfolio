@@ -8,7 +8,11 @@ registerBlockType(metadata.name, {
     <>
       {props.attributes.imgURL && (
         <div>
-          <img src={props.attributes.imgURL} alt="" />
+          <img
+            className="sp-w-full sp-h-auto"
+            src={props.attributes.imgURL}
+            alt=""
+          />
         </div>
       )}
       {!props.attributes.imgURL && <div>No Uploaded</div>}

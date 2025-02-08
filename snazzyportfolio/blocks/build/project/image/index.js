@@ -235,6 +235,7 @@ __webpack_require__.r(__webpack_exports__);
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: function save(props) {
     return /*#__PURE__*/React.createElement(React.Fragment, null, props.attributes.imgURL && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
+      className: "sp-w-full sp-h-auto",
       src: props.attributes.imgURL,
       alt: ""
     })), !props.attributes.imgURL && /*#__PURE__*/React.createElement("div", null, "No Uploaded"));

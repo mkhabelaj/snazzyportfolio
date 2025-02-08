@@ -82,7 +82,7 @@ module.exports = window["wp"]["blocks"];
   \*************************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-paragraph","title":"Snazzy Project Paragraph","editorScript":"file:./index.js","attributes":{"text":{"type":"string","default":"Project Paragraph"},"size":{"type":"string","default":"sm"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-paragraph","title":"Snazzy Project Paragraph","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"text":{"type":"string","default":"Project Paragraph"},"size":{"type":"string","default":"md"}}}');
 
 /***/ })
 
@@ -174,14 +174,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_1__.name, {
-  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
-  save: function save(props) {
-    return /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, {
-      tagName: "p",
-      className: "".concat(_textSize__WEBPACK_IMPORTED_MODULE_4__["default"][props.attributes.size], " \n                md:sp-max-w-[650px] sp-whitespace-pre-wrap sp-my-5 sp-leading-tight"),
-      value: props.attributes.text
-    });
-  }
+  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"]
+  // save: (props) => (
+  //   <RichText.Content
+  //     tagName="p"
+  //     className={`${textSizeVariant[props.attributes.size]}
+  //               md:sp-max-w-[650px] sp-whitespace-pre-wrap sp-my-5 sp-leading-tight`}
+  //     value={props.attributes.text}
+  //   />
+  // ),
 });
 })();
 

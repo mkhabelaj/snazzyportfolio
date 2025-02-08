@@ -4,6 +4,7 @@
   "name": "snazzyportfolio/project-paragraph",
   "title": "Snazzy Project Paragraph",
   "editorScript": "file:./index.js",
+  "render": "file:./render.php",
   "attributes": {
     "text": {
       "type": "string",
@@ -11,7 +12,7 @@
     },
     "size": {
       "type": "string",
-      "default": "sm"
+      "default": "md"
     }
   }
 }

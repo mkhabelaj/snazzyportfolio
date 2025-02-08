@@ -192,7 +192,7 @@ __webpack_require__.r(__webpack_exports__);
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: function save() {
     return /*#__PURE__*/React.createElement("div", {
-      className: " sp-flex md:sp-flex-row sp-gap-4 sp-flex-col-reverse"
+      className: " sp-flex md:sp-flex-row sp-gap-10 sp-flex-col-reverse"
     }, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks.Content, null));
   }
 });

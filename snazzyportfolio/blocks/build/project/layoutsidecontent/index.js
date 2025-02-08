@@ -185,8 +185,8 @@ __webpack_require__.r(__webpack_exports__);
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_1__.name, {
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: function save() {
-    return /*#__PURE__*/React.createElement("div", {
-      className: "md:sp-basis-80 sp-p-2 md:sp-mt-52"
+    return /*#__PURE__*/React.createElement("aside", {
+      className: "sp-p-2 md:sp-mt-52 md:sp-w-1/4 md:sp-min-w-[300px] md:sp-max-w-[400px]"
     }, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks.Content, null));
   }
 });

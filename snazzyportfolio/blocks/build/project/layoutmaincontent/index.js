@@ -186,7 +186,7 @@ __webpack_require__.r(__webpack_exports__);
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: function save() {
     return /*#__PURE__*/React.createElement("div", {
-      className: "sp-flex-grow"
+      className: "sp-flex-1 sp-p-4"
     }, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks.Content, null));
   }
 });

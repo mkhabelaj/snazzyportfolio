@@ -6,12 +6,12 @@ import textSizeVariant from "./textSize";
 
 registerBlockType(metadata.name, {
   edit: Edit,
-  save: (props) => (
-    <RichText.Content
-      tagName="p"
-      className={`${textSizeVariant[props.attributes.size]} 
-                md:sp-max-w-[650px] sp-whitespace-pre-wrap sp-my-5 sp-leading-tight`}
-      value={props.attributes.text}
-    />
-  ),
+  // save: (props) => (
+  //   <RichText.Content
+  //     tagName="p"
+  //     className={`${textSizeVariant[props.attributes.size]}
+  //               md:sp-max-w-[650px] sp-whitespace-pre-wrap sp-my-5 sp-leading-tight`}
+  //     value={props.attributes.text}
+  //   />
+  // ),
 });
