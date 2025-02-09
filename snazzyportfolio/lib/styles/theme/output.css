@@ -620,6 +620,30 @@ video {
   right: 1rem;
 }
 
+.sp-left-0 {
+  left: 0px;
+}
+
+.sp-top-0 {
+  top: 0px;
+}
+
+.sp-right-2 {
+  right: 0.5rem;
+}
+
+.sp-top-2 {
+  top: 0.5rem;
+}
+
+.sp-right-6 {
+  right: 1.5rem;
+}
+
+.sp-z-50 {
+  z-index: 50;
+}
+
 .sp-mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -696,6 +720,14 @@ video {
   margin-top: 2rem;
 }
 
+.sp-mt-16 {
+  margin-top: 4rem;
+}
+
+.sp-mt-20 {
+  margin-top: 5rem;
+}
+
 .sp-block {
   display: block;
 }
@@ -740,6 +772,18 @@ video {
   height: 1.5rem;
 }
 
+.sp-h-screen {
+  height: 100vh;
+}
+
+.sp-h-12 {
+  height: 3rem;
+}
+
+.sp-h-full {
+  height: 100%;
+}
+
 .sp-min-h-64 {
   min-height: 16rem;
 }
@@ -779,6 +823,10 @@ video {
 
 .sp-w-6 {
   width: 1.5rem;
+}
+
+.sp-w-12 {
+  width: 3rem;
 }
 
 .sp-min-w-\[300px\] {
@@ -841,12 +889,28 @@ video {
   justify-content: flex-start;
 }
 
+.sp-justify-end {
+  justify-content: flex-end;
+}
+
 .sp-justify-center {
   justify-content: center;
 }
 
 .sp-justify-between {
   justify-content: space-between;
+}
+
+.sp-justify-around {
+  justify-content: space-around;
+}
+
+.sp-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.sp-justify-items-center {
+  justify-items: center;
 }
 
 .sp-gap-2 {
@@ -875,6 +939,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.sp-space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .sp-overflow-hidden {

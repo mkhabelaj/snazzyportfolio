@@ -5,7 +5,9 @@
   "title": "Snazzy Portfolio Header",
   "editorScript": "file:./index.js",
   "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js",
   "supports": {
+    "interactivity": true,
     "align": ["full"]
   },
   "attributes": {

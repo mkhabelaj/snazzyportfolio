@@ -50,7 +50,7 @@ module.exports = window["wp"]["blocks"];
   \**************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/header","title":"Snazzy Portfolio Header","editorScript":"file:./index.js","render":"file:./render.php","supports":{"align":["full"]},"attributes":{"align":{"type":"string","default":"full"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/header","title":"Snazzy Portfolio Header","editorScript":"file:./index.js","render":"file:./render.php","viewScriptModule":"file:./view.js","supports":{"interactivity":true,"align":["full"]},"attributes":{"align":{"type":"string","default":"full"}}}');
 
 /***/ })
 
