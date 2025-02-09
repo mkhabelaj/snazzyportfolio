@@ -11,6 +11,14 @@ class ExtendedTimelinesMetaModel extends TimelineMetaModel
     {
         return $this->currentPlaceOfEmployment->getValue() == "1";
     }
+
+    public function getTrimmedDescription(int $length = 100): string
+    {
+        $description = $this->description->getValue();
+
+        return wp_trim_words($description, $length);
+    }
+
     public function getYearlyDurationContent(): array
     {
 

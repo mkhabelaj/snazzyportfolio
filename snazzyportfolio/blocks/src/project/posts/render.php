@@ -20,11 +20,13 @@ if (empty($related_posts)) {
     foreach ($related_posts as $project) :
         if (!($project instanceof WP_Post)) {
             continue;
-        }?>
+        }
+        $excerpt = wp_trim_words($project->post_excerpt);
+        ?>
       <li class="sp-flex sp-flex-col sp-gap-2 sp-text-slate-200">
         <?= $project->post_title; ?>
         <p class="sp-text-sm sp-font-normal sp-text-slate-400">
-          <?= $project->post_excerpt; ?>
+          <?= $excerpt; ?>
         </p>
         <p>
         <a class="sp-text-teal-300  hover:sp-text-red-white" href="<?= get_the_permalink($project->ID); ?>">

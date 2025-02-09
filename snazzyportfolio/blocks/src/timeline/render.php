@@ -64,7 +64,6 @@ function get_yearly_duration_content(array $data)
           sp-rounded-full sp-mt-1.5 -sp-left-1.5 sp-border 
           sp-border-stone-900
           ">
-
               </div>
               <div class="
                 sp-flex sp-flex-wrap sp-gap-4 sp-flex-row sp-items-center sp-justify-start sp-text-xs md:sp-text-sm"

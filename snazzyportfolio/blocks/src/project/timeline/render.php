@@ -21,7 +21,7 @@ $related_timelines = $project->timelines->getValue();
       <li class="sp-flex sp-flex-col sp-gap-2 sp-text-slate-200">
         <?= $timeline->institution->getValue(); ?>
         <p class="sp-text-sm sp-font-normal sp-text-slate-400">
-          <?= $timeline->description->getValue(); ?>
+          <?= $timeline->getTrimmedDescription(); ?>
         </p>
         <p class="sp-text-sm sp-font-normal sp-text-slate-400">
           <?php echo $timeline->startDate->getDateFormattedVal("M Y"); ?> - <?php echo $timeline->getFormattedEndDate(); ?>
