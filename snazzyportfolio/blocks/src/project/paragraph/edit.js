@@ -6,7 +6,6 @@ export default function EditComponent({
   setAttributes,
 }) {
   const blockProps = useBlockProps();
-  //variant text-sm-lg
   return (
     <>
       <div {...blockProps}>
@@ -14,7 +13,7 @@ export default function EditComponent({
           <RichText
             tagName="p"
             className={`${textSizeVariant[size]} 
-                md:sp-max-w-[650px] sp-whitespace-pre-wrap sp-my-5  sp-leading-tight`}
+                md:sp-max-w-[650px] sp-whitespace-pre-wrap sp-my-5 sp-leading-tight project-paragraph`}
             value={text}
             onChange={(value) => setAttributes({ text: value })}
           />

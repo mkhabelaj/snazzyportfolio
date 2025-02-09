@@ -744,6 +744,18 @@ video {
   height: 100vh;
 }
 
+.sp-h-10 {
+  height: 2.5rem;
+}
+
+.sp-h-5 {
+  height: 1.25rem;
+}
+
+.sp-h-8 {
+  height: 2rem;
+}
+
 .sp-min-h-64 {
   min-height: 16rem;
 }
@@ -773,12 +785,28 @@ video {
   width: max-content;
 }
 
+.sp-w-10 {
+  width: 2.5rem;
+}
+
+.sp-w-5 {
+  width: 1.25rem;
+}
+
+.sp-w-8 {
+  width: 2rem;
+}
+
 .sp-max-w-sm {
   max-width: 24rem;
 }
 
 .sp-flex-1 {
   flex: 1 1 0%;
+}
+
+.sp-flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .sp-flex-grow {
@@ -964,6 +992,62 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.sp-bg-amber-400\/10 {
+  background-color: rgb(251 191 36 / 0.1);
+}
+
+.sp-bg-rose-400\/10 {
+  background-color: rgb(251 113 133 / 0.1);
+}
+
+.sp-fill-slate-200 {
+  fill: #e2e8f0;
+}
+
+.sp-fill-rose-300 {
+  fill: #fda4af;
+}
+
+.sp-fill-teal-300 {
+  fill: #5eead4;
+}
+
+.sp-stroke-slate-200 {
+  stroke: #e2e8f0;
+}
+
+.sp-stroke-rose-300 {
+  stroke: #fda4af;
+}
+
+.sp-stroke-teal-300 {
+  stroke: #5eead4;
+}
+
+.sp-stroke-teal-400\/10 {
+  stroke: rgb(45 212 191 / 0.1);
+}
+
+.sp-stroke-amber-400 {
+  stroke: #fbbf24;
+}
+
+.sp-stroke-amber-400\/10 {
+  stroke: rgb(251 191 36 / 0.1);
+}
+
+.sp-stroke-amber-400\/20 {
+  stroke: rgb(251 191 36 / 0.2);
+}
+
+.sp-stroke-amber-300 {
+  stroke: #fcd34d;
+}
+
+.sp-stroke-amber-300\/55 {
+  stroke: rgb(252 211 77 / 0.55);
+}
+
 .sp-object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -987,6 +1071,10 @@ video {
 
 .sp-p-6 {
   padding: 1.5rem;
+}
+
+.sp-p-5 {
+  padding: 1.25rem;
 }
 
 .sp-px-2 {
@@ -1082,6 +1170,10 @@ video {
 
 .sp-font-semibold {
   font-weight: 600;
+}
+
+.sp-font-light {
+  font-weight: 300;
 }
 
 .sp-uppercase {

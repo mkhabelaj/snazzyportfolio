@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/info",
+  "title": "Snazzy Portfolio Info Block",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "attributes": {
+    "type": {
+      "type": "string",
+      "default": "info"
+    },
+    "content": {
+      "type": "string",
+      "default": "Snazzy Portfolio Info Block Content"
+    }
+  }
+}
