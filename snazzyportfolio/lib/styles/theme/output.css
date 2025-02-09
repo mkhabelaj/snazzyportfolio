@@ -600,44 +600,24 @@ video {
   position: relative;
 }
 
-.sp-sticky {
-  position: sticky;
-}
-
-.sp-inset-0 {
-  inset: 0px;
-}
-
 .-sp-left-1\.5 {
   left: -0.375rem;
-}
-
-.sp-top-4 {
-  top: 1rem;
-}
-
-.sp-right-4 {
-  right: 1rem;
 }
 
 .sp-left-0 {
   left: 0px;
 }
 
+.sp-right-4 {
+  right: 1rem;
+}
+
 .sp-top-0 {
   top: 0px;
 }
 
-.sp-right-2 {
-  right: 0.5rem;
-}
-
-.sp-top-2 {
-  top: 0.5rem;
-}
-
-.sp-right-6 {
-  right: 1.5rem;
+.sp-top-4 {
+  top: 1rem;
 }
 
 .sp-z-50 {
@@ -708,6 +688,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.sp-mt-20 {
+  margin-top: 5rem;
+}
+
 .sp-mt-4 {
   margin-top: 1rem;
 }
@@ -718,14 +702,6 @@ video {
 
 .sp-mt-8 {
   margin-top: 2rem;
-}
-
-.sp-mt-16 {
-  margin-top: 4rem;
-}
-
-.sp-mt-20 {
-  margin-top: 5rem;
 }
 
 .sp-block {
@@ -760,28 +736,12 @@ video {
   height: 20rem;
 }
 
-.sp-h-64 {
-  height: 16rem;
-}
-
 .sp-h-auto {
   height: auto;
 }
 
-.sp-h-6 {
-  height: 1.5rem;
-}
-
 .sp-h-screen {
   height: 100vh;
-}
-
-.sp-h-12 {
-  height: 3rem;
-}
-
-.sp-h-full {
-  height: 100%;
 }
 
 .sp-min-h-64 {
@@ -813,36 +773,8 @@ video {
   width: max-content;
 }
 
-.sp-w-1\/4 {
-  width: 25%;
-}
-
-.sp-w-64 {
-  width: 16rem;
-}
-
-.sp-w-6 {
-  width: 1.5rem;
-}
-
-.sp-w-12 {
-  width: 3rem;
-}
-
-.sp-min-w-\[300px\] {
-  min-width: 300px;
-}
-
 .sp-max-w-sm {
   max-width: 24rem;
-}
-
-.sp-max-w-\[400px\] {
-  max-width: 400px;
-}
-
-.sp-max-w-full {
-  max-width: 100%;
 }
 
 .sp-flex-1 {
@@ -889,10 +821,6 @@ video {
   justify-content: flex-start;
 }
 
-.sp-justify-end {
-  justify-content: flex-end;
-}
-
 .sp-justify-center {
   justify-content: center;
 }
@@ -901,16 +829,8 @@ video {
   justify-content: space-between;
 }
 
-.sp-justify-around {
-  justify-content: space-around;
-}
-
-.sp-justify-evenly {
-  justify-content: space-evenly;
-}
-
-.sp-justify-items-center {
-  justify-items: center;
+.sp-gap-10 {
+  gap: 2.5rem;
 }
 
 .sp-gap-2 {
@@ -925,26 +845,22 @@ video {
   gap: 1.5rem;
 }
 
-.sp-gap-10 {
-  gap: 2.5rem;
-}
-
 .sp-space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.sp-space-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
 .sp-space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.sp-space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .sp-overflow-hidden {
@@ -1013,11 +929,6 @@ video {
 .sp-border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.sp-border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .sp-bg-black {
@@ -1348,6 +1259,15 @@ h1 {
   text-decoration-thickness: 4px;
 }
 
+.project-paragraph a {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 body *::-moz-selection {
   --tw-bg-opacity: 1;
   background-color: rgb(94 234 212 / var(--tw-bg-opacity));
@@ -1486,10 +1406,6 @@ pre[class*="language-"] {
     display: block;
   }
 
-  .md\:sp-flex {
-    display: flex;
-  }
-
   .md\:sp-hidden {
     display: none;
   }
@@ -1502,6 +1418,10 @@ pre[class*="language-"] {
     min-height: 24rem;
   }
 
+  .md\:sp-w-1\/4 {
+    width: 25%;
+  }
+
   .md\:sp-w-80 {
     width: 20rem;
   }
@@ -1510,16 +1430,12 @@ pre[class*="language-"] {
     width: 80%;
   }
 
-  .md\:sp-w-1\/4 {
-    width: 25%;
-  }
-
   .md\:sp-min-w-\[300px\] {
     min-width: 300px;
   }
 
-  .md\:sp-min-w-\[400px\] {
-    min-width: 400px;
+  .md\:sp-max-w-\[400px\] {
+    max-width: 400px;
   }
 
   .md\:sp-max-w-\[650px\] {
@@ -1532,14 +1448,6 @@ pre[class*="language-"] {
 
   .md\:sp-max-w-\[850px\] {
     max-width: 850px;
-  }
-
-  .md\:sp-max-w-\[400px\] {
-    max-width: 400px;
-  }
-
-  .md\:sp-max-w-\[500px\] {
-    max-width: 500px;
   }
 
   .md\:sp-basis-80 {

@@ -32,6 +32,11 @@
 h1 {
   @apply sp-text-4xl sp-decoration-4  sp-text-slate-200 sp-uppercase sp-tracking-widest;
 }
+
+.project-paragraph a {
+  @apply sp-text-slate-200 sp-underline sp-underline-offset-4 sp-decoration-dotted sp-decoration-1;
+}
+
 body {
   @apply selection:sp-bg-teal-300 selection:sp-text-teal-900;
   background-color: var(--wp--preset--color--background);
