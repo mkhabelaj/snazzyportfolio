@@ -1,6 +1,7 @@
 <?php
 
 require_once get_template_directory() . '/vendor/autoload.php';
+require_once get_template_directory() . '/lib/theme_functions.php';
 require_once get_template_directory() . '/lib/worm-model-generator.php';
 require get_theme_file_path('/inc/posttypes.php');
 require get_theme_file_path('/inc/taxonomies.php');
@@ -30,6 +31,8 @@ function snazzyportfolio_features()
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_image_size('pageBanner', 1500, 350, true);
+    add_image_size('projectLandscapeXXl', 1024, 450, true);
+    add_image_size('projectLandscapeXl', 655, 410, true);
     add_image_size('projectLandscapeLg', 600, 375, true);
     add_image_size('projectLandscapeSm', 343, 201, true);
     add_editor_style('build/output.css');
