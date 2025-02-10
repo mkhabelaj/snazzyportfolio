@@ -23,7 +23,7 @@ $query = new WP_Query(
 
     <!-- Posts Loop -->
     <?php if ($query->have_posts()) : ?>
-      <div class="sp-space-y-8 sp-flex sp-flex-col">
+      <div class="sp-space-y-4 md:sp-space-y-8 sp-flex sp-flex-col">
         
         <?php while ($query->have_posts()) :
             $query->the_post();?>

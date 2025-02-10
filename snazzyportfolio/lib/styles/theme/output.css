@@ -1313,6 +1313,7 @@ video {
 }
 
 h1 {
+  margin-bottom: 1rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
   text-transform: uppercase;
@@ -1320,6 +1321,12 @@ h1 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
   text-decoration-thickness: 4px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin-bottom: 2rem;
+  }
 }
 
 .project-paragraph a {
@@ -1532,6 +1539,12 @@ pre[class*="language-"] {
 
   .md\:sp-flex-row {
     flex-direction: row;
+  }
+
+  .md\:sp-space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
   .md\:sp-text-2xl {

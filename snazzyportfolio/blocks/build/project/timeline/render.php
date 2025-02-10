@@ -5,6 +5,10 @@ use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\{ExtendedTimelinesMeta
 $project = ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel(get_the_ID()));
 $related_timelines = $project->timelines->getValue();
 
+if (empty($related_timelines)) {
+    return;
+}
+
 ?>
 <!-- Timeline Template -->
 <h3 class="sp-text-2xl sp-font-bold sp-text-slate-200 sp-uppercase sp-tracking-widest">

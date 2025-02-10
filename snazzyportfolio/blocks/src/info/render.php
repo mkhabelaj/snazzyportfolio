@@ -6,7 +6,7 @@ $content = $attributes['content'];
 $icon_manager = \Nzuridesigns\WPUtility\ThemeIconManager::getInstance();
 $default_icon_classes = 'sp-w-8 sp-h-8 sp-fill-slate-200 sp-flex-shrink-0';
 $icon = $icon_manager->render('info', ['class' => $default_icon_classes]);
-$container_classes = 'sp-flex sp-flex-row sp-gap-4 sp-p-5 sp-rounded-md sp-items-center';
+$container_classes = 'sp-flex sp-flex-row sp-gap-4 sp-p-5 sp-rounded-md sp-items-center sp-mb-4 md:sp-mb-8';
 $content_classes = 'sp-text-slate-200 sp-text-sm sp-font-semibold sp-tracking-wide project-paragraph';
 
 switch ($info_block_type) {

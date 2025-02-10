@@ -30,7 +30,7 @@
 }
 
 h1 {
-  @apply sp-text-4xl sp-decoration-4  sp-text-slate-200 sp-uppercase sp-tracking-widest;
+  @apply sp-text-4xl sp-decoration-4  sp-text-slate-200 sp-uppercase sp-tracking-widest sp-mb-4 md:sp-mb-8;
 }
 
 .project-paragraph a {

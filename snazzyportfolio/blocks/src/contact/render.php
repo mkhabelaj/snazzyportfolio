@@ -15,7 +15,7 @@ $action = $attributes['action'];
 ?>
 <div class="main-content">
   <div class="sub-main-content">
-    <div class="sp-flex sp-flex-col sp-mb-10 sp-mx-auto">
+    <div class="sp-flex sp-flex-col sp-mx-auto">
       <div class="sp-flex sp-justify-center sp-items-center">
         <form action="<?= $action ?>" method="POST"
           class="sp-flex sp-flex-col sp-w-full md:sp-w-[80%]">

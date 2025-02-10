@@ -23,7 +23,7 @@ $icon = $icon_man->render('menu');
 $close_icon = $icon_man->render('x', ['width' => '40', 'height' => '40']);
 ?>
 
-<header class="sp-mb-10" 
+<header class="sp-mb-4 md:sp-mb-8" 
   data-wp-interactive="navbarPlugin"
   <?= wp_interactivity_data_wp_context(['isMobileNavOpen' => false]) ?>
 >
@@ -33,7 +33,7 @@ $close_icon = $icon_man->render('x', ['width' => '40', 'height' => '40']);
       <div class="sp-container sp-mx-auto sp-flex sp-justify-between sp-items-center">
         <div class="sp-text-white sp-text-lg sp-font-bold">
           <a href="<?php echo site_url() ?>">
-            Jcodify.com
+            Jcodify
           </a>
         </div>
         <ul class="sp-flex sp-space-x-6 sp-uppercase">

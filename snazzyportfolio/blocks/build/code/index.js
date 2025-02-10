@@ -5605,7 +5605,9 @@ __webpack_require__.r(__webpack_exports__);
   save: function save(props) {
     var language = props.attributes.lang;
     var className = "language-".concat(language);
-    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useInnerBlocksProps.save();
+    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useInnerBlocksProps.save({
+      className: "sp-mb-4 md:sp-mb-8"
+    });
     var highlightedCode = prismjs_components_prism_core__WEBPACK_IMPORTED_MODULE_4___default().highlight(props.attributes.code, (prismjs_components_prism_core__WEBPACK_IMPORTED_MODULE_4___default().languages).javascript, language);
     return /*#__PURE__*/React.createElement("div", blockProps, /*#__PURE__*/React.createElement("pre", {
       className: className,

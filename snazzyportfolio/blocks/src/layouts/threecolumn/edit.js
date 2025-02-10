@@ -26,7 +26,7 @@ export default function EditComponent({ clientId }) {
        selection:sp-text-teal-900 
        sp-leading-relaxed
        sp-antialiased
-       sp-flex md:sp-flex-row sp-gap-4 sp-flex-col-reverse sp-p-1`,
+       sp-flex md:sp-flex-row sp-gap-4 sp-p-1`,
     {
       "sp-border-slate-400 sp-border-2": innerBlockCount === 0,
     },
