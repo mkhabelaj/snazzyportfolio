@@ -14,7 +14,7 @@ export default function EditComponent({ clientId }) {
     };
   });
   const className = clsx("sp-flex-grow ", {
-    "sp-p-10 sp-border-2": innerBlockCount === 0,
+    "md:sp-p-10 sp-border-2": innerBlockCount === 0,
   });
   const blockProps = useBlockProps({ className });
 

@@ -31,7 +31,7 @@ function EditComponent(_ref) {
       };
     }),
     innerBlockCount = _useSelect.innerBlockCount;
-  var className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])("\n       sp-min-h-screen font-inter\n       selection:sp-bg-teal-300 \n       selection:sp-text-teal-900 \n       sp-leading-relaxed\n       sp-antialiased\n       sp-flex md:sp-flex-row sp-gap-4 sp-flex-col-reverse sp-p-1", {
+  var className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])("\n       sp-min-h-screen font-inter\n       selection:sp-bg-teal-300 \n       selection:sp-text-teal-900 \n       sp-leading-relaxed\n       sp-antialiased\n       sp-flex md:sp-flex-row sp-gap-4 sp-flex-col sp-p-1", {
     "sp-border-slate-400 sp-border-2": innerBlockCount === 0
   });
   console.log({
@@ -192,7 +192,7 @@ __webpack_require__.r(__webpack_exports__);
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: function save() {
     return /*#__PURE__*/React.createElement("div", {
-      className: " sp-flex md:sp-flex-row sp-gap-10 sp-flex-col-reverse"
+      className: " sp-flex md:sp-flex-row md:sp-gap-10 sp-flex-col"
     }, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks.Content, null));
   }
 });

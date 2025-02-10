@@ -31,7 +31,7 @@ function EditComponent(_ref) {
     }),
     innerBlockCount = _useSelect.innerBlockCount;
   var className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])("sp-flex-grow ", {
-    "sp-p-10 sp-border-2": innerBlockCount === 0
+    "md:sp-p-10 sp-border-2": innerBlockCount === 0
   });
   var blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)({
     className: className
