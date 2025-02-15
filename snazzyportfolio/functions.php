@@ -44,7 +44,12 @@ add_action('after_setup_theme', 'snazzyportfolio_features');
 function snazzyportfolio_blocks()
 {
     $auto_block_register = new \Nzuridesigns\WPUtility\AutoBlockRegistrar(__DIR__);
-    $auto_block_register->registerBlocks();
+    if (WP_DEBUG) {
+        $auto_block_register->registerBlocksForDevelopmentMode();
+    }
+    if (!WP_DEBUG) {
+        $auto_block_register->registerBuildBlocks();
+    }
 }
 
 add_action('init', 'snazzyportfolio_blocks');
