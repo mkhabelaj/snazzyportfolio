@@ -7,6 +7,6 @@
   "render": "file:./render.php",
   "attributes": {
     "text": { "type": "string", "default": "Project Paragraph" },
-    "size": { "type": "string", "default": "md" }
+    "size": { "type": "string", "default": "lg" }
   }
 }

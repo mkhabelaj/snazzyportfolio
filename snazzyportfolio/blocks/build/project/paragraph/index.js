@@ -48,6 +48,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  lg: "sp-text-lg",
   sm: "sp-text-sm",
   md: "sp-text-md",
   xl: "sp-text-xl"
@@ -81,7 +82,7 @@ module.exports = window["wp"]["blocks"];
   \*************************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-paragraph","title":"Snazzy Project Paragraph","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"text":{"type":"string","default":"Project Paragraph"},"size":{"type":"string","default":"md"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-paragraph","title":"Snazzy Project Paragraph","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"text":{"type":"string","default":"Project Paragraph"},"size":{"type":"string","default":"lg"}}}');
 
 /***/ })
 

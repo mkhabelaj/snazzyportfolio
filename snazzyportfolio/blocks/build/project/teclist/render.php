@@ -9,11 +9,11 @@ $tagList = (ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel($pos
   <div>
     <h2 class="sp-text-2xl 
       sp-font-bold 
-      sp-decoration-4 mb-5
+      sp-decoration-4 sp-mb-5
       sp-text-slate-200
       sp-uppercase
       sp-tracking-widest
-      sp-mb-5
+      sp-mb-4
       ">Stack</h2>
     <p class="sp-flex sp-flex-wrap sp-gap-2 sp-flex-row sp-items-center sp-justify-start sp-text-xs md:sp-text-sm">
       <?php

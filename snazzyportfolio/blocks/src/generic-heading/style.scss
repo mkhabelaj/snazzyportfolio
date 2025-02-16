@@ -1,0 +1,39 @@
+.wp-block-car-rental-genericheading {
+  /* TODO: clamp font sizes */
+
+
+  &.headline {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    line-height: 1.2;
+
+    &--xlarge {
+      font-size: clamp(3rem, 4vw + 1.5rem, 5rem);
+      font-weight: 500;
+    }
+
+    &--large {
+      font-size: clamp(2.5rem, 3vw + 1rem, 4rem);
+      font-weight: 400;
+    }
+
+    &--medium {
+      font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.5rem);
+      margin-bottom: 0.75rem;
+      font-weight: 200;
+    }
+
+    &--small {
+      font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+      margin-bottom: 1.9rem;
+      font-weight: 100;
+    }
+
+    &--xsmall {
+      font-size: clamp(0.75rem, 1vw + 0.25rem, 1rem);
+      margin-bottom: 1.5rem;
+      font-weight: 100;
+    }
+  }
+}

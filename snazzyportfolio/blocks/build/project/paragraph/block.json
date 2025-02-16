@@ -12,7 +12,7 @@
     },
     "size": {
       "type": "string",
-      "default": "md"
+      "default": "lg"
     }
   }
 }

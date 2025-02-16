@@ -1,0 +1,15 @@
+export default {
+  xs: "sp-text-xs",
+  sm: "sp-text-sm",
+  md: "sp-text-md",
+  lg: "sp-text-lg",
+  xl: "sp-text-xl",
+  "2xl": "sp-text-2xl",
+  "3xl": "sp-text-3xl",
+  "4xl": "sp-text-4xl",
+  "5xl": "sp-text-5xl",
+  "6xl": "sp-text-6xl",
+  "7xl": "sp-text-7xl",
+  "8xl": "sp-text-8xl",
+  "9xl": "sp-text-9xl",
+};
