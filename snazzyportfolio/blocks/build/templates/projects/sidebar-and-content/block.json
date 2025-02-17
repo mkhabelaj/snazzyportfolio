@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/project-content-sidebar-template",
+  "title": "Snazzy Portfolio Project Content and Sidebar Template",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "category": "snazzyportfolio",
+  "supports": {
+    "align": [
+      "full"
+    ]
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/flex-container",
+  "title": "Snazzy Flex Container",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "category": "snazzyportfolio",
+  "supports": {
+    "align": ["full"],
+    "layout": true,
+    "inserter": true
+  },
+  "attributes": {
+    "templateLock": {
+      "type": "string",
+      "enum": ["all", "insert", "contentOnly", "false"],
+      "default": "false"
+    },
+    "align": {
+      "type": "string",
+      "default": "full"
+    }
+  }
+}

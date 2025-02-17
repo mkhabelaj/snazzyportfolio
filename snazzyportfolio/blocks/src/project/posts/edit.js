@@ -19,7 +19,7 @@ export default function Edit() {
         sp-font-bold
         "
       >
-        Project Timeline Placeholder
+        Project Post Placeholder
       </div>
     </div>
   );
