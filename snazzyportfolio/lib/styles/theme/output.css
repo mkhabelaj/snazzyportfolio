@@ -1363,12 +1363,12 @@ h1 {
 }
 
 ul {
-  list-style-position: outside;
+  list-style-position: inside;
   list-style-type: disc;
 }
 
 ol {
-  list-style-position: outside;
+  list-style-position: inside;
   list-style-type: decimal;
 }
 
@@ -1378,6 +1378,12 @@ ul ol,
 ol ul {
   margin-top: 0.25rem;
   padding-left: 1rem;
+}
+
+/* editer list should be ouside */
+
+.block-editor-block-list__block {
+  list-style-position: outside;
 }
 
 body *::-moz-selection {
