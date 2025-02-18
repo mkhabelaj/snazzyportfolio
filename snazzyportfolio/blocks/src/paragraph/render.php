@@ -8,7 +8,14 @@ $classe_map = [
 ];
 $size = $attributes['size'];
 $text_size_class = $classe_map[$size];
-$text = $attributes['text'];
+$text = " Placeholder Text lorem ispum dolor sit amet consectetur adipisicing elit. Quos, quod.
+lorm ispum dolor sit amet consectetur adipisicing elit. Quos, quod.";
+
+if (isset($attributes['text'])) {
+    $text = $attributes['text'];
+}
+if (empty($text)) {
+}
 $wrapper_attributes =  "$text_size_class sp-md:sp-max-w-[650px] sp-leading-relaxed sp-my-5 project-paragraph";
 ?>
 <p class="<?= $wrapper_attributes; ?>"><?= $text; ?></p>

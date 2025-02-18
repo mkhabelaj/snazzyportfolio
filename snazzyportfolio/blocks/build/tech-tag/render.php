@@ -18,8 +18,8 @@
         <?php
         // Loop through each post in the tag archive
         while (have_posts()) :
-          the_post();
-        ?>
+            the_post();
+            ?>
           <a href="<?php the_permalink(); ?>" class="sp-hover:underline">
             <article <?php post_class('sp-p-6 sp-bg-teal-400/10 sp-text-2xl  sp-text-teal-300 '); ?>>
               <!-- Post Title -->
