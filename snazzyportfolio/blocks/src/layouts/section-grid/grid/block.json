@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/grid-container",
+  "title": "Snazzy Container",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "category": "snazzyportfolio",
+  "allowedBlocks": ["snazzyportfolio/grid-item"],
+  "supports": {
+    "align": ["full"]
+  },
+  "attributes": {
+    "styles": {
+      "type": "array",
+      "default": ["sp-grid"]
+    }
+  }
+}

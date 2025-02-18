@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/grid-item",
+  "parent": ["snazzyportfolio/three-section-grid"],
+  "title": "Snazzy Grid Item",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "attributes": {
+    "area": {
+      "type": "string"
+    }
+  }
+}
