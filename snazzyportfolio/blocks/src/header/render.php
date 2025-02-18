@@ -36,7 +36,7 @@ $close_icon = $icon_man->render('x', ['width' => '40', 'height' => '40']);
             Jcodify
           </a>
         </div>
-        <ul class="sp-flex sp-space-x-6 sp-uppercase">
+        <ul class="sp-flex sp-space-x-6 sp-uppercase sp-list-none">
           <?php foreach ($navItems as $item) : ?>
             <li>
               <a href="<?php echo $item['link']; ?>" class="<?php echo get_active_class($item['active']); ?>  hover:sp-text-red-white">
@@ -75,7 +75,7 @@ $close_icon = $icon_man->render('x', ['width' => '40', 'height' => '40']);
         <?php echo $close_icon; ?>
       </div>
     </div>
-    <ul class="sp-mt-20 sp-flex sp-flex-col sp-space-y-4 sp-uppercase sp-items-center sp-justify-start sp-h-screen sp-text-xl sp-gap-6">
+    <ul class="sp-list-none sp-mt-20 sp-flex sp-flex-col sp-space-y-4 sp-uppercase sp-items-center sp-justify-start sp-h-screen sp-text-xl sp-gap-6">
       <?php foreach ($navItems as $item) : ?>
         <li>
           <a href="<?php echo $item['link']; ?>" class="<?php echo get_active_class($item['active']); ?>  hover:sp-text-red-white">

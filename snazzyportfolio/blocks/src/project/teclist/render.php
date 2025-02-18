@@ -2,11 +2,19 @@
 
 use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedProjectMetaModel;
 
+// posttype is project return
+
+if (get_post_type() !== ExtendedProjectMetaModel::getPostType()) {
+    return;
+}
+
+$showLabel = $attributes['showLabel'];
 $post_id = get_the_ID();
 $tagList = (ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel($post_id)))->taxonomyTechnology->getValue();
 ?>
 <div class="sp-flex sp-flex-col sp-gap-4">
   <div>
+    <?php if ($showLabel) : ?>
     <h2 class="sp-text-2xl 
       sp-font-bold 
       sp-decoration-4 sp-mb-5
@@ -15,6 +23,7 @@ $tagList = (ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel($pos
       sp-tracking-widest
       sp-mb-4
       ">Stack</h2>
+    <?php endif; ?>
     <p class="sp-flex sp-flex-wrap sp-gap-2 sp-flex-row sp-items-center sp-justify-start sp-text-xs md:sp-text-sm">
       <?php
       if (!empty($tagList)) :

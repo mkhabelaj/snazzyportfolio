@@ -18,7 +18,12 @@ const LAYOUT_TEMPLATE = [
           level: 1,
         },
       ],
-      ["snazzyportfolio/project-tech-list", {}],
+      [
+        "snazzyportfolio/project-tech-list",
+        {
+          showLabel: false,
+        },
+      ],
       ["snazzyportfolio/excerpt", {}],
       [
         "snazzyportfolio/snazzyportfolio-genericheading",

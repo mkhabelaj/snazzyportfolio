@@ -9,6 +9,10 @@
     "text": {
       "type": "string",
       "default": "Tag List"
+    },
+    "showLabel": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

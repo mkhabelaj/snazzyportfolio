@@ -13,11 +13,11 @@ use Nzuridesigns\Worm\ModelGenerators\Generators\NonHierarchicalTaxonomyClassGen
 if (defined('WP_CLI') && WP_CLI) {
 
     WP_CLI::add_command('gen-data', function () {
-        if(!WP_DEBUG){
-          return;
+        if (!WP_DEBUG) {
+            return;
         }
 
-       // create terms if they don't exist included desciption
+        // create terms if they don't exist included desciption
         $terms = [
           'CSS' => 'CSS is style sheet language that defines the presentation of documents written in HTML',
           'HTML' => 'HTML is the standard markup language for documents designed to be displayed in a web browser',
@@ -133,7 +133,7 @@ if (defined('WP_CLI') && WP_CLI) {
 
     WP_CLI::add_command('gen-models', function () {
 
-        $postTypes = ['project', 'timeline'];
+        $postTypes = ['project', 'timeline', 'post'];
 
         $importGen = new ImportGenerator();
         $importGen->overrideImportMap([

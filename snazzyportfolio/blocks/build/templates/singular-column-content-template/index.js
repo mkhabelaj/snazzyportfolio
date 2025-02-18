@@ -27,7 +27,9 @@ var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
 [["core/post-title", {
   placeholder: "Project Title",
   level: 1
-}], ["snazzyportfolio/project-tech-list", {}], ["snazzyportfolio/excerpt", {}], ["snazzyportfolio/snazzyportfolio-genericheading", {
+}], ["snazzyportfolio/project-tech-list", {
+  showLabel: false
+}], ["snazzyportfolio/excerpt", {}], ["snazzyportfolio/snazzyportfolio-genericheading", {
   placeholder: "Enter Project subtitle here ..."
 }], ["snazzyportfolio/paragraph", {
   placeholder: "Enter Project Text here ..."
