@@ -48,7 +48,7 @@ export default function EditComponent(props) {
           value={props.attributes.text}
           onChange={handleTextChange}
           tagName={props.attributes.tag}
-          placeholder="Enter text..."
+          placeholder={props.attributes.placeholder}
         />
       </div>
     </>

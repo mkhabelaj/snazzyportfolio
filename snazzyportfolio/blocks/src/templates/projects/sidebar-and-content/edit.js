@@ -26,6 +26,28 @@ const LAYOUT_TEMPLATE = [
                 },
               ],
               ["snazzyportfolio/excerpt", {}],
+              [
+                "snazzyportfolio/snazzyportfolio-genericheading",
+                {
+                  placeholder: "Enter Project subtitle here ...",
+                },
+              ],
+              [
+                "snazzyportfolio/paragraph",
+                { placeholder: "Enter Project Text here ..." },
+              ],
+              [
+                "snazzyportfolio/paragraph",
+                {
+                  placeholder: "Enter Project Text here ...",
+                },
+              ],
+              [
+                "snazzyportfolio/image",
+                {
+                  fullWidth: true,
+                },
+              ],
             ],
           ],
           [

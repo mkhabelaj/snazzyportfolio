@@ -26,7 +26,7 @@
   @apply sp-leading-relaxed sp-antialiased sp-mb-4 md:sp-mb-5;
 }
 .sub-main-content {
-  @apply sp-max-w-5xl sp-w-11/12 sp-mx-auto;
+  @apply sp-max-w-5xl sp-w-full sp-mx-auto;
 }
 
 h1 {
@@ -37,6 +37,18 @@ h1 {
   @apply sp-text-slate-200 sp-underline sp-underline-offset-4 sp-decoration-dotted sp-decoration-1;
 }
 
+ul {
+  @apply sp-list-outside sp-list-disc;
+}
+ol {
+  @apply sp-list-outside sp-list-decimal;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  @apply sp-pl-4 sp-mt-1;
+}
 body {
   @apply selection:sp-bg-teal-300 selection:sp-text-teal-900;
   background-color: var(--wp--preset--color--background);
@@ -47,4 +59,9 @@ body {
 */
 pre[class*="language-"] {
   font-size: clamp(0.6rem, 1.2vw, 1rem) !important;
+}
+
+/* hide editor title */
+.editor-post-title {
+  display: none;
 }

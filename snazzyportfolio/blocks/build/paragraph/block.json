@@ -1,18 +1,21 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "snazzyportfolio/project-paragraph",
-  "title": "Snazzy Project Paragraph",
+  "name": "snazzyportfolio/paragraph",
+  "title": "Snazzy Portfolio Paragraph",
   "editorScript": "file:./index.js",
   "render": "file:./render.php",
   "attributes": {
     "text": {
-      "type": "string",
-      "default": "Project Paragraph"
+      "type": "string"
     },
     "size": {
       "type": "string",
       "default": "lg"
+    },
+    "placeholder": {
+      "type": "string",
+      "default": "Snazzy Portfolio Paragraph"
     }
   }
 }

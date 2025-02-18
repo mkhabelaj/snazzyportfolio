@@ -1,13 +1,14 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "car-rental/snazzyportfolio-genericheading",
+  "name": "snazzyportfolio/snazzyportfolio-genericheading",
   "editorScript": "file:./index.js",
   "style": "file:./style-index.css",
   "attributes": {
     "text": { "type": "string" },
     "size": { "type": "string", "default": "2xl" },
-    "tag": { "type": "string", "default": "h2" }
+    "tag": { "type": "string", "default": "h2" },
+    "placeholder": { "type": "string", "default": "Snazzy Portfolio Heading" }
   },
   "title": "Snazzy Portfolio Generic Heading"
 }

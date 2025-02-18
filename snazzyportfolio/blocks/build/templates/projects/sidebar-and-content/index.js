@@ -30,7 +30,15 @@ var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
 [["core/post-title", {
   placeholder: "Project Title",
   level: 1
-}], ["snazzyportfolio/excerpt", {}]]], ["snazzyportfolio/layout-side-content", {}, [["snazzyportfolio/project-tech-list", {}], ["snazzyportfolio/project-timeline", {}], ["snazzyportfolio/project-post", {}]]] // Side content block with empty attributes
+}], ["snazzyportfolio/excerpt", {}], ["snazzyportfolio/snazzyportfolio-genericheading", {
+  placeholder: "Enter Project subtitle here ..."
+}], ["snazzyportfolio/paragraph", {
+  placeholder: "Enter Project Text here ..."
+}], ["snazzyportfolio/paragraph", {
+  placeholder: "Enter Project Text here ..."
+}], ["snazzyportfolio/image", {
+  fullWidth: true
+}]]], ["snazzyportfolio/layout-side-content", {}, [["snazzyportfolio/project-tech-list", {}], ["snazzyportfolio/project-timeline", {}], ["snazzyportfolio/project-post", {}]]] // Side content block with empty attributes
 ]]]]];
 
 function EditComponent(_ref) {

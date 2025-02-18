@@ -756,6 +756,10 @@ video {
   min-height: 100vh;
 }
 
+.sp-w-11\/12 {
+  width: 91.666667%;
+}
+
 .sp-w-3 {
   width: 0.75rem;
 }
@@ -785,12 +789,12 @@ video {
   width: max-content;
 }
 
-.sp-max-w-sm {
-  max-width: 24rem;
+.sp-max-w-5xl {
+  max-width: 64rem;
 }
 
-.sp-max-w-prose {
-  max-width: 65ch;
+.sp-max-w-sm {
+  max-width: 24rem;
 }
 
 .sp-flex-1 {
@@ -1168,10 +1172,6 @@ video {
   line-height: 1.25;
 }
 
-.sp-leading-snug {
-  line-height: 1.375;
-}
-
 .sp-tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -1328,7 +1328,7 @@ video {
 .sub-main-content {
   margin-left: auto;
   margin-right: auto;
-  width: 91.666667%;
+  width: 100%;
   max-width: 64rem;
 }
 
@@ -1356,6 +1356,24 @@ h1 {
   text-decoration-style: dotted;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+}
+
+ul {
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+ol {
+  list-style-position: outside;
+  list-style-type: decimal;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0.25rem;
+  padding-left: 1rem;
 }
 
 body *::-moz-selection {
@@ -1397,6 +1415,12 @@ body {
 
 pre[class*="language-"] {
   font-size: clamp(0.6rem, 1.2vw, 1rem) !important;
+}
+
+/* hide editor title */
+
+.editor-post-title {
+  display: none;
 }
 
 .selection\:sp-bg-teal-300 *::-moz-selection {
