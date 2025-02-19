@@ -16,7 +16,7 @@ if (isset($attributes['text'])) {
 }
 if (empty($text)) {
 }
-$wrapper_attributes =  "$text_size_class sp-md:sp-max-w-[650px] sp-leading-relaxed sp-my-5 project-paragraph";
+$wrapper_attributes =  "$text_size_class sp-leading-relaxed sp-my-5 project-paragraph";
 ?>
 <p class="<?= $wrapper_attributes; ?>"><?= $text; ?></p>
 

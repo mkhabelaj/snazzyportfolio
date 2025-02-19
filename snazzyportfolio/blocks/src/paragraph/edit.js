@@ -13,7 +13,7 @@ export default function EditComponent({
           <RichText
             tagName="p"
             className={`${textSizeVariant[size]} 
-                md:sp-max-w-[650px] sp-whitespace-pre-wrap sp-my-5 sp-leading-tight project-paragraph`}
+                sp-whitespace-pre-wrap sp-my-5 sp-leading-tight project-paragraph`}
             value={text}
             onChange={(value) => setAttributes({ text: value })}
             placeholder={placeholder}

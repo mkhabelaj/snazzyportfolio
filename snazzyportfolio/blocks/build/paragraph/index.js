@@ -26,7 +26,7 @@ function EditComponent(_ref) {
   var blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)();
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", blockProps, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
     tagName: "p",
-    className: "".concat(_textSize__WEBPACK_IMPORTED_MODULE_1__["default"][size], " \n                md:sp-max-w-[650px] sp-whitespace-pre-wrap sp-my-5 sp-leading-tight project-paragraph"),
+    className: "".concat(_textSize__WEBPACK_IMPORTED_MODULE_1__["default"][size], " \n                sp-whitespace-pre-wrap sp-my-5 sp-leading-tight project-paragraph"),
     value: text,
     onChange: function onChange(value) {
       return setAttributes({

@@ -34,26 +34,35 @@ h1 {
 }
 
 .project-paragraph a {
-  @apply sp-text-slate-200 sp-underline sp-underline-offset-4 sp-decoration-dotted sp-decoration-1;
+  @apply sp-text-teal-300 sp-underline sp-underline-offset-4 sp-decoration-teal-800 sp-decoration-1;
 }
 
-ul {
-  @apply sp-list-inside sp-list-disc;
+ul.wp-block-list {
+  @apply sp-list-inside sp-list-disc sp-mb-2;
 }
-ol {
-  @apply sp-list-inside sp-list-decimal;
+ol.wp-block-list {
+  @apply sp-list-inside sp-list-decimal sp-mb-2;
 }
 
-ul ul,
-ol ol,
-ul ol,
-ol ul {
-  @apply sp-pl-4 sp-mt-1;
+.wp-block-list li {
+  @apply sp-text-lg sp-leading-relaxed sp-mb-2;
+}
+
+.wp-block-list li a {
+  @apply sp-text-teal-300 sp-underline sp-underline-offset-4 sp-decoration-teal-800;
+}
+
+ul.wp-block-list ul.wp-block-list,
+ol.wp-block-list ol.wp-block-list,
+ul.wp-block-list ol.wp-block-list,
+ol.wp-block-list ul.wp-block-list {
+  @apply sp-pl-5 sp-mt-1;
 }
 /* editer list should be ouside */
 
 .block-editor-block-list__block {
   @apply sp-list-outside;
+  @apply sp-mb-2 sp-text-lg sp-leading-relaxed;
 }
 body {
   @apply selection:sp-bg-teal-300 selection:sp-text-teal-900;

@@ -105,7 +105,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 
 function SaveComponent(props) {
   var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save({
-    className: "".concat(_textSize__WEBPACK_IMPORTED_MODULE_1__["default"][props.attributes.size], "  sp-mb-5 sp-text-slate-200 sp-tracking-widest sp-uppercase")
+    className: "".concat(_textSize__WEBPACK_IMPORTED_MODULE_1__["default"][props.attributes.size], "  sp-mb-4 sp-text-slate-200 sp-tracking-widest sp-uppercase")
   });
   return /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, _extends({}, blockProps, {
     value: props.attributes.text,
