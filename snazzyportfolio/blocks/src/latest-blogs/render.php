@@ -30,7 +30,7 @@ $query = new WP_Query(
           <a href="<?php the_permalink(); ?>" class="sp-hover:underline">
             <article <?php post_class('sp-p-6 sp-bg-teal-400/10 sp-text-2xl  sp-text-teal-300 '); ?>>
               <!-- Post Title -->
-              <h2 class="sp-font-semibold sp-mb-3 sp-text-teal-300 sp-tracking-wide">
+              <h2 class="sp-font-semibold sp-mb-3 sp-text-teal-300 sp-tracking-wide sp-uppercase">
                 <?php the_title(); ?> <!-- Post title -->
               </h2>
 

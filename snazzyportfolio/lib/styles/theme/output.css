@@ -1567,6 +1567,10 @@ pre[class*="language-"] {
   color: rgb(15 118 110 / var(--tw-text-opacity));
 }
 
+.hover\:sp-underline:hover {
+  text-decoration-line: underline;
+}
+
 .focus\:sp-border-teal-300:focus {
   --tw-border-opacity: 1;
   border-color: rgb(94 234 212 / var(--tw-border-opacity));
