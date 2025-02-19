@@ -4,5 +4,11 @@
   "name": "snazzyportfolio/project-timeline",
   "title": "Snazzy Project Timeline",
   "editorScript": "file:./index.js",
-  "render": "file:./render.php"
+  "render": "file:./render.php",
+  "attributes": {
+    "showLabel": {
+      "type": "boolean",
+      "default": true
+    }
+  }
 }

@@ -50,7 +50,7 @@ module.exports = window["wp"]["blocks"];
   \************************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-timeline","title":"Snazzy Project Timeline","editorScript":"file:./index.js","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-timeline","title":"Snazzy Project Timeline","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"showLabel":{"type":"boolean","default":true}}}');
 
 /***/ })
 

@@ -8,13 +8,16 @@ $related_timelines = $project->timelines->getValue();
 if (empty($related_timelines)) {
     return;
 }
+$showLabel =  $attributes['showLabel'];
 
 ?>
 
 <!-- Timeline Template -->
+<?php if ($showLabel) : ?>
 <h3 class="sp-text-2xl sp-font-bold sp-text-slate-200 sp-uppercase sp-tracking-widest">
   Related Timeline
 </h3>
+<?php endif; ?>
 <div class="sp-flex sp-flex-col sp-gap-2 sp-text-slate-200">
   <ul class="sp-flex sp-flex-col sp-gap-2 sp-text-slate-200">
     <?php
@@ -22,8 +25,7 @@ if (empty($related_timelines)) {
     foreach ($related_timelines as $timeline) :
         $timeline = ExtendedTimelinesMetaModel::instance($timeline);
         ?>
-    
-      <li class="sp-flex sp-flex-col sp-gap-2 sp-text-slate-200">
+      <li class="sp-flex sp-flex-col sp-gap-2 sp-text-slate-300">
         <?= $timeline->institution->getValue(); ?>
         <p class="sp-text-sm sp-font-normal sp-text-slate-400">
           <?= $timeline->getTrimmedDescription(); ?>

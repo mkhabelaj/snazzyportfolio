@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "snazzyportfolio/dropdown",
+  "title": "Snazzy Portfolio Dropdown",
+  "editorScript": "file:./index.js",
+  "viewScriptModule": "file:./view.js",
+  "render": "file:./render.php",
+  "supports": { "interactivity": true },
+  "attributes": {
+    "title": { "type": "string", "default": "Dropdown Title" }
+  }
+}

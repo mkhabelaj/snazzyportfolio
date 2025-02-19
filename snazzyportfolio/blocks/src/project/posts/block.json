@@ -4,5 +4,8 @@
   "name": "snazzyportfolio/project-post",
   "title": "Snazzy Project Posts",
   "editorScript": "file:./index.js",
-  "render": "file:./render.php"
+  "render": "file:./render.php",
+  "attributes": {
+    "showLabel": { "type": "boolean", "default": true }
+  }
 }
