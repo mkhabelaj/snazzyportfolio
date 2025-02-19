@@ -9,7 +9,7 @@ import clsx from "clsx";
 const LAYOUT_TEMPLATE = [
   [
     "snazzyportfolio/layout-container", // Parent block
-    { styles: ["sp-max-w-5xl sp-w-full sp-mx-auto"] }, // Attributes (empty in this case)
+    { styles: ["sp-max-w-5xl sp-w-full sp-mx-auto sp-p-4"] }, // Attributes (empty in this case)
     [
       [
         "core/post-title",
@@ -19,7 +19,6 @@ const LAYOUT_TEMPLATE = [
         },
       ],
 
-      ["snazzyportfolio/project-timeline-vertical", {}],
       [
         "snazzyportfolio/project-tech-list",
         {
@@ -58,18 +57,9 @@ export default function EditComponent({ clientId }) {
       innerBlockCount: getBlockCount(clientId),
     };
   });
-  const className = clsx(
-    `
-       sp-min-h-screen font-inter
-       selection:sp-bg-teal-300 
-       selection:sp-text-teal-900 
-       sp-leading-relaxed
-       sp-antialiased
-       sp-flex md:sp-flex-row sp-gap-4 sp-p-1`,
-    {
-      "sp-border-slate-400 sp-border-2": innerBlockCount === 0,
-    },
-  );
+  const className = clsx({
+    "sp-border-slate-400 sp-border-2": innerBlockCount === 0,
+  });
 
   const blockProps = useBlockProps({ className });
 

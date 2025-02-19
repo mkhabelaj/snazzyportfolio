@@ -8,7 +8,7 @@ import { useSelect } from "@wordpress/data";
 const LAYOUT_TEMPLATE = [
   [
     "snazzyportfolio/layout-container", // Parent block
-    {}, // Attributes (empty in this case)
+    { styles: ["sp-max-w-5xl sp-w-full sp-mx-auto sp-p-4"] }, // Attributes (empty in this case)
     [
       [
         "snazzyportfolio/flex-container",
@@ -74,13 +74,9 @@ export default function EditComponent({ clientId }) {
       innerBlockCount: getBlockCount(clientId),
     };
   });
-  const className = clsx(
-    `
-       sp-flex md:sp-flex-row sp-gap-4 sp-p-1`,
-    {
-      "sp-border-slate-400 sp-border-2": innerBlockCount === 0,
-    },
-  );
+  const className = clsx({
+    "sp-border-slate-400 sp-border-2": innerBlockCount === 0,
+  });
 
   const blockProps = useBlockProps({ className });
 

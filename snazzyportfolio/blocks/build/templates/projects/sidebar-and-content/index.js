@@ -21,7 +21,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
 // Parent block
-{},
+{
+  styles: ["sp-max-w-5xl sp-w-full sp-mx-auto sp-p-4"]
+},
 // Attributes (empty in this case)
 [["snazzyportfolio/flex-container", {},
 // Attributes
@@ -51,7 +53,7 @@ function EditComponent(_ref) {
       };
     }),
     innerBlockCount = _useSelect.innerBlockCount;
-  var className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])("\n       sp-flex md:sp-flex-row sp-gap-4 sp-p-1", {
+  var className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])({
     "sp-border-slate-400 sp-border-2": innerBlockCount === 0
   });
   var blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)({
@@ -208,9 +210,7 @@ __webpack_require__.r(__webpack_exports__);
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_1__.name, {
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: function save() {
-    return /*#__PURE__*/React.createElement("div", {
-      className: " sp-flex md:sp-flex-row sp-gap-4"
-    }, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks.Content, null));
+    return /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks.Content, null);
   }
 });
 })();
