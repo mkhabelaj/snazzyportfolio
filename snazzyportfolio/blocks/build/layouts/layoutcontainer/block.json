@@ -14,6 +14,12 @@
     "align": {
       "type": "string",
       "default": "full"
+    },
+    "styles": {
+      "type": "array",
+      "default": [
+        "sp-max-w-5xl sp-w-full sp-mx-auto"
+      ]
     }
   }
 }

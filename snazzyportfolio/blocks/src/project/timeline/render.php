@@ -10,6 +10,7 @@ if (empty($related_timelines)) {
 }
 
 ?>
+
 <!-- Timeline Template -->
 <h3 class="sp-text-2xl sp-font-bold sp-text-slate-200 sp-uppercase sp-tracking-widest">
   Related Timeline

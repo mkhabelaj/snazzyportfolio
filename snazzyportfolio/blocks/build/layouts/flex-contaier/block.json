@@ -27,6 +27,12 @@
     "align": {
       "type": "string",
       "default": "full"
+    },
+    "styles": {
+      "type": "array",
+      "default": [
+        "sp-flex md:sp-flex-row md:sp-gap-10 sp-flex-col"
+      ]
     }
   }
 }

@@ -3,7 +3,6 @@ import {
   useInnerBlocksProps,
   store as bllockEditorStore,
 } from "@wordpress/block-editor";
-import { useSelect } from "@wordpress/data";
 
 const styles = [
   "sp-grid sp-gap-4 sp-gp-4",

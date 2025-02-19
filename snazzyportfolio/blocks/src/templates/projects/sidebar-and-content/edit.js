@@ -76,11 +76,6 @@ export default function EditComponent({ clientId }) {
   });
   const className = clsx(
     `
-       sp-min-h-screen font-inter
-       selection:sp-bg-teal-300 
-       selection:sp-text-teal-900 
-       sp-leading-relaxed
-       sp-antialiased
        sp-flex md:sp-flex-row sp-gap-4 sp-p-1`,
     {
       "sp-border-slate-400 sp-border-2": innerBlockCount === 0,

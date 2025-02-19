@@ -9,7 +9,7 @@ import clsx from "clsx";
 const LAYOUT_TEMPLATE = [
   [
     "snazzyportfolio/layout-container", // Parent block
-    {}, // Attributes (empty in this case)
+    { styles: ["sp-max-w-5xl sp-w-full sp-mx-auto"] }, // Attributes (empty in this case)
     [
       [
         "core/post-title",
@@ -18,6 +18,8 @@ const LAYOUT_TEMPLATE = [
           level: 1,
         },
       ],
+
+      ["snazzyportfolio/project-timeline-vertical", {}],
       [
         "snazzyportfolio/project-tech-list",
         {

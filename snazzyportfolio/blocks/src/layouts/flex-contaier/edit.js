@@ -6,7 +6,7 @@ import {
 import { useSelect } from "@wordpress/data";
 import clsx from "clsx";
 
-export default function EditComponent({ clientId }) {
+export default function EditComponent({ clientId, attributes: { styles } }) {
   const { innerBlockCount } = useSelect((select) => {
     const { getBlockCount } = select(blockEditorStore);
     return {
@@ -15,6 +15,7 @@ export default function EditComponent({ clientId }) {
   });
 
   const className = clsx(
+    styles,
     `
       sp-min-h-screen font-inter
       selection:sp-bg-teal-300 

@@ -51,7 +51,7 @@ function EditComponent(_ref) {
       };
     }),
     innerBlockCount = _useSelect.innerBlockCount;
-  var className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])("\n       sp-min-h-screen font-inter\n       selection:sp-bg-teal-300 \n       selection:sp-text-teal-900 \n       sp-leading-relaxed\n       sp-antialiased\n       sp-flex md:sp-flex-row sp-gap-4 sp-p-1", {
+  var className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])("\n       sp-flex md:sp-flex-row sp-gap-4 sp-p-1", {
     "sp-border-slate-400 sp-border-2": innerBlockCount === 0
   });
   var blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)({

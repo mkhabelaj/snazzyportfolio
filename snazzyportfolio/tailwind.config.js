@@ -2,7 +2,7 @@
 module.exports = {
   prefix: "sp-",
   content: [
-    "./blocks/src/**/*.{html,js,php}",
+    "./blocks/src/**/*.{html,js,php,json}",
     "./template-parts/**/*.php",
     "./inc/**/*.php",
   ],

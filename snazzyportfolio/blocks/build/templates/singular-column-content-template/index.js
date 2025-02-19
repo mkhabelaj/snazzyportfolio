@@ -22,12 +22,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
 // Parent block
-{},
+{
+  styles: ["sp-max-w-5xl sp-w-full sp-mx-auto"]
+},
 // Attributes (empty in this case)
 [["core/post-title", {
   placeholder: "Project Title",
   level: 1
-}], ["snazzyportfolio/project-tech-list", {
+}], ["snazzyportfolio/project-timeline-vertical", {}], ["snazzyportfolio/project-tech-list", {
   showLabel: false
 }], ["snazzyportfolio/excerpt", {}], ["snazzyportfolio/snazzyportfolio-genericheading", {
   placeholder: "Enter Project subtitle here ..."

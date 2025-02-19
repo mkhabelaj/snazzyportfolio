@@ -21,7 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function EditComponent(_ref) {
-  var clientId = _ref.clientId;
+  var clientId = _ref.clientId,
+    styles = _ref.attributes.styles;
   var _useSelect = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.useSelect)(function (select) {
       var _select = select(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.store),
         getBlockCount = _select.getBlockCount;
@@ -30,7 +31,7 @@ function EditComponent(_ref) {
       };
     }),
     innerBlockCount = _useSelect.innerBlockCount;
-  var className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])("\n      sp-min-h-screen font-inter\n      selection:sp-bg-teal-300 \n      selection:sp-text-teal-900 \n      sp-leading-relaxed\n      sp-antialiased\n      sp-flex md:sp-flex-row sp-gap-4 sp-flex-col sp-p-1", {
+  var className = (0,clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(styles, "\n      sp-min-h-screen font-inter\n      selection:sp-bg-teal-300 \n      selection:sp-text-teal-900 \n      sp-leading-relaxed\n      sp-antialiased\n      sp-flex md:sp-flex-row sp-gap-4 sp-flex-col sp-p-1", {
     "sp-border-slate-400 sp-border-2": innerBlockCount === 0
   });
   console.log({
@@ -96,7 +97,7 @@ function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else i
   \*****************************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/flex-container","title":"Snazzy Flex Container","editorScript":"file:./index.js","render":"file:./render.php","category":"snazzyportfolio","supports":{"align":["full"],"layout":true,"inserter":true},"attributes":{"templateLock":{"type":"string","enum":["all","insert","contentOnly","false"],"default":"false"},"align":{"type":"string","default":"full"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/flex-container","title":"Snazzy Flex Container","editorScript":"file:./index.js","render":"file:./render.php","category":"snazzyportfolio","supports":{"align":["full"],"layout":true,"inserter":true},"attributes":{"templateLock":{"type":"string","enum":["all","insert","contentOnly","false"],"default":"false"},"align":{"type":"string","default":"full"},"styles":{"type":"array","default":["sp-flex md:sp-flex-row md:sp-gap-10 sp-flex-col"]}}}');
 
 /***/ })
 
