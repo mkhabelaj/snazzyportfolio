@@ -17,7 +17,7 @@ function snazzyportfolio_files()
     //in the block itself(we could also make it a plugin)
     wp_enqueue_style(
         'prism-tomorrow',
-        get_theme_file_uri('./node_modules/prismjs/themes/prism-tomorrow.css'),
+        get_theme_file_uri('./lib/styles/prism/prism.css'),
     );
 }
 
