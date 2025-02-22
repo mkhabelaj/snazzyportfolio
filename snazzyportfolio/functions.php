@@ -30,6 +30,8 @@ function snazzyportfolio_features()
     add_theme_support('align-wide');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+    // If we add a new image size remember to to update
+    // the image carousel in blocks/src/image-carousel
     add_image_size('pageBanner', 1500, 350, true);
     add_image_size('projectLandscapeXXl', 1024, 450, true);
     add_image_size('projectLandscapeXl', 655, 410, true);

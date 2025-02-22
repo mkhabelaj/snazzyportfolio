@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.7.1",
+    "@wordpress/icons": "^10.18.0",
     "@wordpress/interactivity": "^6.17.0",
     "clsx": "^2.1.1",
     "prismjs": "^1.29.0"
