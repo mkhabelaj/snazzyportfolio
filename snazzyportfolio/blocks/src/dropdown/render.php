@@ -6,11 +6,12 @@ $iconManager = ThemeIconManager::getInstance();
 $chevDow = $iconManager->render('circle-chevron-down');
 $chevUp = $iconManager->render('circle-chevron-up');
 $title = $attributes['title'];
+$initialOpen = $attributes['initialOpen'];
 ?>
 
 <div 
   data-wp-interactive="snazzyDropdown"
-  <?= wp_interactivity_data_wp_context(['navIsOpen' => false]) ?>
+  <?= wp_interactivity_data_wp_context(['navIsOpen' => $initialOpen]) ?>
   class="sp-mb-4"
 >
   <div class="sp-bg-gray-800 sp-p-3 sp-flex sp-flex-row sp-justify-start sp-gap-2 sp-items-center sp-font-bold"> 

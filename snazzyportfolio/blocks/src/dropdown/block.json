@@ -6,8 +6,9 @@
   "editorScript": "file:./index.js",
   "viewScriptModule": "file:./view.js",
   "render": "file:./render.php",
-  "supports": { "interactivity": true },
+  "supports": { "interactivity": true, "layout": true },
   "attributes": {
-    "title": { "type": "string", "default": "Dropdown Title" }
+    "title": { "type": "string", "default": "Dropdown Title" },
+    "initialOpen": { "type": "boolean", "default": false }
   }
 }

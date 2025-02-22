@@ -10,6 +10,7 @@ import {
   PanelRow,
   Panel,
   SelectControl,
+  ToggleControl,
 } from "@wordpress/components";
 import { Icon, cancelCircleFilled } from "@wordpress/icons";
 import { useState } from "@wordpress/element";
@@ -122,7 +123,7 @@ function ObjectControl({ config, setAttributes, label }) {
 }
 
 export default function EditComponent({
-  attributes: { images, imageSize, config },
+  attributes: { images, imageSize, config, marginB },
   setAttributes,
 }) {
   const blockProps = useBlockProps();
@@ -175,20 +176,13 @@ export default function EditComponent({
                 setAttributes={setAttributes}
               />
             </PanelRow>
-            {/*   <PanelRow> */}
-            {/*     <CheckboxControl */}
-            {/*       label="Full Width" */}
-            {/*       checked={props.attributes.fullWidth} */}
-            {/*       onChange={(value) => props.setAttributes({ fullWidth: value })} */}
-            {/*     /> */}
-            {/*   </PanelRow> */}
-            {/* <PanelRow> */}
-            {/*   <CheckboxControl */}
-            {/*     label="Image Sizes" */}
-            {/*     checked={props.attributes.autoHeight} */}
-            {/*     onChange={(value) => props.setAttributes({ autoHeight: value })} */}
-            {/*   /> */}
-            {/* </PanelRow> */}
+            <PanelRow>
+              <ToggleControl
+                label="Margin Bottom"
+                checked={marginB}
+                onChange={(value) => setAttributes({ marginB: value })}
+              />
+            </PanelRow>
           </PanelBody>
         </Panel>
       </InspectorControls>

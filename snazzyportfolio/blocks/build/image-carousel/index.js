@@ -244,6 +244,7 @@ function EditComponent(_ref6) {
     images = _ref6$attributes.images,
     imageSize = _ref6$attributes.imageSize,
     config = _ref6$attributes.config,
+    marginB = _ref6$attributes.marginB,
     setAttributes = _ref6.setAttributes;
   var blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)();
   function onFileSelect(images) {
@@ -290,6 +291,14 @@ function EditComponent(_ref6) {
     label: "Glide Configuration",
     config: config,
     setAttributes: setAttributes
+  })), /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToggleControl, {
+    label: "Margin Bottom",
+    checked: marginB,
+    onChange: function onChange(value) {
+      return setAttributes({
+        marginB: value
+      });
+    }
   }))))), /*#__PURE__*/React.createElement("div", blockProps, imagesElements.length > 0 ? /*#__PURE__*/React.createElement("div", {
     className: "sp-grid sp-grid-cols-4 sp-gap-4"
   }, imagesElements) : /*#__PURE__*/React.createElement("div", {
@@ -399,7 +408,7 @@ module.exports = window["wp"]["primitives"];
   \**********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/image-carousel","title":"Snazzy Portfolio Image Carousel","editorScript":"file:./index.js","render":"file:./render.php","viewScriptModule":"file:./view.js","style":"file:./style-index.css","editorStyle":"file:./index.css","supports":{"interactivity":true},"attributes":{"config":{"type":"object","default":{"autoplay":3000,"hoverpause":true}},"imageSize":{"type":"string","default":"full"},"images":{"type":"array"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/image-carousel","title":"Snazzy Portfolio Image Carousel","editorScript":"file:./index.js","render":"file:./render.php","viewScriptModule":"file:./view.js","style":"file:./style-index.css","editorStyle":"file:./index.css","supports":{"interactivity":true},"attributes":{"config":{"type":"object","default":{"autoplay":3000,"hoverpause":true}},"imageSize":{"type":"string","default":"full"},"images":{"type":"array"},"marginB":{"type":"boolean","default":false}}}');
 
 /***/ })
 

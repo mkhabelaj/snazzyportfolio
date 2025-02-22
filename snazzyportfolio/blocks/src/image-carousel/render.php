@@ -7,6 +7,7 @@ if (!isset($attributes['images']) || !isset($attributes['imageSize'])) {
 $images = $attributes['images'];
 $imageSize = $attributes['imageSize'];
 $config = $attributes['config'];
+$marginB = $attributes['marginB'];
 
 $image_urls = array_map(function ($image) use ($imageSize) {
     return snazzyposnazzyportfolio_get_image_url_by_id($image['id'], $imageSize);
@@ -19,7 +20,11 @@ if (empty($image_urls)) {
 ?>
 <div  
   data-wp-interactive="imageGallery"
+
+  <?php if ($marginB) : ?>
   class="sp-mb-4"
+  <?php endif; ?>
+
   <?= wp_interactivity_data_wp_context(["config" => $config]) ?>
 >
 

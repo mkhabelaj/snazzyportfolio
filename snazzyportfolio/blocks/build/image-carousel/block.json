@@ -25,6 +25,10 @@
     },
     "images": {
       "type": "array"
+    },
+    "marginB": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

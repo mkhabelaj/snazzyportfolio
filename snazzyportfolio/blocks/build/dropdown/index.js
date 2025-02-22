@@ -14,13 +14,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+
 
 function EditComponent(_ref) {
-  var clientId = _ref.clientId,
-    title = _ref.attributes.title;
+  var _ref$attributes = _ref.attributes,
+    title = _ref$attributes.title,
+    initialOpen = _ref$attributes.initialOpen,
+    setAttributes = _ref.setAttributes;
   var blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)();
   var innerBlocksProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useInnerBlocksProps)(blockProps);
-  return /*#__PURE__*/React.createElement("div", innerBlocksProps, title);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InspectorControls, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Panel, {
+    header: "Snazzy Dropdown Settings"
+  }, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
+    title: "Settings",
+    initialOpen: true
+  }, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.TextControl, {
+    label: "Dropdown Title",
+    value: title,
+    onChange: function onChange(value) {
+      return setAttributes({
+        title: value
+      });
+    }
+  })), /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToggleControl, {
+    label: "Initial Open",
+    checked: initialOpen,
+    onChange: function onChange(value) {
+      return setAttributes({
+        initialOpen: value
+      });
+    }
+  }))))), /*#__PURE__*/React.createElement("div", innerBlocksProps));
 }
 
 /***/ }),
@@ -45,13 +71,23 @@ module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["components"];
+
+/***/ }),
+
 /***/ "./blocks/src/dropdown/block.json":
 /*!****************************************!*\
   !*** ./blocks/src/dropdown/block.json ***!
   \****************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/dropdown","title":"Snazzy Portfolio Dropdown","editorScript":"file:./index.js","viewScriptModule":"file:./view.js","render":"file:./render.php","supports":{"interactivity":true},"attributes":{"title":{"type":"string","default":"Dropdown Title"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/dropdown","title":"Snazzy Portfolio Dropdown","editorScript":"file:./index.js","viewScriptModule":"file:./view.js","render":"file:./render.php","supports":{"interactivity":true,"layout":true},"attributes":{"title":{"type":"string","default":"Dropdown Title"},"initialOpen":{"type":"boolean","default":false}}}');
 
 /***/ })
 

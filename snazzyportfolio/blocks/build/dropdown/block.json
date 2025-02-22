@@ -7,12 +7,17 @@
   "viewScriptModule": "file:./view.js",
   "render": "file:./render.php",
   "supports": {
-    "interactivity": true
+    "interactivity": true,
+    "layout": true
   },
   "attributes": {
     "title": {
       "type": "string",
       "default": "Dropdown Title"
+    },
+    "initialOpen": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
