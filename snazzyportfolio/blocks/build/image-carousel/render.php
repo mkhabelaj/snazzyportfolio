@@ -19,7 +19,8 @@ if (empty($image_urls)) {
 ?>
 <div  
   data-wp-interactive="imageGallery"
-  <?= wp_interactivity_data_wp_context($config) ?>
+  class="sp-mb-4"
+  <?= wp_interactivity_data_wp_context(["config" => $config]) ?>
 >
 
 <div class="glide" data-wp-run--glide="callbacks.loadGlide">
@@ -30,6 +31,7 @@ if (empty($image_urls)) {
           <img src="<?= $image_url ?>" />
         </li>
     <?php endforeach; ?>
+    </ul>
     </div>
 
   <div class="glide__bullets" data-glide-el="controls[nav]">

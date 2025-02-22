@@ -11,10 +11,8 @@ store("imageGallery", {
     loadGlide() {
       useEffect(() => {
         const { ref } = getElement();
-        const glide = new Glide(ref, {
-          autoplay: 3000,
-          hoverpause: true,
-        });
+        const { config } = getContext();
+        const glide = new Glide(ref, config);
         glide.mount();
       }, []);
       document.querySelector(".glide");
