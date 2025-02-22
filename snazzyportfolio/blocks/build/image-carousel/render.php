@@ -25,6 +25,7 @@ if (empty($image_urls)) {
   class="sp-mb-4"
   <?php endif; ?>
 
+  <?= get_block_wrapper_attributes() ?>
   <?= wp_interactivity_data_wp_context(["config" => $config]) ?>
 >
 

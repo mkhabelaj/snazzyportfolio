@@ -3987,15 +3987,16 @@ __webpack_require__.r(__webpack_exports__);
 (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)("imageGallery", {
   callbacks: {
     loadGlide: function loadGlide() {
-      (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-        var _getElement = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)(),
-          ref = _getElement.ref;
-        var _getContext = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)(),
-          config = _getContext.config;
-        var glide = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__["default"](ref, config);
-        glide.mount();
-      }, []);
-      document.querySelector(".glide");
+      document.addEventListener("DOMContentLoaded", function () {
+        (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+          var _getElement = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)(),
+            ref = _getElement.ref;
+          var _getContext = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)(),
+            config = _getContext.config;
+          var glide = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__["default"](ref, config);
+          glide.mount();
+        }, []);
+      });
     }
   }
 });

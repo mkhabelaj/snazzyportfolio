@@ -39,7 +39,12 @@ var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
   showLabel: false
 }]]], ["snazzyportfolio/project-tech-list", {
   showLabel: false
-}], ["snazzyportfolio/excerpt", {}], ["snazzyportfolio/snazzyportfolio-genericheading", {
+}], ["snazzyportfolio/excerpt", {}], ["snazzyportfolio/dropdown", {
+  title: "Project Showcase",
+  initialOpen: true
+}, [["snazzyportfolio/image-carousel", {
+  imageSize: "projectLandscapeXXl"
+}]]], ["snazzyportfolio/snazzyportfolio-genericheading", {
   placeholder: "Enter Project subtitle here ..."
 }], ["snazzyportfolio/paragraph", {
   placeholder: "Enter Project Text here ..."

@@ -54,6 +54,21 @@ const LAYOUT_TEMPLATE = [
       ],
       ["snazzyportfolio/excerpt", {}],
       [
+        "snazzyportfolio/dropdown",
+        {
+          title: "Project Showcase",
+          initialOpen: true,
+        },
+        [
+          [
+            "snazzyportfolio/image-carousel",
+            {
+              imageSize: "projectLandscapeXXl",
+            },
+          ],
+        ],
+      ],
+      [
         "snazzyportfolio/snazzyportfolio-genericheading",
         {
           placeholder: "Enter Project subtitle here ...",
