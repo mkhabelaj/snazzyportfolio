@@ -604,6 +604,14 @@ video {
   left: -0.375rem;
 }
 
+.-sp-right-3 {
+  right: -0.75rem;
+}
+
+.-sp-top-3 {
+  top: -0.75rem;
+}
+
 .sp-left-0 {
   left: 0px;
 }
@@ -618,38 +626,6 @@ video {
 
 .sp-top-4 {
   top: 1rem;
-}
-
-.sp-right-0 {
-  right: 0px;
-}
-
-.-sp-top-1 {
-  top: -0.25rem;
-}
-
-.-sp-top-3 {
-  top: -0.75rem;
-}
-
-.-sp-top-2 {
-  top: -0.5rem;
-}
-
-.-sp-right-1 {
-  right: -0.25rem;
-}
-
-.-sp-right-2 {
-  right: -0.5rem;
-}
-
-.-sp-right-5 {
-  right: -1.25rem;
-}
-
-.-sp-right-3 {
-  right: -0.75rem;
 }
 
 .sp-z-50 {
@@ -736,10 +712,6 @@ video {
   margin-top: 2rem;
 }
 
-.sp-mt-2 {
-  margin-top: 0.5rem;
-}
-
 .sp-block {
   display: block;
 }
@@ -784,10 +756,6 @@ video {
   height: 100vh;
 }
 
-.sp-h-2 {
-  height: 0.5rem;
-}
-
 .sp-min-h-64 {
   min-height: 16rem;
 }
@@ -827,10 +795,6 @@ video {
 .sp-w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.sp-w-2 {
-  width: 0.5rem;
 }
 
 .sp-max-w-5xl {
@@ -939,6 +903,10 @@ video {
   white-space: pre-wrap;
 }
 
+.sp-rounded {
+  border-radius: 0.25rem;
+}
+
 .sp-rounded-full {
   border-radius: 9999px;
 }
@@ -949,10 +917,6 @@ video {
 
 .sp-rounded-md {
   border-radius: 0.375rem;
-}
-
-.sp-rounded {
-  border-radius: 0.25rem;
 }
 
 .sp-rounded-l-md {
@@ -977,10 +941,6 @@ video {
   border-left-width: 1px;
 }
 
-.sp-border-t {
-  border-top-width: 1px;
-}
-
 .sp-border-solid {
   border-style: solid;
 }
@@ -988,6 +948,11 @@ video {
 .sp-border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.sp-border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
 .sp-border-gray-800 {
@@ -1020,16 +985,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.sp-border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
-
-.sp-border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
-}
-
 .sp-bg-amber-400\/10 {
   background-color: rgb(251 191 36 / 0.1);
 }
@@ -1037,6 +992,11 @@ video {
 .sp-bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.sp-bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .sp-bg-gray-300 {
@@ -1071,43 +1031,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.sp-bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.sp-bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
-.sp-bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.sp-fill-slate-200 {
-  fill: #e2e8f0;
-}
-
-.sp-fill-transparent {
-  fill: transparent;
-}
-
-.sp-fill-red-600 {
-  fill: #dc2626;
-}
-
 .sp-fill-red-400 {
   fill: #f87171;
 }
 
-.sp-stroke-violet-700 {
-  stroke: #6d28d9;
-}
-
-.sp-stroke-red-950 {
-  stroke: #450a0a;
+.sp-fill-slate-200 {
+  fill: #e2e8f0;
 }
 
 .sp-stroke-red-700 {
@@ -1129,10 +1058,6 @@ video {
 
 .sp-p-2 {
   padding: 0.5rem;
-}
-
-.sp-p-3 {
-  padding: 0.75rem;
 }
 
 .sp-p-4 {
@@ -1320,6 +1245,11 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.sp-text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
 .sp-text-slate-200 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
@@ -1350,11 +1280,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.sp-text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
 .sp-underline {
   text-decoration-line: underline;
 }
@@ -1366,10 +1291,6 @@ video {
 .sp-antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.sp-caret-white {
-  caret-color: #fff;
 }
 
 .sp-shadow-sm {
@@ -1713,6 +1634,11 @@ pre[class*="language-"] {
 .focus\:sp-outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.sp-group:hover .group-hover\:sp-text-teal-300 {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
