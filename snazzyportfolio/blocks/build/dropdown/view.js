@@ -62,7 +62,6 @@ __webpack_require__.r(__webpack_exports__);
 (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)("snazzyDropdown", {
   actions: {
     toggleNav: function toggleNav() {
-      console.log("toggleNav");
       var context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
       context.navIsOpen = !context.navIsOpen;
     }
