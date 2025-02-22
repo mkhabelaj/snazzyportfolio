@@ -1,22 +1,26 @@
-import {
-  store,
-  getContext,
-  getElement,
-  useEffect,
-} from "@wordpress/interactivity";
+import { store, getContext, getElement } from "@wordpress/interactivity";
 import Glide from "@glidejs/glide";
 
 store("imageGallery", {
   callbacks: {
     loadGlide() {
-      document.addEventListener("DOMContentLoaded", () => {
-        useEffect(() => {
-          const { ref } = getElement();
-          const { config } = getContext();
-          const glide = new Glide(ref, config);
-          glide.mount();
-        }, []);
-      });
+      const { config } = getContext();
+      const { ref } = getElement();
+      let firstLoad = false;
+
+      function onVisibilityChange(entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !firstLoad) {
+            new Glide(ref, config).mount();
+            firstLoad = true;
+          }
+        });
+      }
+
+      new IntersectionObserver(onVisibilityChange, {
+        root: null, // observes in relation to the viewport
+        threshold: 0.1, // triggers when at least 10% of the element is visible
+      }).observe(ref);
     },
   },
 });

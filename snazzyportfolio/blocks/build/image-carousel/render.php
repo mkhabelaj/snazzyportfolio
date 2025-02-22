@@ -1,9 +1,15 @@
 <?php
 
+
+
 if (!isset($attributes['images']) || !isset($attributes['imageSize'])) {
     return;
 }
 
+$identifier = 'image-carousel-'. wp_generate_uuid4();
+if (isset($attributes['identifier'])) {
+    $identifier = $attributes['identifier'];
+}
 $images = $attributes['images'];
 $imageSize = $attributes['imageSize'];
 $config = $attributes['config'];
@@ -26,10 +32,13 @@ if (empty($image_urls)) {
   <?php endif; ?>
 
   <?= get_block_wrapper_attributes() ?>
-  <?= wp_interactivity_data_wp_context(["config" => $config]) ?>
+  <?= wp_interactivity_data_wp_context(["config" => $config, "identifier" => $identifier]) ?>
 >
 
-<div class="glide" data-wp-run--glide="callbacks.loadGlide">
+  <div  
+    id="<?= $identifier ?>"
+    class="glide"
+    data-wp-init--glide="callbacks.loadGlide" >
     <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
     <?php foreach ($image_urls as $image_url) : ?>

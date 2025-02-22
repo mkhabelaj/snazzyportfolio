@@ -3987,16 +3987,24 @@ __webpack_require__.r(__webpack_exports__);
 (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)("imageGallery", {
   callbacks: {
     loadGlide: function loadGlide() {
-      document.addEventListener("DOMContentLoaded", function () {
-        (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-          var _getElement = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)(),
-            ref = _getElement.ref;
-          var _getContext = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)(),
-            config = _getContext.config;
-          var glide = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__["default"](ref, config);
-          glide.mount();
-        }, []);
-      });
+      var _getContext = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)(),
+        config = _getContext.config;
+      var _getElement = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)(),
+        ref = _getElement.ref;
+      var firstLoad = false;
+      function onVisibilityChange(entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting && !firstLoad) {
+            new _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__["default"](ref, config).mount();
+            firstLoad = true;
+          }
+        });
+      }
+      new IntersectionObserver(onVisibilityChange, {
+        root: null,
+        // observes in relation to the viewport
+        threshold: 0.1 // triggers when at least 10% of the element is visible
+      }).observe(ref);
     }
   }
 });

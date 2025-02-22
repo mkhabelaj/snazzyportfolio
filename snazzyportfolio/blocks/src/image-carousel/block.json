@@ -12,6 +12,9 @@
     "interactivity": true
   },
   "attributes": {
+    "identifier": {
+      "type": "string"
+    },
     "config": {
       "type": "object",
       "default": {

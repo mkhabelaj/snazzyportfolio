@@ -408,7 +408,7 @@ module.exports = window["wp"]["primitives"];
   \**********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/image-carousel","title":"Snazzy Portfolio Image Carousel","editorScript":"file:./index.js","render":"file:./render.php","viewScriptModule":"file:./view.js","style":"file:./style-index.css","editorStyle":"file:./index.css","supports":{"interactivity":true},"attributes":{"config":{"type":"object","default":{"autoplay":3000,"hoverpause":true}},"imageSize":{"type":"string","default":"full"},"images":{"type":"array"},"marginB":{"type":"boolean","default":false}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/image-carousel","title":"Snazzy Portfolio Image Carousel","editorScript":"file:./index.js","render":"file:./render.php","viewScriptModule":"file:./view.js","style":"file:./style-index.css","editorStyle":"file:./index.css","supports":{"interactivity":true},"attributes":{"identifier":{"type":"string"},"config":{"type":"object","default":{"autoplay":3000,"hoverpause":true}},"imageSize":{"type":"string","default":"full"},"images":{"type":"array"},"marginB":{"type":"boolean","default":false}}}');
 
 /***/ })
 
