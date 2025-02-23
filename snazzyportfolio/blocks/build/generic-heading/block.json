@@ -4,6 +4,11 @@
   "name": "snazzyportfolio/snazzyportfolio-genericheading",
   "editorScript": "file:./index.js",
   "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js",
+  "supports": {
+    "interactivity": true
+  },
   "attributes": {
     "text": {
       "type": "string"

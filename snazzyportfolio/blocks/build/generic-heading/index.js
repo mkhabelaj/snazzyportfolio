@@ -205,7 +205,7 @@ module.exports = window["wp"]["components"];
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/snazzyportfolio-genericheading","editorScript":"file:./index.js","style":"file:./style-index.css","attributes":{"text":{"type":"string"},"size":{"type":"string","default":"2xl"},"tag":{"type":"string","default":"h2"},"placeholder":{"type":"string","default":"Snazzy Portfolio Heading"}},"title":"Snazzy Portfolio Generic Heading"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/snazzyportfolio-genericheading","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js","supports":{"interactivity":true},"attributes":{"text":{"type":"string"},"size":{"type":"string","default":"2xl"},"tag":{"type":"string","default":"h2"},"placeholder":{"type":"string","default":"Snazzy Portfolio Heading"}},"title":"Snazzy Portfolio Generic Heading"}');
 
 /***/ })
 
