@@ -30,6 +30,8 @@ var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
   placeholder: "Project Title",
   level: 1
 }], ["snazzyportfolio/dropdown", {
+  title: "Project Overview"
+}, [["snazzyportfolio/overview", {}]]], ["snazzyportfolio/dropdown", {
   title: "Related Posts"
 }, [["snazzyportfolio/project-post", {
   showLabel: false

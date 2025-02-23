@@ -18,6 +18,13 @@ const LAYOUT_TEMPLATE = [
           level: 1,
         },
       ],
+      [
+        "snazzyportfolio/dropdown",
+        {
+          title: "Project Overview",
+        },
+        [["snazzyportfolio/overview", {}]],
+      ],
       ["snazzyportfolio/excerpt", {}],
       [
         "snazzyportfolio/snazzyportfolio-genericheading",

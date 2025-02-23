@@ -57,6 +57,15 @@ const LAYOUT_TEMPLATE = [
               ["snazzyportfolio/project-tech-list", {}],
               ["snazzyportfolio/project-timeline", {}],
               ["snazzyportfolio/project-post", {}],
+
+              [
+                "snazzyportfolio/dropdown",
+                {
+                  title: "Project Overview",
+                  initialOpen: true,
+                },
+                [["snazzyportfolio/overview", {}]],
+              ],
             ],
           ], // Side content block with empty attributes
         ],

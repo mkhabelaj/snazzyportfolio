@@ -29,7 +29,9 @@ var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
 [["core/post-title", {
   placeholder: "Project Title",
   level: 1
-}], ["snazzyportfolio/excerpt", {}], ["snazzyportfolio/snazzyportfolio-genericheading", {
+}], ["snazzyportfolio/dropdown", {
+  title: "Project Overview"
+}, [["snazzyportfolio/overview", {}]]], ["snazzyportfolio/excerpt", {}], ["snazzyportfolio/snazzyportfolio-genericheading", {
   placeholder: "Enter Project subtitle here ..."
 }], ["snazzyportfolio/paragraph", {
   placeholder: "Enter Project Text here ..."

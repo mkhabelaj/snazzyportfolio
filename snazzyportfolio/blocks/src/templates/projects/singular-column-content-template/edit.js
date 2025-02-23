@@ -21,6 +21,13 @@ const LAYOUT_TEMPLATE = [
       [
         "snazzyportfolio/dropdown",
         {
+          title: "Project Overview",
+        },
+        [["snazzyportfolio/overview", {}]],
+      ],
+      [
+        "snazzyportfolio/dropdown",
+        {
           title: "Related Posts",
         },
         [

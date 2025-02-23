@@ -1,4 +1,7 @@
 <?php
+if (!isset($attributes['text']) || !isset($attributes['tag'])) {
+    return;
+}
 $tag = $attributes['tag'];
 $text = $attributes['text'];
 $identifier = implode("-", explode(" ", $text));
