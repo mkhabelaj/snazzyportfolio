@@ -16,6 +16,10 @@
     "placeholder": {
       "type": "string",
       "default": "Snazzy Portfolio Paragraph"
+    },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-4"
     }
   }
 }

@@ -113,7 +113,7 @@ function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else i
   \************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/info","title":"Snazzy Portfolio Info Block","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"type":{"type":"string","default":"info"},"content":{"type":"string","default":"Snazzy Portfolio Info Block Content"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/info","title":"Snazzy Portfolio Info Block","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"type":{"type":"string","default":"info"},"content":{"type":"string","default":"Snazzy Portfolio Info Block Content"},"marginB":{"type":"string","default":"sp-mb-4"}}}');
 
 /***/ })
 

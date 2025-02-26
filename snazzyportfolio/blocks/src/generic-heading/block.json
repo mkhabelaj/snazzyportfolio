@@ -13,7 +13,11 @@
     "text": { "type": "string" },
     "size": { "type": "string", "default": "2xl" },
     "tag": { "type": "string", "default": "h2" },
-    "placeholder": { "type": "string", "default": "Snazzy Portfolio Heading" }
+    "placeholder": { "type": "string", "default": "Snazzy Portfolio Heading" },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-4"
+    }
   },
   "title": "Snazzy Portfolio Generic Heading"
 }

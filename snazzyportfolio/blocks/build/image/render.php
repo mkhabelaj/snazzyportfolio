@@ -8,6 +8,7 @@ $size = $attributes['size'];
 $center = $attributes['center'];
 $fullWidth = $attributes['fullWidth'];
 $autoHeight = $attributes['autoHeight'];
+$marginB = $attributes['marginB'];
 $image_url = null;
 $containerClassExtra = '';
 $imgClassExtra = '';
@@ -45,7 +46,7 @@ switch ($size) {
 }
 
 ?>
-<div class="sp-flex sp-flex-col <?= $containerClassExtra; ?> sp-mb-4 md:sp-mb-8">
+<div class="sp-flex sp-flex-col <?= $marginB; ?> <?= $containerClassExtra; ?> sp-mb-4 md:sp-mb-8">
   <div class="<?= $imgClassExtra; ?>">
     <img class="<?= $imgClassExtra; ?>" src="<?php echo $image_url; ?>" alt="Image">
   </div>

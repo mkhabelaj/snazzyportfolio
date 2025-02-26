@@ -26,12 +26,7 @@ if (empty($image_urls)) {
 ?>
 <div  
   data-wp-interactive="imageGallery"
-
-  <?php if ($marginB) : ?>
-  class="sp-mb-4"
-  <?php endif; ?>
-
-  <?= get_block_wrapper_attributes() ?>
+  <?= get_block_wrapper_attributes(["class" => "$marginB"]) ?>
   <?= wp_interactivity_data_wp_context(["config" => $config, "identifier" => $identifier]) ?>
 >
 

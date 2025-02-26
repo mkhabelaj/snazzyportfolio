@@ -14,6 +14,7 @@ import {
 } from "@wordpress/components";
 import { Icon, cancelCircleFilled } from "@wordpress/icons";
 import { useState } from "@wordpress/element";
+import { MarginPanelRow } from "../../../lib/script/margin/margin";
 
 const imageSizes = [
   { value: "full", label: "Full" },
@@ -176,13 +177,7 @@ export default function EditComponent({
                 setAttributes={setAttributes}
               />
             </PanelRow>
-            <PanelRow>
-              <ToggleControl
-                label="Margin Bottom"
-                checked={marginB}
-                onChange={(value) => setAttributes({ marginB: value })}
-              />
-            </PanelRow>
+            <MarginPanelRow marginB={marginB} setAttributes={setAttributes} />
           </PanelBody>
         </Panel>
       </InspectorControls>

@@ -11,13 +11,14 @@ if (get_post_type() !== ExtendedProjectMetaModel::getPostType()) {
 $showLabel = $attributes['showLabel'];
 $post_id = get_the_ID();
 $tagList = (ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel($post_id)))->taxonomyTechnology->getValue();
+$marginB = $attributes['marginB'];
 ?>
-<div class="sp-flex sp-flex-col sp-gap-4">
+<div class="sp-flex sp-flex-col <?= $marginB; ?>">
   <div>
     <?php if ($showLabel) : ?>
     <h2 class="sp-text-2xl 
       sp-font-bold 
-      sp-decoration-4 sp-mb-5
+      sp-decoration-4 
       sp-text-slate-200
       sp-uppercase
       sp-tracking-widest
@@ -40,10 +41,6 @@ $tagList = (ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel($pos
       else : ?>
     <p class="sp-text-slate-300">No Tags</p>
   <?php endif; ?>
-
   </p>
-  </div>
-  <div>
-    <div class="sp-flex sp-flex-col"></div>
   </div>
 </div>

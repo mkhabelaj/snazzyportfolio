@@ -13,6 +13,10 @@
     "content": {
       "type": "string",
       "default": ""
+    },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-4"
     }
   }
 }

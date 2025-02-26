@@ -1,9 +1,14 @@
 import { useBlockProps } from "@wordpress/block-editor";
+import { MarginInspectorSettings } from "../../../../lib/script/margin/margin";
 
-export default function Edit() {
+export default function Edit(props) {
   const blockProps = useBlockProps();
   return (
     <div {...blockProps}>
+      <MarginInspectorSettings
+        marginB={props.attributes.marginB}
+        setAttributes={props.setAttributes}
+      />
       <div
         className="
         sp-font-inter

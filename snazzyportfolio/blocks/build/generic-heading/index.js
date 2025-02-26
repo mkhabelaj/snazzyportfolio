@@ -18,7 +18,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _textSize__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./textSize */ "./blocks/src/generic-heading/textSize.js");
 /* harmony import */ var _tags__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tags */ "./blocks/src/generic-heading/tags.js");
+/* harmony import */ var _lib_script_margin_margin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../lib/script/margin/margin */ "./lib/script/margin/margin.js");
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+
 
 
 
@@ -32,7 +34,10 @@ function EditComponent(props) {
   var blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)({
     className: "".concat(_textSize__WEBPACK_IMPORTED_MODULE_2__["default"][props.attributes.size], " sp-text-slate-200 sp-tracking-widest sp-uppercase")
   });
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.BlockControls, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarGroup, null, Object.keys(_textSize__WEBPACK_IMPORTED_MODULE_2__["default"]).map(function (size) {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_lib_script_margin_margin__WEBPACK_IMPORTED_MODULE_4__.MarginInspectorSettings, {
+    marginB: props.attributes.marginB,
+    setAttributes: props.setAttributes
+  }), /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.BlockControls, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarGroup, null, Object.keys(_textSize__WEBPACK_IMPORTED_MODULE_2__["default"]).map(function (size) {
     return /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarButton, {
       key: size,
       isPressed: props.attributes.size === size,
@@ -105,7 +110,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 
 function SaveComponent(props) {
   var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save({
-    className: "".concat(_textSize__WEBPACK_IMPORTED_MODULE_1__["default"][props.attributes.size], "  sp-mb-4 sp-text-slate-200 sp-tracking-widest sp-uppercase")
+    className: "".concat(_textSize__WEBPACK_IMPORTED_MODULE_1__["default"][props.attributes.size], " sp-text-slate-200 sp-tracking-widest sp-uppercase")
   });
   return /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, _extends({}, blockProps, {
     value: props.attributes.text,
@@ -157,6 +162,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./lib/script/margin/margin.js":
+/*!*************************************!*\
+  !*** ./lib/script/margin/margin.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MarginInspectorSettings: () => (/* binding */ MarginInspectorSettings),
+/* harmony export */   MarginPanelRow: () => (/* binding */ MarginPanelRow)
+/* harmony export */ });
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var options = [{
+  label: "zero",
+  value: "sp-mb-0"
+}, {
+  label: "xs",
+  value: "sp-mb-1"
+}, {
+  label: "sm",
+  value: "sp-mb-2"
+}, {
+  label: "md",
+  value: "sp-mb-3"
+}, {
+  label: "lg",
+  value: "sp-mb-4"
+}, {
+  label: "xl",
+  value: "sp-mb-5"
+}, {
+  label: "xxl",
+  value: "sp-mb-6"
+}];
+function MarginPanelRow(_ref) {
+  var marginB = _ref.marginB,
+    setAttributes = _ref.setAttributes;
+  return /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+    label: "Margin Bottom",
+    value: marginB,
+    options: options,
+    onChange: function onChange(marginB) {
+      return setAttributes({
+        marginB: marginB
+      });
+    }
+  }));
+}
+function MarginInspectorSettings(_ref2) {
+  var marginB = _ref2.marginB,
+    setAttributes = _ref2.setAttributes;
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InspectorControls, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Panel, {
+    header: "Margin Settings"
+  }, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
+    title: "Settings",
+    initialOpen: true
+  }, /*#__PURE__*/React.createElement(MarginPanelRow, {
+    marginB: marginB,
+    setAttributes: setAttributes
+  })))));
+}
+
+/***/ }),
+
 /***/ "./blocks/src/generic-heading/style.scss":
 /*!***********************************************!*\
   !*** ./blocks/src/generic-heading/style.scss ***!
@@ -205,7 +279,7 @@ module.exports = window["wp"]["components"];
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/snazzyportfolio-genericheading","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js","supports":{"interactivity":true},"attributes":{"text":{"type":"string"},"size":{"type":"string","default":"2xl"},"tag":{"type":"string","default":"h2"},"placeholder":{"type":"string","default":"Snazzy Portfolio Heading"}},"title":"Snazzy Portfolio Generic Heading"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/snazzyportfolio-genericheading","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js","supports":{"interactivity":true},"attributes":{"text":{"type":"string"},"size":{"type":"string","default":"2xl"},"tag":{"type":"string","default":"h2"},"placeholder":{"type":"string","default":"Snazzy Portfolio Heading"},"marginB":{"type":"string","default":"sp-mb-4"}},"title":"Snazzy Portfolio Generic Heading"}');
 
 /***/ })
 

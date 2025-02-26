@@ -5,6 +5,7 @@ if (!isset($attributes['text']) || !isset($attributes['tag'])) {
 $tag = $attributes['tag'];
 $text = $attributes['text'];
 $identifier = implode("-", explode(" ", $text));
+$marginB = $attributes['marginB'];
 $class = "";
 switch ($tag) {
     case "h3":
@@ -40,7 +41,7 @@ $context = [
   ></span>
 </span>
 
-<section id="<?= $identifier ?>">
+<section id="<?= $identifier ?>" class="<?= $marginB ?>">
   <?= $content ?>
 </section>
 

@@ -13,6 +13,10 @@
     "showLabel": {
       "type": "boolean",
       "default": true
+    },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-4"
     }
   }
 }

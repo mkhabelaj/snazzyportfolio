@@ -10,9 +10,10 @@ import {
   TextControl,
   ToggleControl,
 } from "@wordpress/components";
+import { MarginPanelRow } from "../../../lib/script/margin/margin";
 
 export default function EditComponent({
-  attributes: { title, initialOpen },
+  attributes: { title, initialOpen, marginB },
   setAttributes,
 }) {
   const blockProps = useBlockProps();
@@ -38,6 +39,7 @@ export default function EditComponent({
                 onChange={(value) => setAttributes({ initialOpen: value })}
               />
             </PanelRow>
+            <MarginPanelRow marginB={marginB} setAttributes={setAttributes} />
           </PanelBody>
         </Panel>
       </InspectorControls>

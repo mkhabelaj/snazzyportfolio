@@ -6,9 +6,10 @@ import {
   TextareaControl,
 } from "@wordpress/components";
 import clsx from "clsx";
+import { MarginPanelRow } from "../../../lib/script/margin/margin";
 
 export default function Edit({
-  attributes: { container, content },
+  attributes: { container, content, marginB },
   setAttributes,
 }) {
   const blockProps = useBlockProps();
@@ -32,6 +33,7 @@ export default function Edit({
                 onChange={(content) => setAttributes({ content })}
               />
             </PanelRow>
+            <MarginPanelRow marginB={marginB} setAttributes={setAttributes} />
           </PanelBody>
         </Panel>
       </InspectorControls>

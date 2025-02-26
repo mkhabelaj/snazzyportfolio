@@ -6,6 +6,7 @@ import {
 import { ToolbarGroup, ToolbarButton } from "@wordpress/components";
 import textSizeVariant from "./textSize";
 import tags from "./tags";
+import { MarginInspectorSettings } from "../../../lib/script/margin/margin";
 
 export default function EditComponent(props) {
   function handleTextChange(value) {
@@ -18,6 +19,10 @@ export default function EditComponent(props) {
   });
   return (
     <>
+      <MarginInspectorSettings
+        marginB={props.attributes.marginB}
+        setAttributes={props.setAttributes}
+      />
       <BlockControls>
         <ToolbarGroup>
           {Object.keys(textSizeVariant).map((size) => (

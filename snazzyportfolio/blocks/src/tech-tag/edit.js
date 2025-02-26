@@ -3,11 +3,10 @@ import { useBlockProps } from "@wordpress/block-editor";
 export default function Edit() {
   const blockProps = useBlockProps();
   return (
-    <div {...blockProps}>
-      <div
-        className="
-        sp-font-inter
-        selection:sp-bg-teal-300 
+    <>
+      <div {...blockProps}>
+        <div
+          className="
         selection:sp-text-teal-900 
         sp-leading-relaxed
         sp-antialiased
@@ -18,9 +17,10 @@ export default function Edit() {
         sp-text-5xl
         sp-font-bold
         "
-      >
-        Tag Placeholder
+        >
+          Tag Placeholder
+        </div>
       </div>
-    </div>
+    </>
   );
 }

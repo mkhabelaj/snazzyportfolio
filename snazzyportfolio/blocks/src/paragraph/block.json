@@ -8,6 +8,10 @@
   "attributes": {
     "text": { "type": "string" },
     "size": { "type": "string", "default": "lg" },
-    "placeholder": { "type": "string", "default": "Snazzy Portfolio Paragraph" }
+    "placeholder": {
+      "type": "string",
+      "default": "Snazzy Portfolio Paragraph"
+    },
+    "marginB": { "type": "string", "default": "sp-mb-4" }
   }
 }

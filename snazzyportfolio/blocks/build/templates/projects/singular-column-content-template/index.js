@@ -26,10 +26,7 @@ var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
   styles: ["sp-max-w-5xl sp-w-full sp-mx-auto sp-p-4"]
 },
 // Attributes (empty in this case)
-[["core/post-title", {
-  placeholder: "Project Title",
-  level: 1
-}], ["snazzyportfolio/dropdown", {
+[["snazzyportfolio/dropdown", {
   title: "Project Overview"
 }, [["snazzyportfolio/overview", {}]]], ["snazzyportfolio/dropdown", {
   title: "Related Posts"
@@ -38,12 +35,21 @@ var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
 }]]], ["snazzyportfolio/dropdown", {
   title: "Related Timeline"
 }, [["snazzyportfolio/project-timeline", {
-  showLabel: false
-}]]], ["snazzyportfolio/project-tech-list", {
-  showLabel: false
+  showLabel: false,
+  marginB: "sp-mb-0"
+}]]], ["snazzyportfolio/dropdown", {
+  title: "Tech Stack",
+  marginB: "sp-mb-4"
+}, [["snazzyportfolio/project-tech-list", {
+  showLabel: false,
+  marginB: "sp-mb-0"
+}]]], ["core/post-title", {
+  placeholder: "Project Title",
+  level: 1
 }], ["snazzyportfolio/excerpt", {}], ["snazzyportfolio/dropdown", {
   title: "Project Showcase",
-  initialOpen: true
+  initialOpen: true,
+  marginB: "sp-mb-4"
 }, [["snazzyportfolio/image-carousel", {
   imageSize: "projectLandscapeXXl"
 }]]], ["snazzyportfolio/snazzyportfolio-genericheading", {
@@ -54,6 +60,12 @@ var LAYOUT_TEMPLATE = [["snazzyportfolio/layout-container",
   placeholder: "Enter Project Text here ..."
 }], ["snazzyportfolio/image", {
   fullWidth: true
+}], ["snazzyportfolio/snazzyportfolio-genericheading", {
+  placeholder: "Enter Project subtitle here ..."
+}], ["snazzyportfolio/paragraph", {
+  placeholder: "Enter Project Text here ..."
+}], ["snazzyportfolio/paragraph", {
+  placeholder: "Enter Project Text here ..."
 }]]]];
 function EditComponent(_ref) {
   var clientId = _ref.clientId;

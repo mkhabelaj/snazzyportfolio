@@ -16,6 +16,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _lib_script_margin_margin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../lib/script/margin/margin */ "./lib/script/margin/margin.js");
+
 
 
 
@@ -27,7 +29,10 @@ function Edit(props) {
   }, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
     title: "Options",
     initialOpen: true
-  }, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CheckboxControl, {
+  }, /*#__PURE__*/React.createElement(_lib_script_margin_margin__WEBPACK_IMPORTED_MODULE_2__.MarginPanelRow, {
+    marginB: props.attributes.marginB,
+    setAttributes: props.setAttributes
+  }), /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CheckboxControl, {
     label: "Show Label",
     checked: props.attributes.showLabel,
     onChange: function onChange(value) {
@@ -38,6 +43,75 @@ function Edit(props) {
   }))))), /*#__PURE__*/React.createElement("div", blockProps, /*#__PURE__*/React.createElement("div", {
     className: " sp-font-inter selection:sp-bg-teal-300  selection:sp-text-teal-900  sp-leading-relaxed sp-antialiased sp-flex sp-items-center  sp-flex-col  sp-text-center sp-p-10 sp-text-5xl sp-font-bold "
   }, "Tech List Placeholder")));
+}
+
+/***/ }),
+
+/***/ "./lib/script/margin/margin.js":
+/*!*************************************!*\
+  !*** ./lib/script/margin/margin.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MarginInspectorSettings: () => (/* binding */ MarginInspectorSettings),
+/* harmony export */   MarginPanelRow: () => (/* binding */ MarginPanelRow)
+/* harmony export */ });
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var options = [{
+  label: "zero",
+  value: "sp-mb-0"
+}, {
+  label: "xs",
+  value: "sp-mb-1"
+}, {
+  label: "sm",
+  value: "sp-mb-2"
+}, {
+  label: "md",
+  value: "sp-mb-3"
+}, {
+  label: "lg",
+  value: "sp-mb-4"
+}, {
+  label: "xl",
+  value: "sp-mb-5"
+}, {
+  label: "xxl",
+  value: "sp-mb-6"
+}];
+function MarginPanelRow(_ref) {
+  var marginB = _ref.marginB,
+    setAttributes = _ref.setAttributes;
+  return /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+    label: "Margin Bottom",
+    value: marginB,
+    options: options,
+    onChange: function onChange(marginB) {
+      return setAttributes({
+        marginB: marginB
+      });
+    }
+  }));
+}
+function MarginInspectorSettings(_ref2) {
+  var marginB = _ref2.marginB,
+    setAttributes = _ref2.setAttributes;
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InspectorControls, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Panel, {
+    header: "Margin Settings"
+  }, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
+    title: "Settings",
+    initialOpen: true
+  }, /*#__PURE__*/React.createElement(MarginPanelRow, {
+    marginB: marginB,
+    setAttributes: setAttributes
+  })))));
 }
 
 /***/ }),
@@ -78,7 +152,7 @@ module.exports = window["wp"]["components"];
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-tech-list","title":"Snazzy Project Tech List","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"text":{"type":"string","default":"Tag List"},"showLabel":{"type":"boolean","default":true}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/project-tech-list","title":"Snazzy Project Tech List","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"text":{"type":"string","default":"Tag List"},"showLabel":{"type":"boolean","default":true},"marginB":{"type":"string","default":"sp-mb-4"}}}');
 
 /***/ })
 

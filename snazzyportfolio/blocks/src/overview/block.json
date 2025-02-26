@@ -8,5 +8,11 @@
   "viewScriptModule": "file:./view.js",
   "supports": {
     "interactivity": true
+  },
+  "attributes": {
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-0"
+    }
   }
 }

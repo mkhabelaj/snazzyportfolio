@@ -28,6 +28,10 @@
     "size": {
       "type": "string",
       "default": "lg"
+    },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-4"
     }
   }
 }

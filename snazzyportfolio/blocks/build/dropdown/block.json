@@ -18,6 +18,10 @@
     "initialOpen": {
       "type": "boolean",
       "default": false
+    },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-2"
     }
   }
 }

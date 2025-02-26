@@ -24,6 +24,10 @@
     "placeholder": {
       "type": "string",
       "default": "Snazzy Portfolio Heading"
+    },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-4"
     }
   },
   "title": "Snazzy Portfolio Generic Heading"

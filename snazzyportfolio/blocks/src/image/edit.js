@@ -12,6 +12,7 @@ import {
   SelectControl,
   CheckboxControl,
 } from "@wordpress/components";
+import { MarginPanelRow } from "../../../lib/script/margin/margin";
 
 const options = [
   { value: "sm", label: "Small" },
@@ -76,6 +77,10 @@ export default function EditComponent(props) {
                 onChange={(value) => props.setAttributes({ autoHeight: value })}
               />
             </PanelRow>
+            <MarginPanelRow
+              marginB={props.attributes.marginB}
+              setAttributes={props.setAttributes}
+            />
           </PanelBody>
         </Panel>
       </InspectorControls>

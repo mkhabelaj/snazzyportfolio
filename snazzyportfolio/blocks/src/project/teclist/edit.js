@@ -2,6 +2,7 @@ import { useBlockProps } from "@wordpress/block-editor";
 import { InspectorControls } from "@wordpress/block-editor";
 import { Panel, PanelBody, PanelRow } from "@wordpress/components";
 import { CheckboxControl } from "@wordpress/components";
+import { MarginPanelRow } from "../../../../lib/script/margin/margin";
 
 export default function Edit(props) {
   const blockProps = useBlockProps();
@@ -10,6 +11,10 @@ export default function Edit(props) {
       <InspectorControls>
         <Panel header="Tech List Settings">
           <PanelBody title="Options" initialOpen>
+            <MarginPanelRow
+              marginB={props.attributes.marginB}
+              setAttributes={props.setAttributes}
+            />
             <PanelRow>
               <CheckboxControl
                 label="Show Label"

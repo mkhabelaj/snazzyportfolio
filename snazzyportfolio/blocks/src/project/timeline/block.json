@@ -6,6 +6,10 @@
   "editorScript": "file:./index.js",
   "render": "file:./render.php",
   "attributes": {
-    "showLabel": { "type": "boolean", "default": true }
+    "showLabel": { "type": "boolean", "default": true },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-4"
+    }
   }
 }

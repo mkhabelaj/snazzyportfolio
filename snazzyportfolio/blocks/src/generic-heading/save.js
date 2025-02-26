@@ -5,7 +5,7 @@ export default function SaveComponent(props) {
   const blockProps = useBlockProps.save({
     className: `${
       textSizeVariant[props.attributes.size]
-    }  sp-mb-4 sp-text-slate-200 sp-tracking-widest sp-uppercase`,
+    } sp-text-slate-200 sp-tracking-widest sp-uppercase`,
   });
   return (
     <RichText.Content

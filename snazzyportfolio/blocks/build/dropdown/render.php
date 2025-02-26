@@ -8,12 +8,14 @@ $chevDow = $iconManager->render('circle-chevron-down');
 $chevUp = $iconManager->render('circle-chevron-up');
 $title = $attributes['title'];
 $initialOpen = $attributes['initialOpen'];
+$marginB = $attributes['marginB'];
 ?>
 
 <div 
   data-wp-interactive="snazzyDropdown"
   <?= wp_interactivity_data_wp_context(['navIsOpen' => $initialOpen]) ?>
-  class="sp-mb-2 
+  class="
+   <?php echo $marginB; ?>
     group
     sp-text-slate-300
     hover:sp-text-teal-300

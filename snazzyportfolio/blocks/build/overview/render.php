@@ -1,4 +1,5 @@
 <?php
+$marginB = $attributes['marginB'];
 $state = wp_interactivity_state('overview', array(
   'headers' => array(),
 ));
@@ -6,7 +7,7 @@ $state = wp_interactivity_state('overview', array(
 
 <div 
   data-wp-interactive="overview"
-  <?php echo get_block_wrapper_attributes(); ?>
+  <?php echo get_block_wrapper_attributes(array('class' => $marginB)); ?>
 >
    <div class="sp-text-slate-100 sp-flex sp-gap-2 sp-flex-col">
     <template data-wp-each="state.headers">

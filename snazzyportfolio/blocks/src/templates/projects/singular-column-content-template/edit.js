@@ -12,13 +12,6 @@ const LAYOUT_TEMPLATE = [
     { styles: ["sp-max-w-5xl sp-w-full sp-mx-auto sp-p-4"] }, // Attributes (empty in this case)
     [
       [
-        "core/post-title",
-        {
-          placeholder: "Project Title",
-          level: 1,
-        },
-      ],
-      [
         "snazzyportfolio/dropdown",
         {
           title: "Project Overview",
@@ -49,14 +42,32 @@ const LAYOUT_TEMPLATE = [
             "snazzyportfolio/project-timeline",
             {
               showLabel: false,
+              marginB: "sp-mb-0",
             },
           ],
         ],
       ],
       [
-        "snazzyportfolio/project-tech-list",
+        "snazzyportfolio/dropdown",
         {
-          showLabel: false,
+          title: "Tech Stack",
+          marginB: "sp-mb-4",
+        },
+        [
+          [
+            "snazzyportfolio/project-tech-list",
+            {
+              showLabel: false,
+              marginB: "sp-mb-0",
+            },
+          ],
+        ],
+      ],
+      [
+        "core/post-title",
+        {
+          placeholder: "Project Title",
+          level: 1,
         },
       ],
       ["snazzyportfolio/excerpt", {}],
@@ -65,6 +76,7 @@ const LAYOUT_TEMPLATE = [
         {
           title: "Project Showcase",
           initialOpen: true,
+          marginB: "sp-mb-4",
         },
         [
           [
@@ -94,6 +106,20 @@ const LAYOUT_TEMPLATE = [
         {
           fullWidth: true,
         },
+      ],
+      [
+        "snazzyportfolio/snazzyportfolio-genericheading",
+        {
+          placeholder: "Enter Project subtitle here ...",
+        },
+      ],
+      [
+        "snazzyportfolio/paragraph",
+        { placeholder: "Enter Project Text here ..." },
+      ],
+      [
+        "snazzyportfolio/paragraph",
+        { placeholder: "Enter Project Text here ..." },
       ],
     ],
   ],

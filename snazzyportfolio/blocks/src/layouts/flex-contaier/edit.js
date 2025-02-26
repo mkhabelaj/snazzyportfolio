@@ -28,8 +28,6 @@ export default function EditComponent({ clientId, attributes: { styles } }) {
     },
   );
 
-  console.log({ innerBlockCount });
-
   const blockProps = useBlockProps({ className });
 
   const innerBlocksProps = useInnerBlocksProps(blockProps);

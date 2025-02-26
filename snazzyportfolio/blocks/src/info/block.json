@@ -13,6 +13,10 @@
     "content": {
       "type": "string",
       "default": "Snazzy Portfolio Info Block Content"
+    },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-4"
     }
   }
 }

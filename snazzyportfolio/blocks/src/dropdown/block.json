@@ -9,6 +9,10 @@
   "supports": { "interactivity": true, "layout": true },
   "attributes": {
     "title": { "type": "string", "default": "Dropdown Title" },
-    "initialOpen": { "type": "boolean", "default": false }
+    "initialOpen": { "type": "boolean", "default": false },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-2"
+    }
   }
 }
