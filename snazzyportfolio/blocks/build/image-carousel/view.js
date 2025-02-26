@@ -3991,12 +3991,15 @@ __webpack_require__.r(__webpack_exports__);
         config = _getContext.config;
       var _getElement = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)(),
         ref = _getElement.ref;
-      var firstLoad = false;
+      // let firstLoad = false;
+
       function onVisibilityChange(entries) {
         entries.forEach(function (entry) {
-          if (entry.isIntersecting && !firstLoad) {
+          // if (entry.isIntersecting && !firstLoad) {
+          if (entry.isIntersecting) {
             new _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__["default"](ref, config).mount();
-            firstLoad = true;
+            console.log("mounted");
+            // firstLoad = true;
           }
         });
       }

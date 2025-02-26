@@ -6,13 +6,15 @@ store("imageGallery", {
     loadGlide() {
       const { config } = getContext();
       const { ref } = getElement();
-      let firstLoad = false;
+      // let firstLoad = false;
 
       function onVisibilityChange(entries) {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !firstLoad) {
+          // if (entry.isIntersecting && !firstLoad) {
+          if (entry.isIntersecting) {
             new Glide(ref, config).mount();
-            firstLoad = true;
+            console.log("mounted");
+            // firstLoad = true;
           }
         });
       }
