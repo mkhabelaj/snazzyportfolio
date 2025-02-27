@@ -3,7 +3,9 @@
 use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedProjectMetaModel;
 
 $post_id = get_the_ID();
-$tagList = (ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel($post_id)))->taxonomyTechnology->getValue();
+$project  = ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel($post_id));
+$tagList = $project->taxonomyTechnology->getValue();
+$title = $project->getProjectName();
 ?>
 <a href="<?php the_permalink(); ?>">
   <div class="
@@ -18,7 +20,7 @@ $tagList = (ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel($pos
     <img src="<?php the_post_thumbnail_url("projectLandscapeSm"); ?>" alt="portfolio image"
       class="sp-w-full sp-h-36 md:sp-h-48 sp-object-cover sp-cursor-pointer">
     <div class="sp-w-full sp-p-4">
-      <h2 class="sp-text-lg md:sp-text-xl sp-mb-2 md:sp-mb-3 sp-font-semibold sp-text-center sp-text-slate-200"><?php the_title(); ?></h2>
+      <h2 class="sp-text-lg md:sp-text-xl sp-mb-2 md:sp-mb-3 sp-font-semibold sp-text-center sp-text-slate-200"><?= $title; ?></h2>
       <p class="sp-flex sp-flex-wrap sp-gap-2 sp-flex-row sp-items-center sp-justify-center sp-text-xs md:sp-text-sm">
         <?php if (!empty($tagList)) : ?>
           <?php foreach ($tagList as $tag) : ?>

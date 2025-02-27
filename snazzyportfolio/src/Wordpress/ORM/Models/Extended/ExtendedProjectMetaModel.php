@@ -15,4 +15,12 @@ class ExtendedProjectMetaModel extends ProjectMetaModel
         }
         return  array_map(fn ($project) => get_post($project), $related_projects);
     }
+
+    public function getProjectName(): string
+    {
+        if ($this->name->getValue()) {
+            return $this->name->getValue();
+        }
+        return $this->getPostTitle();
+    }
 }

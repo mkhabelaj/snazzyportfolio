@@ -16,6 +16,7 @@ class ProjectQueryModel extends Query
     public OneToManyACFQueryHandler $timelines;
     public MetaQueryHandler $relatedPosts;
     public MetaQueryHandler $name;
+    public MetaQueryHandler $priority;
     public TaxQueryHandler $taxonomyTechnology;
 
     public function __construct()
@@ -24,6 +25,7 @@ class ProjectQueryModel extends Query
         $this->timelines = new OneToManyACFQueryHandler('otm-acf_timelines', ExtendedTimelinesQueryModel::class);
         $this->relatedPosts = new MetaQueryHandler('related_posts');
         $this->name = new MetaQueryHandler('name');
+        $this->priority = new MetaQueryHandler('priority');
         $this->taxonomyTechnology = new TaxQueryHandler('technology');
     }
 }
