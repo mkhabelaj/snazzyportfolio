@@ -4,6 +4,7 @@
   "name": "snazzyportfolio/code",
   "title": "Snazzy Portfolio Code Block",
   "editorScript": "file:./index.js",
+  "render": "file:./render.php",
   "attributes": {
     "code": {
       "type": "string",
@@ -12,6 +13,10 @@
     "lang": {
       "type": "string",
       "default": "js"
+    },
+    "marginB": {
+      "type": "string",
+      "default": "sp-mb-4"
     }
   }
 }

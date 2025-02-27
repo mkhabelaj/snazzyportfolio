@@ -7,9 +7,10 @@ import {
 import { createBlock, getDefaultBlockName } from "@wordpress/blocks";
 import { PanelBody, PanelRow, SelectControl } from "@wordpress/components";
 import LanguageOptions from "./prismOptions.js";
+import { MarginPanelRow } from "../../../lib/script/margin/margin";
 
 export default function EditComponent({
-  attributes: { code, lang },
+  attributes: { code, lang, marginB },
   setAttributes,
   onRemove,
   mergeBlocks,
@@ -30,6 +31,7 @@ export default function EditComponent({
               options={LanguageOptions}
             />
           </PanelRow>
+          <MarginPanelRow marginB={marginB} setAttributes={setAttributes} />
         </PanelBody>
       </InspectorControls>
       <div className="sp-flex sp-flex-col sp-justify-center">

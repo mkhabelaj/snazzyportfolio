@@ -21,6 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _prismOptions_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./prismOptions.js */ "./blocks/src/code/prismOptions.js");
+/* harmony import */ var _lib_script_margin_margin__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../lib/script/margin/margin */ "./lib/script/margin/margin.js");
+
 
 
 
@@ -30,6 +32,7 @@ function EditComponent(_ref) {
   var _ref$attributes = _ref.attributes,
     code = _ref$attributes.code,
     lang = _ref$attributes.lang,
+    marginB = _ref$attributes.marginB,
     setAttributes = _ref.setAttributes,
     onRemove = _ref.onRemove,
     mergeBlocks = _ref.mergeBlocks;
@@ -46,7 +49,10 @@ function EditComponent(_ref) {
       });
     },
     options: _prismOptions_js__WEBPACK_IMPORTED_MODULE_4__["default"]
-  })))), /*#__PURE__*/React.createElement("div", {
+  })), /*#__PURE__*/React.createElement(_lib_script_margin_margin__WEBPACK_IMPORTED_MODULE_5__.MarginPanelRow, {
+    marginB: marginB,
+    setAttributes: setAttributes
+  }))), /*#__PURE__*/React.createElement("div", {
     className: "sp-flex sp-flex-col sp-justify-center"
   }, /*#__PURE__*/React.createElement("pre", blockProps, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
     tagName: "code",
@@ -154,6 +160,76 @@ __webpack_require__.r(__webpack_exports__);
   label: "sh",
   value: "sh"
 }]);
+
+/***/ }),
+
+/***/ "./lib/script/margin/margin.js":
+/*!*************************************!*\
+  !*** ./lib/script/margin/margin.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MarginInspectorSettings: () => (/* binding */ MarginInspectorSettings),
+/* harmony export */   MarginPanelRow: () => (/* binding */ MarginPanelRow)
+/* harmony export */ });
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var options = [{
+  label: "zero",
+  value: "sp-mb-0"
+}, {
+  label: "xs",
+  value: "sp-mb-1"
+}, {
+  label: "sm",
+  value: "sp-mb-2"
+}, {
+  label: "md",
+  value: "sp-mb-3"
+}, {
+  label: "lg",
+  value: "sp-mb-4"
+}, {
+  label: "xl",
+  value: "sp-mb-5"
+}, {
+  label: "xxl",
+  value: "sp-mb-6"
+}];
+function MarginPanelRow(_ref) {
+  var marginB = _ref.marginB,
+    setAttributes = _ref.setAttributes;
+  return /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+    label: "Margin Bottom",
+    value: marginB,
+    options: options,
+    onChange: function onChange(marginB) {
+      return setAttributes({
+        marginB: marginB
+      });
+    }
+  }));
+}
+function MarginInspectorSettings(_ref2) {
+  var marginB = _ref2.marginB,
+    setAttributes = _ref2.setAttributes;
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InspectorControls, null, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Panel, {
+    header: "Margin Settings"
+  }, /*#__PURE__*/React.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
+    title: "Settings",
+    initialOpen: true
+  }, /*#__PURE__*/React.createElement(MarginPanelRow, {
+    marginB: marginB,
+    setAttributes: setAttributes
+  })))));
+}
 
 /***/ }),
 
@@ -5411,7 +5487,7 @@ module.exports = window["wp"]["i18n"];
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/code","title":"Snazzy Portfolio Code Block","editorScript":"file:./index.js","attributes":{"code":{"type":"string","default":"console.log(\'hello world\');"},"lang":{"type":"string","default":"js"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/code","title":"Snazzy Portfolio Code Block","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"code":{"type":"string","default":"console.log(\'hello world\');"},"lang":{"type":"string","default":"js"},"marginB":{"type":"string","default":"sp-mb-4"}}}');
 
 /***/ })
 
@@ -5605,9 +5681,7 @@ __webpack_require__.r(__webpack_exports__);
   save: function save(props) {
     var language = props.attributes.lang;
     var className = "language-".concat(language);
-    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useInnerBlocksProps.save({
-      className: "sp-mb-4 md:sp-mb-8"
-    });
+    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useInnerBlocksProps.save();
     var highlightedCode = prismjs_components_prism_core__WEBPACK_IMPORTED_MODULE_4___default().highlight(props.attributes.code, (prismjs_components_prism_core__WEBPACK_IMPORTED_MODULE_4___default().languages).javascript, language);
     return /*#__PURE__*/React.createElement("div", blockProps, /*#__PURE__*/React.createElement("pre", {
       className: className,

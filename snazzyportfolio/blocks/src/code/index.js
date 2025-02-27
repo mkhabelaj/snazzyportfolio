@@ -10,9 +10,7 @@ registerBlockType(metadata.name, {
   save: (props) => {
     const language = props.attributes.lang;
     const className = `language-${language}`;
-    const blockProps = useInnerBlocksProps.save({
-      className: "sp-mb-4 md:sp-mb-8",
-    });
+    const blockProps = useInnerBlocksProps.save();
     const highlightedCode = Prism.highlight(
       props.attributes.code,
       Prism.languages.javascript,
