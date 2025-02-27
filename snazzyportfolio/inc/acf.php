@@ -1,5 +1,6 @@
 <?php
 
+
 add_action('acf/include_fields', function () {
     if (! function_exists('acf_add_local_field_group')) {
         return;
@@ -72,6 +73,27 @@ add_action('acf/include_fields', function () {
             'bidirectional' => 0,
             'bidirectional_target' => array(
             ),
+        ),
+        array(
+            'key' => 'field_67c0307aa823c',
+            'label' => 'Name',
+            'name' => 'name',
+            'aria-label' => '',
+            'type' => 'text',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'maxlength' => '',
+            'allow_in_bindings' => 0,
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
         ),
     ),
     'location' => array(

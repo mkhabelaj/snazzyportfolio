@@ -18,6 +18,7 @@ class ProjectMetaModel extends MetaModel
 {
     public OnetoManyACFField $timelines;
     public BasicField $relatedPosts;
+    public BasicField $name;
     public NonHierarchicalTaxonomyField $taxonomyTechnology;
 
     public function __construct(int $id)
@@ -25,6 +26,7 @@ class ProjectMetaModel extends MetaModel
         parent::__construct($id);
         $this->timelines = new OnetoManyACFField($id, 'otm-acf_timelines', ExtendedTimelinesMetaModel::class);
         $this->relatedPosts = new BasicField($id, 'related_posts');
+        $this->name = new BasicField($id, 'name');
         $this->taxonomyTechnology = new NonHierarchicalTaxonomyField($id, 'technology');
     }
     public static function instance(MetaModel $model): static
