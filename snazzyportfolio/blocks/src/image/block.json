@@ -6,7 +6,7 @@
   "editorScript": "file:./index.js",
   "render": "file:./render.php",
   "attributes": {
-    "text": { "type": "string", "default": "Snazzy Project Image" },
+    "text": { "type": "string", "default": "Snazzy Image" },
     "imgID": { "type": "number" },
     "center": { "type": "boolean", "default": false },
     "fullWidth": { "type": "boolean", "default": false },

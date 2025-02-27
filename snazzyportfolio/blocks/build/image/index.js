@@ -208,7 +208,7 @@ module.exports = window["wp"]["components"];
   \*************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/image","title":"Snazzy Portfolio Image","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"text":{"type":"string","default":"Snazzy Project Image"},"imgID":{"type":"number"},"center":{"type":"boolean","default":false},"fullWidth":{"type":"boolean","default":false},"autoHeight":{"type":"boolean","default":false},"size":{"type":"string","default":"lg"},"marginB":{"type":"string","default":"sp-mb-4"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"snazzyportfolio/image","title":"Snazzy Portfolio Image","editorScript":"file:./index.js","render":"file:./render.php","attributes":{"text":{"type":"string","default":"Snazzy Image"},"imgID":{"type":"number"},"center":{"type":"boolean","default":false},"fullWidth":{"type":"boolean","default":false},"autoHeight":{"type":"boolean","default":false},"size":{"type":"string","default":"lg"},"marginB":{"type":"string","default":"sp-mb-4"}}}');
 
 /***/ })
 

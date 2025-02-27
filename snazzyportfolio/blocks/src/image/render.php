@@ -46,7 +46,7 @@ switch ($size) {
 }
 
 ?>
-<div class="sp-flex sp-flex-col <?= $marginB; ?> <?= $containerClassExtra; ?> sp-mb-4 md:sp-mb-8">
+<div class="sp-flex sp-flex-col <?= $marginB; ?> <?= $containerClassExtra; ?> ">
   <div class="<?= $imgClassExtra; ?>">
     <img class="<?= $imgClassExtra; ?>" src="<?php echo $image_url; ?>" alt="Image">
   </div>

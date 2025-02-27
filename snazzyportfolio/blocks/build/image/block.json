@@ -8,7 +8,7 @@
   "attributes": {
     "text": {
       "type": "string",
-      "default": "Snazzy Project Image"
+      "default": "Snazzy Image"
     },
     "imgID": {
       "type": "number"
