@@ -9,14 +9,17 @@ import {
   Panel,
   SelectControl,
 } from "@wordpress/components";
-import clsx from "clsx";
+import { MarginPanelRow } from "../../../lib/script/margin/margin";
 
 const OPTIONS = [
   { label: "Infomation", value: "info" },
   { label: "Warning", value: "warn" },
   { label: "Error", value: "erro" },
 ];
-export default function Edit({ attributes: { type, content }, setAttributes }) {
+export default function Edit({
+  attributes: { type, content, marginB },
+  setAttributes,
+}) {
   const blockProps = useBlockProps();
   return (
     <>
@@ -31,6 +34,7 @@ export default function Edit({ attributes: { type, content }, setAttributes }) {
                 onChange={(value) => setAttributes({ type: value })}
               />
             </PanelRow>
+            <MarginPanelRow marginB={marginB} setAttributes={setAttributes} />
           </PanelBody>
         </Panel>
       </InspectorControls>

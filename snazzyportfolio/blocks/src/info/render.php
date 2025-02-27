@@ -7,8 +7,8 @@ $marginB = $attributes['marginB'];
 $icon_manager = \Nzuridesigns\WPUtility\ThemeIconManager::getInstance();
 $default_icon_classes = 'sp-w-8 sp-h-8 sp-fill-slate-200 sp-flex-shrink-0';
 $icon = $icon_manager->render('info', ['class' => $default_icon_classes]);
-$container_classes = 'sp-flex sp-flex-row sp-gap-4 sp-p-5 sp-rounded-md sp-items-center $marginB md:sp-mb-8';
-$content_classes = 'sp-text-slate-200 sp-text-md sp-font-semibold sp-tracking-wide project-paragraph';
+$container_classes = "sp-flex sp-flex-row sp-gap-4 sp-pt-2 sp-pb-2 sp-pl-4 sp-pr-4 sp-rounded-md sp-items-center $marginB";
+$content_classes = 'sp-text-slate-300 sp-text-sm sp-font-semibold sp-tracking-wide project-paragraph';
 
 switch ($info_block_type) {
     case 'info':
