@@ -5,6 +5,10 @@ use Jcodify\Snazzyportfolio\Wordpress\ORM\Models\Extended\ExtendedProjectMetaMod
 $post_id = get_the_ID();
 $project  = ExtendedProjectMetaModel::instance(new ExtendedProjectMetaModel($post_id));
 $tagList = $project->taxonomyTechnology->getValue();
+
+if ($tagList) {
+    $tagList = array_slice($tagList, 0, 9);
+}
 $title = $project->getProjectName();
 ?>
 <a href="<?php the_permalink(); ?>">
