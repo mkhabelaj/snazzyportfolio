@@ -1138,6 +1138,14 @@ video {
   padding-right: 1rem;
 }
 
+.sp-pl-5 {
+  padding-left: 1.25rem;
+}
+
+.sp-pr-5 {
+  padding-right: 1.25rem;
+}
+
 .sp-text-center {
   text-align: center;
 }
@@ -1755,6 +1763,14 @@ pre[class*="language-"] {
 
   .md\:sp-p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:sp-pl-0 {
+    padding-left: 0px;
+  }
+
+  .md\:sp-pr-0 {
+    padding-right: 0px;
   }
 
   .md\:sp-text-2xl {
