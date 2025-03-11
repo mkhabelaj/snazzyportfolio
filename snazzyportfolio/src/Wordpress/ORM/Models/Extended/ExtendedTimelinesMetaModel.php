@@ -53,6 +53,9 @@ class ExtendedTimelinesMetaModel extends TimelineMetaModel
     public function getTimeDuration(): string
     {
 
+        if (!$this->showDuration->getValue()) {
+            return "";
+        }
         $start_date = $this->startDate->getValue();
         $end_date = $this->endDate->getValue();
 
@@ -84,8 +87,20 @@ class ExtendedTimelinesMetaModel extends TimelineMetaModel
         }
     }
 
+
+    public function getFormattedStartDate(string $format = "M Y"): string
+    {
+        if (!$this->showMonth->getValue()) {
+            $format = "Y";
+        }
+        return $this->startDate->getDateFormattedVal($format);
+    }
+
     public function getFormattedEndDate(string $format = "M Y"): string
     {
+        if (!$this->showMonth->getValue()) {
+            $format = "Y";
+        }
         if ($this->isCurrentPlaceOfEmployment()) {
             return "Present";
         }

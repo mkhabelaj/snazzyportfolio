@@ -32,7 +32,7 @@ $marginB = $attributes['marginB'];
             <?= $timeline->getTrimmedDescription(); ?>
           </p>
           <p class="sp-text-sm sp-font-normal sp-text-slate-400">
-            <?php echo $timeline->startDate->getDateFormattedVal("M Y"); ?> - <?php echo $timeline->getFormattedEndDate(); ?>
+            <?php echo $timeline->getFormattedStartDate(); ?> - <?php echo $timeline->getFormattedEndDate(); ?>
           </p>
         </li>
 

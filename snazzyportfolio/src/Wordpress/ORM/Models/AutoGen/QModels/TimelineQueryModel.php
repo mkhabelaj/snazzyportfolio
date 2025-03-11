@@ -16,6 +16,8 @@ class TimelineQueryModel extends Query
     public MetaQueryHandler $institution;
     public MetaQueryHandler $description;
     public MetaQueryHandler $currentPlaceOfEmployment;
+    public MetaQueryHandler $showDuration;
+    public MetaQueryHandler $showMonth;
     public TaxQueryHandler $taxonomyPostTag;
 
     public function __construct()
@@ -26,6 +28,8 @@ class TimelineQueryModel extends Query
         $this->institution = new MetaQueryHandler('institution');
         $this->description = new MetaQueryHandler('description');
         $this->currentPlaceOfEmployment = new MetaQueryHandler('current_place_of_employment');
+        $this->showDuration = new MetaQueryHandler('show_duration');
+        $this->showMonth = new MetaQueryHandler('show_month');
         $this->taxonomyPostTag = new TaxQueryHandler('post_tag');
     }
 }

@@ -19,6 +19,8 @@ class TimelineMetaModel extends MetaModel
     public BasicField $institution;
     public BasicField $description;
     public BasicField $currentPlaceOfEmployment;
+    public BasicField $showDuration;
+    public BasicField $showMonth;
     public NonHierarchicalTaxonomyField $taxonomyPostTag;
 
     public function __construct(int $id)
@@ -29,6 +31,8 @@ class TimelineMetaModel extends MetaModel
         $this->institution = new BasicField($id, 'institution');
         $this->description = new BasicField($id, 'description');
         $this->currentPlaceOfEmployment = new BasicField($id, 'current_place_of_employment');
+        $this->showDuration = new BasicField($id, 'show_duration');
+        $this->showMonth = new BasicField($id, 'show_month');
         $this->taxonomyPostTag = new NonHierarchicalTaxonomyField($id, 'post_tag');
     }
     public static function instance(MetaModel $model): static
@@ -56,7 +60,7 @@ class TimelineMetaModel extends MetaModel
 
     public static function create($title = null, $publish = true): static
     {
-        $metaModel = new ExtendedTimelinesMetaModel(self::createNewPost(self::getPostType(), $title, $publish));
+        $metaModel = new ExtendedTimelineMetaModel(self::createNewPost(self::getPostType(), $title, $publish));
         if ($metaModel instanceof MetaModel) {
             return $metaModel;
         }

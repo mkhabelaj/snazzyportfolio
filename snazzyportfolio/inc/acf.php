@@ -1,6 +1,5 @@
 <?php
 
-
 add_action('acf/include_fields', function () {
     if (! function_exists('acf_add_local_field_group')) {
         return;
@@ -239,6 +238,48 @@ add_action('acf/include_fields', function () {
             ),
             'message' => '',
             'default_value' => 0,
+            'allow_in_bindings' => 0,
+            'ui' => 0,
+            'ui_on_text' => '',
+            'ui_off_text' => '',
+        ),
+        array(
+            'key' => 'field_67d0158a78efd',
+            'label' => 'Show Duration',
+            'name' => 'show_duration',
+            'aria-label' => '',
+            'type' => 'true_false',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'message' => '',
+            'default_value' => 1,
+            'allow_in_bindings' => 0,
+            'ui' => 0,
+            'ui_on_text' => '',
+            'ui_off_text' => '',
+        ),
+        array(
+            'key' => 'field_67d015c8b61ff',
+            'label' => 'Show Month',
+            'name' => 'show_month',
+            'aria-label' => '',
+            'type' => 'true_false',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'message' => '',
+            'default_value' => 1,
             'allow_in_bindings' => 0,
             'ui' => 0,
             'ui_on_text' => '',
