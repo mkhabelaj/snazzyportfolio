@@ -1,10 +1,10 @@
 <?php
-$clean_title = str_replace('Archives: ', 'All ', get_the_archive_title());
+$clean_title = str_replace('Archives:', '', get_the_archive_title());
 ?>
 <div class="main-content">
   <div class="sub-main-content">
-    <h1 class="sp-text-4xl md:sp-text-5xl sp-font-bold sp-mb-4 sp-text-slate-200 sp-mt-10">
-      <?php echo $clean_title; ?>
+    <h1 class="sp-flex sp-item sp-justify-center  sp-text-4xl md:sp-text-5xl sp-font-bold sp-mb-10 sp-text-slate-200 sp-mt-10 sp-pl-4">
+     All &nbsp; <?php echo $clean_title; ?>
     </h1>
     <!-- Project Archive -->
     <section class="sp-flex sp-flex-col md:sp-flex-row sp-items-center sp-justify-center">
