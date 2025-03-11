@@ -1110,6 +1110,16 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.sp-py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sp-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .sp-pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1763,6 +1773,16 @@ pre[class*="language-"] {
 
   .md\:sp-p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:sp-py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:sp-px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:sp-pl-0 {
